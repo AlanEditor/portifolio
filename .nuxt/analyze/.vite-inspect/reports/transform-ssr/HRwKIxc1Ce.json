@@ -4,69 +4,69 @@
     {
       "name": "vite:load-fallback",
       "result": "<template>\n  <div id=\"about\">\n    <div class=\"relative z-10 bg-gray-900 pb-20 sm:pb-24 xl:pb-0\">\n      <div class=\"absolute inset-0 overflow-hidden\" aria-hidden=\"true\">\n        <div class=\"absolute left-[calc(50%-19rem)] top-[calc(50%-36rem)] transform-gpu blur-3xl\">\n          <div\n            class=\"aspect-[1097/1023] w-[68.5625rem] bg-gradient-to-r from-[#ff4694] to-[#776fff] opacity-25\"\n            style=\"clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)\"\n          />\n        </div>\n      </div>\n      <div\n        class=\"mx-auto flex max-w-7xl flex-col items-center gap-x-8 gap-y-10 px-6 sm:gap-y-8 lg:px-8 xl:flex-row xl:items-stretch\"\n      >\n        <div class=\"-mt-8 w-full max-w-2xl xl:-mb-8 xl:w-96 xl:flex-none\">\n          <div class=\"relative aspect-square h-full md:-mx-8 xl:mx-0 xl:aspect-auto\">\n            <img\n              class=\"absolute inset-0 h-full w-full rounded-2xl bg-image hover:scale-105 transition duration-300 object-cover shadow-2xl\"\n              src=\"../src/assets/img/alan.png\"\n              alt\n            />\n          </div>\n        </div>\n        <div class=\"w-full max-w-2xl xl:max-w-none xl:flex-auto xl:px-16 xl:py-24\">\n          <figure class=\"relative isolate pt-6 sm:pt-2\">\n            <blockquote class=\"leading-8 text-white sm:leading-9\">\n              <h1 class=\"text-6xl font-bold\">{{ getTranslation('Olá', actualLanguage)}},</h1>\n              <p\n                class=\"mt-6 text-lg\"\n              >{{ getTranslation('Sobre-mim', actualLanguage)}}</p>\n            </blockquote>\n          </figure>\n          <div class=\"mt-10\">\n            <a\n              href=\"https://www.linkedin.com/in/alan-santos-profile/\"\n              target=\"_blank\"\n              class=\"mr-4 px-6 py-3 bg-transparent text-white rounded-lg\"\n            >\n              <i class=\"bi bi-linkedin mr-2\"></i> LinkedIn\n            </a>\n            <a\n              href=\"https://github.com/AlanEditor\"\n              target=\"_blank\"\n              class=\"mr-4 px-6 py-3 bg-transparent text-white rounded-lg\"\n            >\n            <i class=\"bi bi-github mr-2\"></i> LinkedIn\n            </a>\n          </div>\n          <div class=\"my-10 flex justify-center md:justify-start mx-2\">\n            <button\n              type=\"button\"\n              class=\"px-6 py-3 bg-transparent border border-white hover:border-blue-500 hover:text-blue-500 text-white rounded-lg\"\n              style=\"z-index: 1000;\"\n              @click=\"downloadFile\"\n            >Download CV</button>\n          </div>\n        </div>\n      </div>\n    </div>\n  </div>\n</template>\n\n<script>\nimport { getTranslation } from \"~/services/translationService\";\nexport default {\n  name: \"aboutSection\",\n  data() {\n    return {\n      actualLanguage: this.$router.currentRoute.value.query.lang\n    };\n  },\n  methods: {\n    downloadFile() {\n      const file = this.actualLanguage === 'en' ? 'alan_santos_cv_english.pdf' : 'alan_santos_cv.pdf';\n      const fileUrl = \"/files/\" + file;\n      const link = document.createElement(\"a\");\n      link.href = fileUrl;\n      link.download = file;\n      link.click();\n    },\n    getTranslation(key, language) {\n      return getTranslation(key, language);\n    },\n  },\n  watch: {\n      $route(to, from) {\n        this.actualLanguage = to.query.lang;\n      }\n    }\n};\n</script>\n\n<style scoped>\n.bg-image {\n  background: linear-gradient(to bottom, #000004, #291b31);\n}\n\na {\n  position: relative;\n  display: inline-block;\n  text-decoration: none;\n  color: #ffffff;\n}\n\na::after {\n  content: \"\";\n  position: absolute;\n  left: 0;\n  bottom: -2px;\n  width: 100%;\n  height: 2px;\n  background-color: rgb(76, 155, 181);\n  transform: scaleX(0);\n  transition: transform 0.1s ease;\n}\n\na:hover::after {\n  transform: scaleX(1);\n}\n</style>",
-      "start": 1704505701094,
-      "end": 1704505701112,
+      "start": 1704507462070,
+      "end": 1704507462099,
       "sourcemaps": null
     },
     {
       "name": "nuxt:layer-aliasing",
-      "start": 1704505701112,
-      "end": 1704505701112,
+      "start": 1704507462099,
+      "end": 1704507462099,
       "order": "pre"
     },
     {
       "name": "nuxt:layer-aliasing",
-      "start": 1704505701112,
-      "end": 1704505701112,
+      "start": 1704507462099,
+      "end": 1704507462099,
       "order": "pre"
     },
     {
       "name": "nuxt:server-devonly:transform",
-      "start": 1704505701112,
-      "end": 1704505701112,
+      "start": 1704507462099,
+      "end": 1704507462099,
       "order": "pre"
     },
     {
       "name": "nuxt:server-devonly:transform",
-      "start": 1704505701112,
-      "end": 1704505701112,
+      "start": 1704507462099,
+      "end": 1704507462099,
       "order": "pre"
     },
     {
       "name": "nuxt:client-fallback-auto-id",
-      "start": 1704505701112,
-      "end": 1704505701112,
+      "start": 1704507462099,
+      "end": 1704507462099,
       "order": "pre"
     },
     {
       "name": "vite:css",
-      "start": 1704505701112,
-      "end": 1704505701112,
+      "start": 1704507462099,
+      "end": 1704507462099,
       "order": "normal"
     },
     {
       "name": "vite:esbuild",
-      "start": 1704505701112,
-      "end": 1704505701112,
+      "start": 1704507462099,
+      "end": 1704507462099,
       "order": "normal"
     },
     {
       "name": "vite:json",
-      "start": 1704505701112,
-      "end": 1704505701112,
+      "start": 1704507462099,
+      "end": 1704507462099,
       "order": "normal"
     },
     {
       "name": "vite:worker",
-      "start": 1704505701112,
-      "end": 1704505701112,
+      "start": 1704507462099,
+      "end": 1704507462099,
       "order": "normal"
     },
     {
       "name": "vite:vue",
       "result": "\nimport { getTranslation } from \"~/services/translationService\";\nconst _sfc_main = {\n  name: \"aboutSection\",\n  data() {\n    return {\n      actualLanguage: this.$router.currentRoute.value.query.lang\n    };\n  },\n  methods: {\n    downloadFile() {\n      const file = this.actualLanguage === 'en' ? 'alan_santos_cv_english.pdf' : 'alan_santos_cv.pdf';\n      const fileUrl = \"/files/\" + file;\n      const link = document.createElement(\"a\");\n      link.href = fileUrl;\n      link.download = file;\n      link.click();\n    },\n    getTranslation(key, language) {\n      return getTranslation(key, language);\n    },\n  },\n  watch: {\n      $route(to, from) {\n        this.actualLanguage = to.query.lang;\n      }\n    }\n};\n\nimport { mergeProps as _mergeProps } from \"vue\"\nimport { ssrRenderStyle as _ssrRenderStyle, ssrRenderAttr as _ssrRenderAttr, ssrRenderAttrs as _ssrRenderAttrs, ssrInterpolate as _ssrInterpolate } from \"vue/server-renderer\"\nimport _imports_0 from '../src/assets/img/alan.png'\n\n\nfunction _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $options) {\n  _push(`<div${\n    _ssrRenderAttrs(_mergeProps({ id: \"about\" }, _attrs))\n  } data-v-d3418ece><div class=\"relative z-10 bg-gray-900 pb-20 sm:pb-24 xl:pb-0\" data-v-d3418ece><div class=\"absolute inset-0 overflow-hidden\" aria-hidden=\"true\" data-v-d3418ece><div class=\"absolute left-[calc(50%-19rem)] top-[calc(50%-36rem)] transform-gpu blur-3xl\" data-v-d3418ece><div class=\"aspect-[1097/1023] w-[68.5625rem] bg-gradient-to-r from-[#ff4694] to-[#776fff] opacity-25\" style=\"${\n    _ssrRenderStyle({\"clip-path\":\"polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)\"})\n  }\" data-v-d3418ece></div></div></div><div class=\"mx-auto flex max-w-7xl flex-col items-center gap-x-8 gap-y-10 px-6 sm:gap-y-8 lg:px-8 xl:flex-row xl:items-stretch\" data-v-d3418ece><div class=\"-mt-8 w-full max-w-2xl xl:-mb-8 xl:w-96 xl:flex-none\" data-v-d3418ece><div class=\"relative aspect-square h-full md:-mx-8 xl:mx-0 xl:aspect-auto\" data-v-d3418ece><img class=\"absolute inset-0 h-full w-full rounded-2xl bg-image hover:scale-105 transition duration-300 object-cover shadow-2xl\"${\n    _ssrRenderAttr(\"src\", _imports_0)\n  } alt data-v-d3418ece></div></div><div class=\"w-full max-w-2xl xl:max-w-none xl:flex-auto xl:px-16 xl:py-24\" data-v-d3418ece><figure class=\"relative isolate pt-6 sm:pt-2\" data-v-d3418ece><blockquote class=\"leading-8 text-white sm:leading-9\" data-v-d3418ece><h1 class=\"text-6xl font-bold\" data-v-d3418ece>${\n    _ssrInterpolate($options.getTranslation('Olá', $data.actualLanguage))\n  },</h1><p class=\"mt-6 text-lg\" data-v-d3418ece>${\n    _ssrInterpolate($options.getTranslation('Sobre-mim', $data.actualLanguage))\n  }</p></blockquote></figure><div class=\"mt-10\" data-v-d3418ece><a href=\"https://www.linkedin.com/in/alan-santos-profile/\" target=\"_blank\" class=\"mr-4 px-6 py-3 bg-transparent text-white rounded-lg\" data-v-d3418ece><i class=\"bi bi-linkedin mr-2\" data-v-d3418ece></i> LinkedIn </a><a href=\"https://github.com/AlanEditor\" target=\"_blank\" class=\"mr-4 px-6 py-3 bg-transparent text-white rounded-lg\" data-v-d3418ece><i class=\"bi bi-github mr-2\" data-v-d3418ece></i> LinkedIn </a></div><div class=\"my-10 flex justify-center md:justify-start mx-2\" data-v-d3418ece><button type=\"button\" class=\"px-6 py-3 bg-transparent border border-white hover:border-blue-500 hover:text-blue-500 text-white rounded-lg\" style=\"${\n    _ssrRenderStyle({\"z-index\":\"1000\"})\n  }\" data-v-d3418ece>Download CV</button></div></div></div></div></div>`)\n}\n\nimport \"/Users/alansantos/Desktop/PROJETOS/PORTIFÓLIO/portifolio/components/aboutSection.vue?vue&type=style&index=0&scoped=d3418ece&lang.css\"\n\nimport { useSSRContext as __vite_useSSRContext } from 'vue'\nconst _sfc_setup = _sfc_main.setup\n_sfc_main.setup = (props, ctx) => {\n  const ssrContext = __vite_useSSRContext()\n  ;(ssrContext.modules || (ssrContext.modules = new Set())).add(\"components/aboutSection.vue\")\n  return _sfc_setup ? _sfc_setup(props, ctx) : undefined\n}\nimport _export_sfc from '\u0000plugin-vue:export-helper'\nexport default /*#__PURE__*/_export_sfc(_sfc_main, [['ssrRender',_sfc_ssrRender],['__scopeId',\"data-v-d3418ece\"]])",
-      "start": 1704505701112,
-      "end": 1704505701115,
+      "start": 1704507462099,
+      "end": 1704507462103,
       "order": "normal",
       "sourcemaps": {
         "version": 3,
@@ -83,178 +83,178 @@
     },
     {
       "name": "vite:vue-jsx",
-      "start": 1704505701115,
-      "end": 1704505701115,
+      "start": 1704507462103,
+      "end": 1704507462103,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1704505701115,
-      "end": 1704505701115,
+      "start": 1704507462103,
+      "end": 1704507462103,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1704505701115,
-      "end": 1704505701115,
+      "start": 1704507462103,
+      "end": 1704507462103,
       "order": "normal"
     },
     {
       "name": "nuxt:remove-plugin-metadata",
-      "start": 1704505701115,
-      "end": 1704505701115,
+      "start": 1704507462103,
+      "end": 1704507462103,
       "order": "normal"
     },
     {
       "name": "nuxt:remove-plugin-metadata",
-      "start": 1704505701115,
-      "end": 1704505701115,
+      "start": 1704507462103,
+      "end": 1704507462103,
       "order": "normal"
     },
     {
       "name": "nuxt:components:imports",
-      "start": 1704505701115,
-      "end": 1704505701115,
+      "start": 1704507462103,
+      "end": 1704507462103,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1704505701115,
-      "end": 1704505701115,
+      "start": 1704507462103,
+      "end": 1704507462103,
       "order": "normal"
     },
     {
       "name": "ssr-styles",
-      "start": 1704505701115,
-      "end": 1704505701115,
+      "start": 1704507462103,
+      "end": 1704507462103,
       "order": "normal"
     },
     {
       "name": "vite:define",
       "result": "import { getTranslation } from \"~/services/translationService\";\nconst _sfc_main = {\n  name: \"aboutSection\",\n  data() {\n    return {\n      actualLanguage: this.$router.currentRoute.value.query.lang\n    };\n  },\n  methods: {\n    downloadFile() {\n      const file = this.actualLanguage === \"en\" ? \"alan_santos_cv_english.pdf\" : \"alan_santos_cv.pdf\";\n      const fileUrl = \"/files/\" + file;\n      const link = (void 0).createElement(\"a\");\n      link.href = fileUrl;\n      link.download = file;\n      link.click();\n    },\n    getTranslation(key, language) {\n      return getTranslation(key, language);\n    }\n  },\n  watch: {\n    $route(to, from) {\n      this.actualLanguage = to.query.lang;\n    }\n  }\n};\nimport { mergeProps as _mergeProps } from \"vue\";\nimport { ssrRenderStyle as _ssrRenderStyle, ssrRenderAttr as _ssrRenderAttr, ssrRenderAttrs as _ssrRenderAttrs, ssrInterpolate as _ssrInterpolate } from \"vue/server-renderer\";\nimport _imports_0 from \"../src/assets/img/alan.png\";\nfunction _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $options) {\n  _push(`<div${_ssrRenderAttrs(_mergeProps({ id: \"about\" }, _attrs))} data-v-d3418ece><div class=\"relative z-10 bg-gray-900 pb-20 sm:pb-24 xl:pb-0\" data-v-d3418ece><div class=\"absolute inset-0 overflow-hidden\" aria-hidden=\"true\" data-v-d3418ece><div class=\"absolute left-[calc(50%-19rem)] top-[calc(50%-36rem)] transform-gpu blur-3xl\" data-v-d3418ece><div class=\"aspect-[1097/1023] w-[68.5625rem] bg-gradient-to-r from-[#ff4694] to-[#776fff] opacity-25\" style=\"${_ssrRenderStyle({ \"clip-path\": \"polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)\" })}\" data-v-d3418ece></div></div></div><div class=\"mx-auto flex max-w-7xl flex-col items-center gap-x-8 gap-y-10 px-6 sm:gap-y-8 lg:px-8 xl:flex-row xl:items-stretch\" data-v-d3418ece><div class=\"-mt-8 w-full max-w-2xl xl:-mb-8 xl:w-96 xl:flex-none\" data-v-d3418ece><div class=\"relative aspect-square h-full md:-mx-8 xl:mx-0 xl:aspect-auto\" data-v-d3418ece><img class=\"absolute inset-0 h-full w-full rounded-2xl bg-image hover:scale-105 transition duration-300 object-cover shadow-2xl\"${_ssrRenderAttr(\"src\", _imports_0)} alt data-v-d3418ece></div></div><div class=\"w-full max-w-2xl xl:max-w-none xl:flex-auto xl:px-16 xl:py-24\" data-v-d3418ece><figure class=\"relative isolate pt-6 sm:pt-2\" data-v-d3418ece><blockquote class=\"leading-8 text-white sm:leading-9\" data-v-d3418ece><h1 class=\"text-6xl font-bold\" data-v-d3418ece>${_ssrInterpolate($options.getTranslation(\"Olá\", $data.actualLanguage))},</h1><p class=\"mt-6 text-lg\" data-v-d3418ece>${_ssrInterpolate($options.getTranslation(\"Sobre-mim\", $data.actualLanguage))}</p></blockquote></figure><div class=\"mt-10\" data-v-d3418ece><a href=\"https://www.linkedin.com/in/alan-santos-profile/\" target=\"_blank\" class=\"mr-4 px-6 py-3 bg-transparent text-white rounded-lg\" data-v-d3418ece><i class=\"bi bi-linkedin mr-2\" data-v-d3418ece></i> LinkedIn </a><a href=\"https://github.com/AlanEditor\" target=\"_blank\" class=\"mr-4 px-6 py-3 bg-transparent text-white rounded-lg\" data-v-d3418ece><i class=\"bi bi-github mr-2\" data-v-d3418ece></i> LinkedIn </a></div><div class=\"my-10 flex justify-center md:justify-start mx-2\" data-v-d3418ece><button type=\"button\" class=\"px-6 py-3 bg-transparent border border-white hover:border-blue-500 hover:text-blue-500 text-white rounded-lg\" style=\"${_ssrRenderStyle({ \"z-index\": \"1000\" })}\" data-v-d3418ece>Download CV</button></div></div></div></div></div>`);\n}\nimport \"/Users/alansantos/Desktop/PROJETOS/PORTIFÓLIO/portifolio/components/aboutSection.vue?vue&type=style&index=0&scoped=d3418ece&lang.css\";\nimport { useSSRContext as __vite_useSSRContext } from \"vue\";\nconst _sfc_setup = _sfc_main.setup;\n_sfc_main.setup = (props, ctx) => {\n  const ssrContext = __vite_useSSRContext();\n  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add(\"components/aboutSection.vue\");\n  return _sfc_setup ? _sfc_setup(props, ctx) : void 0;\n};\nimport _export_sfc from \"\\0plugin-vue:export-helper\";\nexport default /* @__PURE__ */ _export_sfc(_sfc_main, [[\"ssrRender\", _sfc_ssrRender], [\"__scopeId\", \"data-v-d3418ece\"]]);\n",
-      "start": 1704505701115,
-      "end": 1704505701234,
+      "start": 1704507462103,
+      "end": 1704507462228,
       "order": "normal",
       "sourcemaps": "{\n  \"version\": 3,\n  \"sources\": [\"/Users/alansantos/Desktop/PROJETOS/PORTIFÓLIO/portifolio/components/aboutSection.vue\"],\n  \"sourcesContent\": [\"\\nimport { getTranslation } from \\\"~/services/translationService\\\";\\nconst _sfc_main = {\\n  name: \\\"aboutSection\\\",\\n  data() {\\n    return {\\n      actualLanguage: this.$router.currentRoute.value.query.lang\\n    };\\n  },\\n  methods: {\\n    downloadFile() {\\n      const file = this.actualLanguage === 'en' ? 'alan_santos_cv_english.pdf' : 'alan_santos_cv.pdf';\\n      const fileUrl = \\\"/files/\\\" + file;\\n      const link = document.createElement(\\\"a\\\");\\n      link.href = fileUrl;\\n      link.download = file;\\n      link.click();\\n    },\\n    getTranslation(key, language) {\\n      return getTranslation(key, language);\\n    },\\n  },\\n  watch: {\\n      $route(to, from) {\\n        this.actualLanguage = to.query.lang;\\n      }\\n    }\\n};\\n\\nimport { mergeProps as _mergeProps } from \\\"vue\\\"\\nimport { ssrRenderStyle as _ssrRenderStyle, ssrRenderAttr as _ssrRenderAttr, ssrRenderAttrs as _ssrRenderAttrs, ssrInterpolate as _ssrInterpolate } from \\\"vue/server-renderer\\\"\\nimport _imports_0 from '../src/assets/img/alan.png'\\n\\n\\nfunction _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $options) {\\n  _push(`<div${\\n    _ssrRenderAttrs(_mergeProps({ id: \\\"about\\\" }, _attrs))\\n  } data-v-d3418ece><div class=\\\"relative z-10 bg-gray-900 pb-20 sm:pb-24 xl:pb-0\\\" data-v-d3418ece><div class=\\\"absolute inset-0 overflow-hidden\\\" aria-hidden=\\\"true\\\" data-v-d3418ece><div class=\\\"absolute left-[calc(50%-19rem)] top-[calc(50%-36rem)] transform-gpu blur-3xl\\\" data-v-d3418ece><div class=\\\"aspect-[1097/1023] w-[68.5625rem] bg-gradient-to-r from-[#ff4694] to-[#776fff] opacity-25\\\" style=\\\"${\\n    _ssrRenderStyle({\\\"clip-path\\\":\\\"polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)\\\"})\\n  }\\\" data-v-d3418ece></div></div></div><div class=\\\"mx-auto flex max-w-7xl flex-col items-center gap-x-8 gap-y-10 px-6 sm:gap-y-8 lg:px-8 xl:flex-row xl:items-stretch\\\" data-v-d3418ece><div class=\\\"-mt-8 w-full max-w-2xl xl:-mb-8 xl:w-96 xl:flex-none\\\" data-v-d3418ece><div class=\\\"relative aspect-square h-full md:-mx-8 xl:mx-0 xl:aspect-auto\\\" data-v-d3418ece><img class=\\\"absolute inset-0 h-full w-full rounded-2xl bg-image hover:scale-105 transition duration-300 object-cover shadow-2xl\\\"${\\n    _ssrRenderAttr(\\\"src\\\", _imports_0)\\n  } alt data-v-d3418ece></div></div><div class=\\\"w-full max-w-2xl xl:max-w-none xl:flex-auto xl:px-16 xl:py-24\\\" data-v-d3418ece><figure class=\\\"relative isolate pt-6 sm:pt-2\\\" data-v-d3418ece><blockquote class=\\\"leading-8 text-white sm:leading-9\\\" data-v-d3418ece><h1 class=\\\"text-6xl font-bold\\\" data-v-d3418ece>${\\n    _ssrInterpolate($options.getTranslation('Olá', $data.actualLanguage))\\n  },</h1><p class=\\\"mt-6 text-lg\\\" data-v-d3418ece>${\\n    _ssrInterpolate($options.getTranslation('Sobre-mim', $data.actualLanguage))\\n  }</p></blockquote></figure><div class=\\\"mt-10\\\" data-v-d3418ece><a href=\\\"https://www.linkedin.com/in/alan-santos-profile/\\\" target=\\\"_blank\\\" class=\\\"mr-4 px-6 py-3 bg-transparent text-white rounded-lg\\\" data-v-d3418ece><i class=\\\"bi bi-linkedin mr-2\\\" data-v-d3418ece></i> LinkedIn </a><a href=\\\"https://github.com/AlanEditor\\\" target=\\\"_blank\\\" class=\\\"mr-4 px-6 py-3 bg-transparent text-white rounded-lg\\\" data-v-d3418ece><i class=\\\"bi bi-github mr-2\\\" data-v-d3418ece></i> LinkedIn </a></div><div class=\\\"my-10 flex justify-center md:justify-start mx-2\\\" data-v-d3418ece><button type=\\\"button\\\" class=\\\"px-6 py-3 bg-transparent border border-white hover:border-blue-500 hover:text-blue-500 text-white rounded-lg\\\" style=\\\"${\\n    _ssrRenderStyle({\\\"z-index\\\":\\\"1000\\\"})\\n  }\\\" data-v-d3418ece>Download CV</button></div></div></div></div></div>`)\\n}\\n\\nimport \\\"/Users/alansantos/Desktop/PROJETOS/PORTIFÓLIO/portifolio/components/aboutSection.vue?vue&type=style&index=0&scoped=d3418ece&lang.css\\\"\\n\\nimport { useSSRContext as __vite_useSSRContext } from 'vue'\\nconst _sfc_setup = _sfc_main.setup\\n_sfc_main.setup = (props, ctx) => {\\n  const ssrContext = __vite_useSSRContext()\\n  ;(ssrContext.modules || (ssrContext.modules = new Set())).add(\\\"components/aboutSection.vue\\\")\\n  return _sfc_setup ? _sfc_setup(props, ctx) : undefined\\n}\\nimport _export_sfc from '\\u0000plugin-vue:export-helper'\\nexport default /*#__PURE__*/_export_sfc(_sfc_main, [['ssrRender',_sfc_ssrRender],['__scopeId',\\\"data-v-d3418ece\\\"]])\"],\n  \"mappings\": \"AACA,SAAS,sBAAsB;AAC/B,MAAM,YAAY;AAAA,EAChB,MAAM;AAAA,EACN,OAAO;AACL,WAAO;AAAA,MACL,gBAAgB,KAAK,QAAQ,aAAa,MAAM,MAAM;AAAA,IACxD;AAAA,EACF;AAAA,EACA,SAAS;AAAA,IACP,eAAe;AACb,YAAM,OAAO,KAAK,mBAAmB,OAAO,+BAA+B;AAC3E,YAAM,UAAU,YAAY;AAC5B,YAAM,OAAO,SAAS,cAAc,GAAG;AACvC,WAAK,OAAO;AACZ,WAAK,WAAW;AAChB,WAAK,MAAM;AAAA,IACb;AAAA,IACA,eAAe,KAAK,UAAU;AAC5B,aAAO,eAAe,KAAK,QAAQ;AAAA,IACrC;AAAA,EACF;AAAA,EACA,OAAO;AAAA,IACH,OAAO,IAAI,MAAM;AACf,WAAK,iBAAiB,GAAG,MAAM;AAAA,IACjC;AAAA,EACF;AACJ;AAEA,SAAS,cAAc,mBAAmB;AAC1C,SAAS,kBAAkB,iBAAiB,iBAAiB,gBAAgB,kBAAkB,iBAAiB,kBAAkB,uBAAuB;AACzJ,OAAO,gBAAgB;AAGvB,SAAS,eAAe,MAAM,OAAO,SAAS,QAAQ,QAAQ,QAAQ,OAAO,UAAU;AACrF,QAAM,OACJ,gBAAgB,YAAY,EAAE,IAAI,QAAQ,GAAG,MAAM,CAAC,CACtD,2YACE,gBAAgB,EAAC,aAAY,mNAAkN,CAAC,CAClP,oeACE,eAAe,OAAO,UAAU,CAClC,kTACE,gBAAgB,SAAS,eAAe,OAAO,MAAM,cAAc,CAAC,CACtE,iDACE,gBAAgB,SAAS,eAAe,aAAa,MAAM,cAAc,CAAC,CAC5E,gsBACE,gBAAgB,EAAC,WAAU,OAAM,CAAC,CACpC,sEAAsE;AACxE;AAEA,OAAO;AAEP,SAAS,iBAAiB,4BAA4B;AACtD,MAAM,aAAa,UAAU;AAC7B,UAAU,QAAQ,CAAC,OAAO,QAAQ;AAChC,QAAM,aAAa,qBAAqB;AACvC,GAAC,WAAW,YAAY,WAAW,UAAU,oBAAI,IAAI,IAAI,IAAI,6BAA6B;AAC3F,SAAO,aAAa,WAAW,OAAO,GAAG,IAAI;AAC/C;AACA,OAAO,iBAAiB;AACxB,eAA4B,4BAAY,WAAW,CAAC,CAAC,aAAY,cAAc,GAAE,CAAC,aAAY,iBAAiB,CAAC,CAAC;\",\n  \"names\": []\n}\n"
     },
     {
       "name": "vite:css-post",
-      "start": 1704505701234,
-      "end": 1704505701234,
+      "start": 1704507462228,
+      "end": 1704507462228,
       "order": "normal"
     },
     {
       "name": "vite:build-html",
-      "start": 1704505701234,
-      "end": 1704505701234,
+      "start": 1704507462228,
+      "end": 1704507462228,
       "order": "normal"
     },
     {
       "name": "vite:worker-import-meta-url",
-      "start": 1704505701234,
-      "end": 1704505701234,
+      "start": 1704507462228,
+      "end": 1704507462228,
       "order": "normal"
     },
     {
       "name": "vite:asset-import-meta-url",
-      "start": 1704505701234,
-      "end": 1704505701234,
+      "start": 1704507462228,
+      "end": 1704507462228,
       "order": "normal"
     },
     {
       "name": "commonjs",
-      "start": 1704505701234,
-      "end": 1704505701234,
+      "start": 1704507462228,
+      "end": 1704507462228,
       "order": "normal"
     },
     {
       "name": "vite:dynamic-import-vars",
-      "start": 1704505701234,
-      "end": 1704505701234,
+      "start": 1704507462228,
+      "end": 1704507462228,
       "order": "normal"
     },
     {
       "name": "vite:import-glob",
-      "start": 1704505701234,
-      "end": 1704505701234,
+      "start": 1704507462228,
+      "end": 1704507462228,
       "order": "normal"
     },
     {
       "name": "nuxt:composable-keys",
-      "start": 1704505701234,
-      "end": 1704505701234,
+      "start": 1704507462228,
+      "end": 1704507462228,
       "order": "post"
     },
     {
       "name": "nuxt:composable-keys",
-      "start": 1704505701234,
-      "end": 1704505701234,
+      "start": 1704507462228,
+      "end": 1704507462228,
       "order": "post"
     },
     {
       "name": "nuxt:imports-transform",
-      "start": 1704505701234,
-      "end": 1704505701236,
+      "start": 1704507462228,
+      "end": 1704507462230,
       "order": "post"
     },
     {
       "name": "nuxt:imports-transform",
-      "start": 1704505701234,
-      "end": 1704505701236,
+      "start": 1704507462228,
+      "end": 1704507462230,
       "order": "post"
     },
     {
       "name": "unctx:transform",
-      "start": 1704505701236,
-      "end": 1704505701236,
+      "start": 1704507462230,
+      "end": 1704507462230,
       "order": "post"
     },
     {
       "name": "unctx:transform",
-      "start": 1704505701236,
-      "end": 1704505701236,
+      "start": 1704507462230,
+      "end": 1704507462230,
       "order": "post"
     },
     {
       "name": "nuxt:pages-macros-transform",
-      "start": 1704505701236,
-      "end": 1704505701236,
+      "start": 1704507462230,
+      "end": 1704507462230,
       "order": "post"
     },
     {
       "name": "nuxt:pages-macros-transform",
-      "start": 1704505701236,
-      "end": 1704505701236,
+      "start": 1704507462230,
+      "end": 1704507462230,
       "order": "post"
     },
     {
       "name": "nuxt:tree-shake-template",
-      "start": 1704505701236,
-      "end": 1704505701236,
+      "start": 1704507462230,
+      "end": 1704507462230,
       "order": "post"
     },
     {
       "name": "nuxt:components-loader",
-      "start": 1704505701236,
-      "end": 1704505701236,
+      "start": 1704507462230,
+      "end": 1704507462230,
       "order": "post"
     },
     {
       "name": "nuxt:tree-shake-composables:transform",
-      "start": 1704505701236,
-      "end": 1704505701236,
+      "start": 1704507462230,
+      "end": 1704507462230,
       "order": "post"
     },
     {
       "name": "vite:build-import-analysis",
-      "start": 1704505701236,
-      "end": 1704505701236,
+      "start": 1704507462230,
+      "end": 1704507462230,
       "order": "normal"
     },
     {
       "name": "vite:reporter",
-      "start": 1704505701236,
-      "end": 1704505701236,
+      "start": 1704507462230,
+      "end": 1704507462230,
       "order": "normal"
     }
   ]

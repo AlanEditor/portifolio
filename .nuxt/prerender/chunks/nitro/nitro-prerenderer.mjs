@@ -20,7 +20,7 @@ import { dirname, resolve } from 'file:///Users/alansantos/Desktop/PROJETOS/PORT
 
 const inlineAppConfig = {
   "nuxt": {
-    "buildId": "74ec54cf-ee20-4e25-adc0-5627d241e147"
+    "buildId": "33a60ba7-4caa-46b0-97b9-782e1815c285"
   }
 };
 

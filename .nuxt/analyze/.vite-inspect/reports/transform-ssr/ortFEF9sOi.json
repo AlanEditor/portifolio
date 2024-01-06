@@ -3,255 +3,256 @@
   "transforms": [
     {
       "name": "vite:load-fallback",
-      "result": "<template>\n  <div class=\"bg-black pt-52\" id=\"project\">\n    <div\n      class=\"relative mx-auto -mt-12 max-w-7xl px-4 pb-16 sm:px-6 sm:pb-24 lg:px-8 \"\n    >\n      <div class=\"mx-auto max-w-2xl text-center lg:max-w-4xl\">\n        <h2 class=\"text-5xl font-bold tracking-tight text-white sm:text-6xl\">{{ getTranslation('Projetos em que atuei', actualLanguage) }}</h2>\n        <p\n          class=\"mt-4 text-gray-500\"\n        >{{ getTranslation('descricao de projeto', actualLanguage) }}</p>\n      </div>\n\n      <div class=\"mt-6 grid grid-cols-1 lg:grid-cols-4 \">\n        <div v-for=\"(job, index) in jobs\" :key=\"index\" class=\"group relative opacity-75 hover:opacity-100 hover:scale-105 transition duration-300  hover:border-white  rounded-lg p-6\">\n          <div class=\"overflow-hidden rounded-lg bg-gray-900\">\n            <img :src=\"`..src/assets/img/${job.imageSrc}`\"  class=\"object-cover object-center\" />\n          </div>\n          <div\n            class=\"mt-4 flex items-center justify-between space-x-8 text-base font-medium text-gray-900\"\n          >\n          </div>\n          <h3 class=\"text-white text-center\">\n              <a :href=\"job.link\" target=\"_blank\">\n                <span aria-hidden=\"true\" class=\"absolute inset-0\" />\n              </a>\n            </h3>\n        </div>\n      </div>\n    </div>\n  </div>\n</template>\n  \n<script setup>\nconst jobs = [\n  {\n    company: \"Ensinio\",\n    imageSrc: `ensinio.png`,\n    link: \"https://www.ensinio.com\",\n\n  },\n  {\n    company: \"iPORTO\",\n    imageSrc: `iporto.png`,\n    link: \"https://iporto.com.br/\",\n  },\n  {\n    company: \"Casa de Gê\",\n    imageSrc: `casa_de_ge.png`,\n    link: \"https://casadege.com.br/\",\n  },\n  {\n    company: \"Congregação Mariana\",\n    imageSrc: `cm.png`,\n  }\n];\n\n</script>\n\n<script>\nimport { getTranslation } from '~/services/translationService';\nexport default {\n  name: \"expirienceSection\",\n  data() {\n    return {\n      actualLanguage: this.$router.currentRoute.value.query.lang\n    };\n  },\n  methods: {\n    getTranslation(key, language) {\n      return getTranslation(key, language);\n    }\n  },\n  watch: {\n    $route(to, from) {\n      this.actualLanguage = to.query.lang;\n    }\n  }\n};\n</script>",
-      "start": 1704505701094,
-      "end": 1704505701116,
+      "result": "<template>\n  <div class=\"bg-black pt-52\" id=\"project\">\n    <div class=\"relative mx-auto -mt-12 max-w-7xl px-4 pb-16 sm:px-6 sm:pb-24 lg:px-8\">\n      <div class=\"mx-auto max-w-2xl text-center lg:max-w-4xl\">\n        <h2\n          class=\"text-5xl font-bold tracking-tight text-white sm:text-6xl\"\n        >{{ getTranslation('Projetos em que atuei', actualLanguage) }}</h2>\n        <p class=\"mt-4 text-gray-500\">{{ getTranslation('descricao de projeto', actualLanguage) }}</p>\n      </div>\n\n      <jobsImagesComponent /> \n\n      <div class=\"mt-6 grid grid-cols-1 lg:grid-cols-4\">\n        <div\n          class=\"group relative opacity-75 hover:opacity-100 hover:scale-105 transition duration-300 hover:border-white rounded-lg p-6\"\n        >\n          <div>\n          </div>\n          <div\n            class=\"mt-4 flex items-center justify-between space-x-8 text-base font-medium text-gray-900\"\n          ></div>\n          <h3 class=\"text-white text-center\">\n            <a v-for=\"(job, index) in jobs\" :key=\"index\" :href=\"job.link\" target=\"_blank\">\n              <span aria-hidden=\"true\" class=\"absolute inset-0\" />\n            </a>\n          </h3>\n        </div>\n      </div>\n    </div>\n  </div>\n</template>\n\n\n<script>\nimport { getTranslation } from \"~/services/translationService\";\nimport jobsImagesComponent from \"./images/jobsImagesComponent.vue\";\n\nexport default {\n  name: \"expirienceSection\",\n  components: {\n    jobsImagesComponent\n  },\n  data() {\n    return {\n      actualLanguage: this.$router.currentRoute.value.query.lang\n    };\n  },\n  methods: {\n    getTranslation(key, language) {\n      return getTranslation(key, language);\n    }\n  },\n  watch: {\n    $route(to, from) {\n      this.actualLanguage = to.query.lang;\n    }\n  }\n};\n</script>",
+      "start": 1704507462070,
+      "end": 1704507462094,
       "sourcemaps": null
     },
     {
       "name": "nuxt:layer-aliasing",
-      "start": 1704505701116,
-      "end": 1704505701116,
+      "start": 1704507462094,
+      "end": 1704507462094,
       "order": "pre"
     },
     {
       "name": "nuxt:layer-aliasing",
-      "start": 1704505701116,
-      "end": 1704505701116,
+      "start": 1704507462094,
+      "end": 1704507462094,
       "order": "pre"
     },
     {
       "name": "nuxt:server-devonly:transform",
-      "start": 1704505701116,
-      "end": 1704505701116,
+      "start": 1704507462094,
+      "end": 1704507462094,
       "order": "pre"
     },
     {
       "name": "nuxt:server-devonly:transform",
-      "start": 1704505701116,
-      "end": 1704505701116,
+      "start": 1704507462094,
+      "end": 1704507462094,
       "order": "pre"
     },
     {
       "name": "nuxt:client-fallback-auto-id",
-      "start": 1704505701116,
-      "end": 1704505701116,
+      "start": 1704507462094,
+      "end": 1704507462094,
       "order": "pre"
     },
     {
       "name": "vite:css",
-      "start": 1704505701116,
-      "end": 1704505701116,
+      "start": 1704507462094,
+      "end": 1704507462094,
       "order": "normal"
     },
     {
       "name": "vite:esbuild",
-      "start": 1704505701116,
-      "end": 1704505701116,
+      "start": 1704507462094,
+      "end": 1704507462094,
       "order": "normal"
     },
     {
       "name": "vite:json",
-      "start": 1704505701116,
-      "end": 1704505701116,
+      "start": 1704507462094,
+      "end": 1704507462094,
       "order": "normal"
     },
     {
       "name": "vite:worker",
-      "start": 1704505701116,
-      "end": 1704505701116,
+      "start": 1704507462094,
+      "end": 1704507462094,
       "order": "normal"
     },
     {
       "name": "vite:vue",
-      "result": "import { unref as _unref, mergeProps as _mergeProps } from \"vue\"\nimport { ssrRenderAttr as _ssrRenderAttr, ssrRenderAttrs as _ssrRenderAttrs, ssrInterpolate as _ssrInterpolate, ssrRenderList as _ssrRenderList } from \"vue/server-renderer\"\n\n\nimport { getTranslation } from '~/services/translationService';\nconst __default__ = {\n  name: \"expirienceSection\",\n  data() {\n    return {\n      actualLanguage: this.$router.currentRoute.value.query.lang\n    };\n  },\n  methods: {\n    getTranslation(key, language) {\n      return getTranslation(key, language);\n    }\n  },\n  watch: {\n    $route(to, from) {\n      this.actualLanguage = to.query.lang;\n    }\n  }\n};\n\n\nconst _sfc_main = /*#__PURE__*/Object.assign(__default__, {\n  __ssrInlineRender: true,\n  setup(__props) {\n\nconst jobs = [\n  {\n    company: \"Ensinio\",\n    imageSrc: `ensinio.png`,\n    link: \"https://www.ensinio.com\",\n\n  },\n  {\n    company: \"iPORTO\",\n    imageSrc: `iporto.png`,\n    link: \"https://iporto.com.br/\",\n  },\n  {\n    company: \"Casa de Gê\",\n    imageSrc: `casa_de_ge.png`,\n    link: \"https://casadege.com.br/\",\n  },\n  {\n    company: \"Congregação Mariana\",\n    imageSrc: `cm.png`,\n  }\n];\n\n\nreturn (_ctx, _push, _parent, _attrs) => {\n  _push(`<div${\n    _ssrRenderAttrs(_mergeProps({\n      class: \"bg-black pt-52\",\n      id: \"project\"\n    }, _attrs))\n  }><div class=\"relative mx-auto -mt-12 max-w-7xl px-4 pb-16 sm:px-6 sm:pb-24 lg:px-8\"><div class=\"mx-auto max-w-2xl text-center lg:max-w-4xl\"><h2 class=\"text-5xl font-bold tracking-tight text-white sm:text-6xl\">${\n    _ssrInterpolate(_unref(getTranslation)('Projetos em que atuei', _ctx.actualLanguage))\n  }</h2><p class=\"mt-4 text-gray-500\">${\n    _ssrInterpolate(_unref(getTranslation)('descricao de projeto', _ctx.actualLanguage))\n  }</p></div><div class=\"mt-6 grid grid-cols-1 lg:grid-cols-4\"><!--[-->`)\n  _ssrRenderList(jobs, (job, index) => {\n    _push(`<div class=\"group relative opacity-75 hover:opacity-100 hover:scale-105 transition duration-300 hover:border-white rounded-lg p-6\"><div class=\"overflow-hidden rounded-lg bg-gray-900\"><img${\n      _ssrRenderAttr(\"src\", `..src/assets/img/${job.imageSrc}`)\n    } class=\"object-cover object-center\"></div><div class=\"mt-4 flex items-center justify-between space-x-8 text-base font-medium text-gray-900\"></div><h3 class=\"text-white text-center\"><a${\n      _ssrRenderAttr(\"href\", job.link)\n    } target=\"_blank\"><span aria-hidden=\"true\" class=\"absolute inset-0\"></span></a></h3></div>`)\n  })\n  _push(`<!--]--></div></div></div>`)\n}\n}\n\n})\n\n\n\nimport { useSSRContext as __vite_useSSRContext } from 'vue'\nconst _sfc_setup = _sfc_main.setup\n_sfc_main.setup = (props, ctx) => {\n  const ssrContext = __vite_useSSRContext()\n  ;(ssrContext.modules || (ssrContext.modules = new Set())).add(\"components/expirienceSection.vue\")\n  return _sfc_setup ? _sfc_setup(props, ctx) : undefined\n}\nexport default _sfc_main",
-      "start": 1704505701116,
-      "end": 1704505701119,
+      "result": "\nimport { getTranslation } from \"~/services/translationService\";\nimport jobsImagesComponent from \"./images/jobsImagesComponent.vue\";\n\nconst _sfc_main = {\n  name: \"expirienceSection\",\n  components: {\n    jobsImagesComponent\n  },\n  data() {\n    return {\n      actualLanguage: this.$router.currentRoute.value.query.lang\n    };\n  },\n  methods: {\n    getTranslation(key, language) {\n      return getTranslation(key, language);\n    }\n  },\n  watch: {\n    $route(to, from) {\n      this.actualLanguage = to.query.lang;\n    }\n  }\n};\n\nimport { resolveComponent as _resolveComponent, mergeProps as _mergeProps } from \"vue\"\nimport { ssrRenderComponent as _ssrRenderComponent, ssrRenderAttr as _ssrRenderAttr, ssrRenderAttrs as _ssrRenderAttrs, ssrInterpolate as _ssrInterpolate, ssrRenderList as _ssrRenderList } from \"vue/server-renderer\"\n\nfunction _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $options) {\n  const _component_jobsImagesComponent = _resolveComponent(\"jobsImagesComponent\")\n\n  _push(`<div${\n    _ssrRenderAttrs(_mergeProps({\n      class: \"bg-black pt-52\",\n      id: \"project\"\n    }, _attrs))\n  }><div class=\"relative mx-auto -mt-12 max-w-7xl px-4 pb-16 sm:px-6 sm:pb-24 lg:px-8\"><div class=\"mx-auto max-w-2xl text-center lg:max-w-4xl\"><h2 class=\"text-5xl font-bold tracking-tight text-white sm:text-6xl\">${\n    _ssrInterpolate($options.getTranslation('Projetos em que atuei', $data.actualLanguage))\n  }</h2><p class=\"mt-4 text-gray-500\">${\n    _ssrInterpolate($options.getTranslation('descricao de projeto', $data.actualLanguage))\n  }</p></div>`)\n  _push(_ssrRenderComponent(_component_jobsImagesComponent, null, null, _parent))\n  _push(`<div class=\"mt-6 grid grid-cols-1 lg:grid-cols-4\"><div class=\"group relative opacity-75 hover:opacity-100 hover:scale-105 transition duration-300 hover:border-white rounded-lg p-6\"><div></div><div class=\"mt-4 flex items-center justify-between space-x-8 text-base font-medium text-gray-900\"></div><h3 class=\"text-white text-center\"><!--[-->`)\n  _ssrRenderList(_ctx.jobs, (job, index) => {\n    _push(`<a${_ssrRenderAttr(\"href\", job.link)} target=\"_blank\"><span aria-hidden=\"true\" class=\"absolute inset-0\"></span></a>`)\n  })\n  _push(`<!--]--></h3></div></div></div></div>`)\n}\n\n\nimport { useSSRContext as __vite_useSSRContext } from 'vue'\nconst _sfc_setup = _sfc_main.setup\n_sfc_main.setup = (props, ctx) => {\n  const ssrContext = __vite_useSSRContext()\n  ;(ssrContext.modules || (ssrContext.modules = new Set())).add(\"components/expirienceSection.vue\")\n  return _sfc_setup ? _sfc_setup(props, ctx) : undefined\n}\nimport _export_sfc from '\u0000plugin-vue:export-helper'\nexport default /*#__PURE__*/_export_sfc(_sfc_main, [['ssrRender',_sfc_ssrRender]])",
+      "start": 1704507462094,
+      "end": 1704507462097,
       "order": "normal",
       "sourcemaps": {
         "version": 3,
+        "file": "/Users/alansantos/Desktop/PROJETOS/PORTIFÓLIO/portifolio/components/expirienceSection.vue",
+        "names": [],
         "sources": [
           "/Users/alansantos/Desktop/PROJETOS/PORTIFÓLIO/portifolio/components/expirienceSection.vue"
         ],
         "sourcesContent": [
-          "<template>\n  <div class=\"bg-black pt-52\" id=\"project\">\n    <div\n      class=\"relative mx-auto -mt-12 max-w-7xl px-4 pb-16 sm:px-6 sm:pb-24 lg:px-8 \"\n    >\n      <div class=\"mx-auto max-w-2xl text-center lg:max-w-4xl\">\n        <h2 class=\"text-5xl font-bold tracking-tight text-white sm:text-6xl\">{{ getTranslation('Projetos em que atuei', actualLanguage) }}</h2>\n        <p\n          class=\"mt-4 text-gray-500\"\n        >{{ getTranslation('descricao de projeto', actualLanguage) }}</p>\n      </div>\n\n      <div class=\"mt-6 grid grid-cols-1 lg:grid-cols-4 \">\n        <div v-for=\"(job, index) in jobs\" :key=\"index\" class=\"group relative opacity-75 hover:opacity-100 hover:scale-105 transition duration-300  hover:border-white  rounded-lg p-6\">\n          <div class=\"overflow-hidden rounded-lg bg-gray-900\">\n            <img :src=\"`..src/assets/img/${job.imageSrc}`\"  class=\"object-cover object-center\" />\n          </div>\n          <div\n            class=\"mt-4 flex items-center justify-between space-x-8 text-base font-medium text-gray-900\"\n          >\n          </div>\n          <h3 class=\"text-white text-center\">\n              <a :href=\"job.link\" target=\"_blank\">\n                <span aria-hidden=\"true\" class=\"absolute inset-0\" />\n              </a>\n            </h3>\n        </div>\n      </div>\n    </div>\n  </div>\n</template>\n  \n<script setup>\nconst jobs = [\n  {\n    company: \"Ensinio\",\n    imageSrc: `ensinio.png`,\n    link: \"https://www.ensinio.com\",\n\n  },\n  {\n    company: \"iPORTO\",\n    imageSrc: `iporto.png`,\n    link: \"https://iporto.com.br/\",\n  },\n  {\n    company: \"Casa de Gê\",\n    imageSrc: `casa_de_ge.png`,\n    link: \"https://casadege.com.br/\",\n  },\n  {\n    company: \"Congregação Mariana\",\n    imageSrc: `cm.png`,\n  }\n];\n\n</script>\n\n<script>\nimport { getTranslation } from '~/services/translationService';\nexport default {\n  name: \"expirienceSection\",\n  data() {\n    return {\n      actualLanguage: this.$router.currentRoute.value.query.lang\n    };\n  },\n  methods: {\n    getTranslation(key, language) {\n      return getTranslation(key, language);\n    }\n  },\n  watch: {\n    $route(to, from) {\n      this.actualLanguage = to.query.lang;\n    }\n  }\n};\n</script>"
+          "<template>\n  <div class=\"bg-black pt-52\" id=\"project\">\n    <div class=\"relative mx-auto -mt-12 max-w-7xl px-4 pb-16 sm:px-6 sm:pb-24 lg:px-8\">\n      <div class=\"mx-auto max-w-2xl text-center lg:max-w-4xl\">\n        <h2\n          class=\"text-5xl font-bold tracking-tight text-white sm:text-6xl\"\n        >{{ getTranslation('Projetos em que atuei', actualLanguage) }}</h2>\n        <p class=\"mt-4 text-gray-500\">{{ getTranslation('descricao de projeto', actualLanguage) }}</p>\n      </div>\n\n      <jobsImagesComponent /> \n\n      <div class=\"mt-6 grid grid-cols-1 lg:grid-cols-4\">\n        <div\n          class=\"group relative opacity-75 hover:opacity-100 hover:scale-105 transition duration-300 hover:border-white rounded-lg p-6\"\n        >\n          <div>\n          </div>\n          <div\n            class=\"mt-4 flex items-center justify-between space-x-8 text-base font-medium text-gray-900\"\n          ></div>\n          <h3 class=\"text-white text-center\">\n            <a v-for=\"(job, index) in jobs\" :key=\"index\" :href=\"job.link\" target=\"_blank\">\n              <span aria-hidden=\"true\" class=\"absolute inset-0\" />\n            </a>\n          </h3>\n        </div>\n      </div>\n    </div>\n  </div>\n</template>\n\n\n<script>\nimport { getTranslation } from \"~/services/translationService\";\nimport jobsImagesComponent from \"./images/jobsImagesComponent.vue\";\n\nexport default {\n  name: \"expirienceSection\",\n  components: {\n    jobsImagesComponent\n  },\n  data() {\n    return {\n      actualLanguage: this.$router.currentRoute.value.query.lang\n    };\n  },\n  methods: {\n    getTranslation(key, language) {\n      return getTranslation(key, language);\n    }\n  },\n  watch: {\n    $route(to, from) {\n      this.actualLanguage = to.query.lang;\n    }\n  }\n};\n</script>"
         ],
-        "names": [],
-        "mappings": "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"
+        "mappings": "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"
       }
     },
     {
       "name": "vite:vue-jsx",
-      "start": 1704505701119,
-      "end": 1704505701119,
+      "start": 1704507462097,
+      "end": 1704507462097,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1704505701119,
-      "end": 1704505701119,
+      "start": 1704507462097,
+      "end": 1704507462097,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1704505701119,
-      "end": 1704505701119,
+      "start": 1704507462097,
+      "end": 1704507462097,
       "order": "normal"
     },
     {
       "name": "nuxt:remove-plugin-metadata",
-      "start": 1704505701119,
-      "end": 1704505701119,
+      "start": 1704507462097,
+      "end": 1704507462097,
       "order": "normal"
     },
     {
       "name": "nuxt:remove-plugin-metadata",
-      "start": 1704505701119,
-      "end": 1704505701119,
+      "start": 1704507462097,
+      "end": 1704507462097,
       "order": "normal"
     },
     {
       "name": "nuxt:components:imports",
-      "start": 1704505701119,
-      "end": 1704505701119,
+      "start": 1704507462097,
+      "end": 1704507462097,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1704505701119,
-      "end": 1704505701119,
+      "start": 1704507462097,
+      "end": 1704507462097,
       "order": "normal"
     },
     {
       "name": "ssr-styles",
-      "start": 1704505701119,
-      "end": 1704505701119,
+      "start": 1704507462097,
+      "end": 1704507462097,
       "order": "normal"
     },
     {
       "name": "vite:define",
-      "start": 1704505701119,
-      "end": 1704505701119,
+      "start": 1704507462097,
+      "end": 1704507462097,
       "order": "normal"
     },
     {
       "name": "vite:css-post",
-      "start": 1704505701119,
-      "end": 1704505701119,
+      "start": 1704507462097,
+      "end": 1704507462097,
       "order": "normal"
     },
     {
       "name": "vite:build-html",
-      "start": 1704505701119,
-      "end": 1704505701119,
+      "start": 1704507462097,
+      "end": 1704507462097,
       "order": "normal"
     },
     {
       "name": "vite:worker-import-meta-url",
-      "start": 1704505701119,
-      "end": 1704505701119,
+      "start": 1704507462097,
+      "end": 1704507462097,
       "order": "normal"
     },
     {
       "name": "vite:asset-import-meta-url",
-      "start": 1704505701119,
-      "end": 1704505701119,
+      "start": 1704507462097,
+      "end": 1704507462097,
       "order": "normal"
     },
     {
       "name": "commonjs",
-      "start": 1704505701119,
-      "end": 1704505701119,
+      "start": 1704507462097,
+      "end": 1704507462097,
       "order": "normal"
     },
     {
       "name": "vite:dynamic-import-vars",
-      "start": 1704505701119,
-      "end": 1704505701119,
+      "start": 1704507462097,
+      "end": 1704507462097,
       "order": "normal"
     },
     {
       "name": "vite:import-glob",
-      "start": 1704505701119,
-      "end": 1704505701119,
+      "start": 1704507462097,
+      "end": 1704507462098,
       "order": "normal"
     },
     {
       "name": "nuxt:composable-keys",
-      "start": 1704505701119,
-      "end": 1704505701119,
+      "start": 1704507462098,
+      "end": 1704507462098,
       "order": "post"
     },
     {
       "name": "nuxt:composable-keys",
-      "start": 1704505701119,
-      "end": 1704505701119,
+      "start": 1704507462098,
+      "end": 1704507462098,
       "order": "post"
     },
     {
       "name": "nuxt:imports-transform",
-      "start": 1704505701119,
-      "end": 1704505701120,
+      "start": 1704507462098,
+      "end": 1704507462098,
       "order": "post"
     },
     {
       "name": "nuxt:imports-transform",
-      "start": 1704505701119,
-      "end": 1704505701120,
+      "start": 1704507462098,
+      "end": 1704507462098,
       "order": "post"
     },
     {
       "name": "unctx:transform",
-      "start": 1704505701120,
-      "end": 1704505701120,
+      "start": 1704507462098,
+      "end": 1704507462098,
       "order": "post"
     },
     {
       "name": "unctx:transform",
-      "start": 1704505701120,
-      "end": 1704505701120,
+      "start": 1704507462098,
+      "end": 1704507462098,
       "order": "post"
     },
     {
       "name": "nuxt:pages-macros-transform",
-      "start": 1704505701120,
-      "end": 1704505701120,
+      "start": 1704507462098,
+      "end": 1704507462098,
       "order": "post"
     },
     {
       "name": "nuxt:pages-macros-transform",
-      "start": 1704505701120,
-      "end": 1704505701120,
+      "start": 1704507462098,
+      "end": 1704507462098,
       "order": "post"
     },
     {
       "name": "nuxt:tree-shake-template",
-      "start": 1704505701120,
-      "end": 1704505701121,
+      "start": 1704507462098,
+      "end": 1704507462098,
       "order": "post"
     },
     {
       "name": "nuxt:components-loader",
-      "start": 1704505701121,
-      "end": 1704505701121,
+      "start": 1704507462098,
+      "end": 1704507462099,
       "order": "post"
     },
     {
       "name": "nuxt:tree-shake-composables:transform",
-      "start": 1704505701121,
-      "end": 1704505701121,
+      "start": 1704507462099,
+      "end": 1704507462099,
       "order": "post"
     },
     {
       "name": "vite:build-import-analysis",
-      "start": 1704505701121,
-      "end": 1704505701121,
+      "start": 1704507462099,
+      "end": 1704507462099,
       "order": "normal"
     },
     {
       "name": "vite:reporter",
-      "start": 1704505701121,
-      "end": 1704505701121,
+      "start": 1704507462099,
+      "end": 1704507462099,
       "order": "normal"
     }
   ]

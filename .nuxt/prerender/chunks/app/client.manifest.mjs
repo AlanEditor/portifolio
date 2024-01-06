@@ -6,12 +6,12 @@ const client_manifest = {
     "preload": true,
     "file": "translationService.Z3ELzQ0v.js"
   },
-  "_vue.f36acd1f.PMV8oN8u.js": {
+  "_vue.f36acd1f.z5299Hwp.js": {
     "resourceType": "script",
     "module": true,
     "prefetch": true,
     "preload": true,
-    "file": "vue.f36acd1f.PMV8oN8u.js",
+    "file": "vue.f36acd1f.z5299Hwp.js",
     "imports": [
       "node_modules/nuxt/dist/app/entry.js"
     ]
@@ -25,7 +25,7 @@ const client_manifest = {
       "aura.EgrCeJIf.png"
     ],
     "css": [],
-    "file": "default.rdHz41-O.js",
+    "file": "default.VpcvFhW0.js",
     "imports": [
       "node_modules/nuxt/dist/app/entry.js",
       "_translationService.Z3ELzQ0v.js"
@@ -51,10 +51,10 @@ const client_manifest = {
     "prefetch": true,
     "preload": true,
     "css": [],
-    "file": "error-404.AuY2LoR-.js",
+    "file": "error-404.QCl3KwZ6.js",
     "imports": [
       "node_modules/nuxt/dist/app/entry.js",
-      "_vue.f36acd1f.PMV8oN8u.js"
+      "_vue.f36acd1f.z5299Hwp.js"
     ],
     "isDynamicEntry": true,
     "src": "node_modules/@nuxt/ui-templates/dist/templates/error-404.vue"
@@ -71,9 +71,9 @@ const client_manifest = {
     "prefetch": true,
     "preload": true,
     "css": [],
-    "file": "error-500.Ks0XmMdH.js",
+    "file": "error-500._0c1wqge.js",
     "imports": [
-      "_vue.f36acd1f.PMV8oN8u.js",
+      "_vue.f36acd1f.z5299Hwp.js",
       "node_modules/nuxt/dist/app/entry.js"
     ],
     "isDynamicEntry": true,
@@ -107,7 +107,7 @@ const client_manifest = {
       "node_modules/@nuxt/ui-templates/dist/templates/error-404.vue",
       "node_modules/@nuxt/ui-templates/dist/templates/error-500.vue"
     ],
-    "file": "entry.a4jxLVIt.js",
+    "file": "entry.Epzv0xsm.js",
     "isEntry": true,
     "src": "node_modules/nuxt/dist/app/entry.js",
     "_globalCSS": true
@@ -120,12 +120,22 @@ const client_manifest = {
     "assets": [
       "fundo-imagem.xxYpY26G.png",
       "alan.ehUaHxzs.png",
+      "ensinio.7fqJmFjL.png",
+      "iporto.ZKpnBZJ8.png",
+      "casa_de_ge.W7bZfft_.png",
+      "cm.cz2JZ1_G.png",
+      "laravel.2w5j14HS.png",
+      "php.6SAekbGD.png",
+      "vue.PxwK4KdQ.png",
+      "docker.7nh1Ehpu.png",
+      "mysql.ZuOIHGwn.png",
+      "node.XTxab9r5.png",
       "vscode.qkYMI2Nt.png"
     ],
     "css": [
-      "index.FF8X_-Rq.css"
+      "index.P7jvYPVQ.css"
     ],
-    "file": "index.FlsgjtGd.js",
+    "file": "index.pyUxtyZ0.js",
     "imports": [
       "node_modules/nuxt/dist/app/entry.js",
       "_translationService.Z3ELzQ0v.js"
@@ -133,8 +143,8 @@ const client_manifest = {
     "isDynamicEntry": true,
     "src": "pages/index.vue"
   },
-  "index.FF8X_-Rq.css": {
-    "file": "index.FF8X_-Rq.css",
+  "index.P7jvYPVQ.css": {
+    "file": "index.P7jvYPVQ.css",
     "resourceType": "style",
     "prefetch": true,
     "preload": true
@@ -147,6 +157,66 @@ const client_manifest = {
   },
   "alan.ehUaHxzs.png": {
     "file": "alan.ehUaHxzs.png",
+    "resourceType": "image",
+    "prefetch": true,
+    "mimeType": "image/png"
+  },
+  "ensinio.7fqJmFjL.png": {
+    "file": "ensinio.7fqJmFjL.png",
+    "resourceType": "image",
+    "prefetch": true,
+    "mimeType": "image/png"
+  },
+  "iporto.ZKpnBZJ8.png": {
+    "file": "iporto.ZKpnBZJ8.png",
+    "resourceType": "image",
+    "prefetch": true,
+    "mimeType": "image/png"
+  },
+  "casa_de_ge.W7bZfft_.png": {
+    "file": "casa_de_ge.W7bZfft_.png",
+    "resourceType": "image",
+    "prefetch": true,
+    "mimeType": "image/png"
+  },
+  "cm.cz2JZ1_G.png": {
+    "file": "cm.cz2JZ1_G.png",
+    "resourceType": "image",
+    "prefetch": true,
+    "mimeType": "image/png"
+  },
+  "laravel.2w5j14HS.png": {
+    "file": "laravel.2w5j14HS.png",
+    "resourceType": "image",
+    "prefetch": true,
+    "mimeType": "image/png"
+  },
+  "php.6SAekbGD.png": {
+    "file": "php.6SAekbGD.png",
+    "resourceType": "image",
+    "prefetch": true,
+    "mimeType": "image/png"
+  },
+  "vue.PxwK4KdQ.png": {
+    "file": "vue.PxwK4KdQ.png",
+    "resourceType": "image",
+    "prefetch": true,
+    "mimeType": "image/png"
+  },
+  "docker.7nh1Ehpu.png": {
+    "file": "docker.7nh1Ehpu.png",
+    "resourceType": "image",
+    "prefetch": true,
+    "mimeType": "image/png"
+  },
+  "mysql.ZuOIHGwn.png": {
+    "file": "mysql.ZuOIHGwn.png",
+    "resourceType": "image",
+    "prefetch": true,
+    "mimeType": "image/png"
+  },
+  "node.XTxab9r5.png": {
+    "file": "node.XTxab9r5.png",
     "resourceType": "image",
     "prefetch": true,
     "mimeType": "image/png"
@@ -171,6 +241,34 @@ const client_manifest = {
     "file": "aura.EgrCeJIf.png",
     "src": "src/assets/img/aura.png"
   },
+  "src/assets/img/casa_de_ge.png": {
+    "resourceType": "image",
+    "prefetch": true,
+    "mimeType": "image/png",
+    "file": "casa_de_ge.W7bZfft_.png",
+    "src": "src/assets/img/casa_de_ge.png"
+  },
+  "src/assets/img/cm.png": {
+    "resourceType": "image",
+    "prefetch": true,
+    "mimeType": "image/png",
+    "file": "cm.cz2JZ1_G.png",
+    "src": "src/assets/img/cm.png"
+  },
+  "src/assets/img/docker.png": {
+    "resourceType": "image",
+    "prefetch": true,
+    "mimeType": "image/png",
+    "file": "docker.7nh1Ehpu.png",
+    "src": "src/assets/img/docker.png"
+  },
+  "src/assets/img/ensinio.png": {
+    "resourceType": "image",
+    "prefetch": true,
+    "mimeType": "image/png",
+    "file": "ensinio.7fqJmFjL.png",
+    "src": "src/assets/img/ensinio.png"
+  },
   "src/assets/img/fundo-imagem.png": {
     "resourceType": "image",
     "prefetch": true,
@@ -178,12 +276,54 @@ const client_manifest = {
     "file": "fundo-imagem.xxYpY26G.png",
     "src": "src/assets/img/fundo-imagem.png"
   },
+  "src/assets/img/iporto.png": {
+    "resourceType": "image",
+    "prefetch": true,
+    "mimeType": "image/png",
+    "file": "iporto.ZKpnBZJ8.png",
+    "src": "src/assets/img/iporto.png"
+  },
+  "src/assets/img/laravel.png": {
+    "resourceType": "image",
+    "prefetch": true,
+    "mimeType": "image/png",
+    "file": "laravel.2w5j14HS.png",
+    "src": "src/assets/img/laravel.png"
+  },
+  "src/assets/img/mysql.png": {
+    "resourceType": "image",
+    "prefetch": true,
+    "mimeType": "image/png",
+    "file": "mysql.ZuOIHGwn.png",
+    "src": "src/assets/img/mysql.png"
+  },
+  "src/assets/img/node.png": {
+    "resourceType": "image",
+    "prefetch": true,
+    "mimeType": "image/png",
+    "file": "node.XTxab9r5.png",
+    "src": "src/assets/img/node.png"
+  },
+  "src/assets/img/php.png": {
+    "resourceType": "image",
+    "prefetch": true,
+    "mimeType": "image/png",
+    "file": "php.6SAekbGD.png",
+    "src": "src/assets/img/php.png"
+  },
   "src/assets/img/vscode.png": {
     "resourceType": "image",
     "prefetch": true,
     "mimeType": "image/png",
     "file": "vscode.qkYMI2Nt.png",
     "src": "src/assets/img/vscode.png"
+  },
+  "src/assets/img/vue.png": {
+    "resourceType": "image",
+    "prefetch": true,
+    "mimeType": "image/png",
+    "file": "vue.PxwK4KdQ.png",
+    "src": "src/assets/img/vue.png"
   }
 };
 
