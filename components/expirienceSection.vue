@@ -13,7 +13,7 @@
       <div class="mt-6 grid grid-cols-1 lg:grid-cols-4 ">
         <div v-for="(job, index) in jobs" :key="index" class="group relative opacity-75 hover:opacity-100 hover:scale-105 transition duration-300  hover:border-white  rounded-lg p-6">
           <div class="overflow-hidden rounded-lg bg-gray-900">
-            <img :src="`/img/${job.imageSrc}`"  class="object-cover object-center" />
+            <img :src="`..src/assets/img/${job.imageSrc}`"  class="object-cover object-center" />
           </div>
           <div
             class="mt-4 flex items-center justify-between space-x-8 text-base font-medium text-gray-900"

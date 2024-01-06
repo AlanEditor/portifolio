@@ -4,69 +4,69 @@
     {
       "name": "vite:load-fallback",
       "result": "<template>\n  <div>\n    <NuxtLayout name=\"default\" />\n    <main>\n        <initialSection />\n      <div\n        ref=\"aboutSection\"\n        class=\"section\"\n        :class=\"{ 'animate__animated animate__fadeIn': aboutVisible }\"\n      >\n        <aboutSection />\n      </div>\n      <div\n        ref=\"expirienceSection\"\n        class=\"section\"\n        :class=\"{ 'animate__animated animate__fadeIn': expirienceVisible }\"\n      >\n        <expirienceSection />\n      </div>\n\n      <div\n        ref=\"stackSection\"\n        class=\"section\"\n        :class=\"{ 'animate__animated animate__fadeIn': stackVisible }\"\n      >\n        <stackSection />\n      </div>\n\n      <div\n        ref=\"testimonialSection\"\n        class=\"section\"\n        :class=\"{ 'animate__animated animate__fadeIn': testimonialVisible }\"\n      >\n        <testimonialSection />\n      </div>\n\n      <div\n        ref=\"contactSection\"\n        class=\"section\"\n        :class=\"{ 'animate__animated animate__fadeIn': contactVisible }\"\n      >\n        <contactSection />\n      </div>\n    </main>\n  </div>\n</template>\n\n<script>\nimport initialSection from \"~/components/initialSection.vue\";\nimport aboutSection from \"../components/aboutSection.vue\";\nimport expirienceSection from \"../components/expirienceSection.vue\";\nimport stackSection from \"../components/stackSection.vue\";\nimport testimonialSection from \"../components/testimonialSection.vue\";\nimport contactSection from \"../components/contactSection.vue\";\n\nexport default {\n  name: \"IndexPage\",\n  layout: \"default\",\n  components: {\n    initialSection,\n    aboutSection,\n    expirienceSection,\n    stackSection,\n    testimonialSection,\n    contactSection\n  },\n  data() {\n    return {\n      aboutVisible: false,\n      expirienceVisible: false,\n      stackVisible: false,\n      testimonialVisible: false,\n      contactVisible: false,\n    };\n  },\n  methods: {\n    handleScroll() {\n      const sections = [\n        { ref: 'aboutSection', prop: 'aboutVisible' },\n        { ref: 'expirienceSection', prop: 'expirienceVisible' },\n        { ref: 'stackSection', prop: 'stackVisible' },\n        { ref: 'testimonialSection', prop: 'testimonialVisible' },\n        { ref: 'contactSection', prop: 'contactVisible' },\n      ];\n\n      sections.forEach(({ ref, prop }) => {\n        const section = this.$refs[ref];\n        const rect = section.getBoundingClientRect();\n\n        this[prop] = rect.top < window.innerHeight && rect.bottom >= 0;\n      });\n    },\n  },\n  mounted() {\n    window.addEventListener('scroll', this.handleScroll);\n  },\n  beforeDestroy() {\n    window.removeEventListener('scroll', this.handleScroll);\n  },\n};\n</script>\n\n<style scoped>\nbody {\n  background-color: #000000;\n}\n.section {\n  opacity: 0;\n  transition: opacity 1s ease;\n}\n\n.animate__fadeIn {\n  opacity: 1;\n}\n</style>",
-      "start": 1704504956993,
-      "end": 1704504957030,
+      "start": 1704505700635,
+      "end": 1704505700680,
       "sourcemaps": null
     },
     {
       "name": "nuxt:layer-aliasing",
-      "start": 1704504957030,
-      "end": 1704504957030,
+      "start": 1704505700680,
+      "end": 1704505700680,
       "order": "pre"
     },
     {
       "name": "nuxt:layer-aliasing",
-      "start": 1704504957030,
-      "end": 1704504957030,
+      "start": 1704505700680,
+      "end": 1704505700680,
       "order": "pre"
     },
     {
       "name": "nuxt:server-devonly:transform",
-      "start": 1704504957030,
-      "end": 1704504957030,
+      "start": 1704505700680,
+      "end": 1704505700680,
       "order": "pre"
     },
     {
       "name": "nuxt:server-devonly:transform",
-      "start": 1704504957030,
-      "end": 1704504957030,
+      "start": 1704505700680,
+      "end": 1704505700680,
       "order": "pre"
     },
     {
       "name": "nuxt:client-fallback-auto-id",
-      "start": 1704504957030,
-      "end": 1704504957030,
+      "start": 1704505700680,
+      "end": 1704505700680,
       "order": "pre"
     },
     {
       "name": "vite:css",
-      "start": 1704504957030,
-      "end": 1704504957030,
+      "start": 1704505700680,
+      "end": 1704505700680,
       "order": "normal"
     },
     {
       "name": "vite:esbuild",
-      "start": 1704504957030,
-      "end": 1704504957030,
+      "start": 1704505700680,
+      "end": 1704505700680,
       "order": "normal"
     },
     {
       "name": "vite:json",
-      "start": 1704504957030,
-      "end": 1704504957030,
+      "start": 1704505700680,
+      "end": 1704505700680,
       "order": "normal"
     },
     {
       "name": "vite:worker",
-      "start": 1704504957030,
-      "end": 1704504957030,
+      "start": 1704505700680,
+      "end": 1704505700680,
       "order": "normal"
     },
     {
       "name": "vite:vue",
       "result": "\nimport initialSection from \"~/components/initialSection.vue\";\nimport aboutSection from \"../components/aboutSection.vue\";\nimport expirienceSection from \"../components/expirienceSection.vue\";\nimport stackSection from \"../components/stackSection.vue\";\nimport testimonialSection from \"../components/testimonialSection.vue\";\nimport contactSection from \"../components/contactSection.vue\";\n\nconst _sfc_main = {\n  name: \"IndexPage\",\n  layout: \"default\",\n  components: {\n    initialSection,\n    aboutSection,\n    expirienceSection,\n    stackSection,\n    testimonialSection,\n    contactSection\n  },\n  data() {\n    return {\n      aboutVisible: false,\n      expirienceVisible: false,\n      stackVisible: false,\n      testimonialVisible: false,\n      contactVisible: false,\n    };\n  },\n  methods: {\n    handleScroll() {\n      const sections = [\n        { ref: 'aboutSection', prop: 'aboutVisible' },\n        { ref: 'expirienceSection', prop: 'expirienceVisible' },\n        { ref: 'stackSection', prop: 'stackVisible' },\n        { ref: 'testimonialSection', prop: 'testimonialVisible' },\n        { ref: 'contactSection', prop: 'contactVisible' },\n      ];\n\n      sections.forEach(({ ref, prop }) => {\n        const section = this.$refs[ref];\n        const rect = section.getBoundingClientRect();\n\n        this[prop] = rect.top < window.innerHeight && rect.bottom >= 0;\n      });\n    },\n  },\n  mounted() {\n    window.addEventListener('scroll', this.handleScroll);\n  },\n  beforeDestroy() {\n    window.removeEventListener('scroll', this.handleScroll);\n  },\n};\n\nimport { resolveComponent as _resolveComponent } from \"vue\"\nimport { ssrRenderComponent as _ssrRenderComponent, ssrRenderClass as _ssrRenderClass, ssrRenderAttrs as _ssrRenderAttrs } from \"vue/server-renderer\"\n\nfunction _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $options) {\n  const _component_NuxtLayout = _resolveComponent(\"NuxtLayout\")\n  const _component_initialSection = _resolveComponent(\"initialSection\")\n  const _component_aboutSection = _resolveComponent(\"aboutSection\")\n  const _component_expirienceSection = _resolveComponent(\"expirienceSection\")\n  const _component_stackSection = _resolveComponent(\"stackSection\")\n  const _component_testimonialSection = _resolveComponent(\"testimonialSection\")\n  const _component_contactSection = _resolveComponent(\"contactSection\")\n\n  _push(`<div${_ssrRenderAttrs(_attrs)} data-v-c730f5b1>`)\n  _push(_ssrRenderComponent(_component_NuxtLayout, { name: \"default\" }, null, _parent))\n  _push(`<main data-v-c730f5b1>`)\n  _push(_ssrRenderComponent(_component_initialSection, null, null, _parent))\n  _push(`<div class=\"${_ssrRenderClass([{ 'animate__animated animate__fadeIn': $data.aboutVisible }, \"section\"])}\" data-v-c730f5b1>`)\n  _push(_ssrRenderComponent(_component_aboutSection, null, null, _parent))\n  _push(`</div><div class=\"${_ssrRenderClass([{ 'animate__animated animate__fadeIn': $data.expirienceVisible }, \"section\"])}\" data-v-c730f5b1>`)\n  _push(_ssrRenderComponent(_component_expirienceSection, null, null, _parent))\n  _push(`</div><div class=\"${_ssrRenderClass([{ 'animate__animated animate__fadeIn': $data.stackVisible }, \"section\"])}\" data-v-c730f5b1>`)\n  _push(_ssrRenderComponent(_component_stackSection, null, null, _parent))\n  _push(`</div><div class=\"${_ssrRenderClass([{ 'animate__animated animate__fadeIn': $data.testimonialVisible }, \"section\"])}\" data-v-c730f5b1>`)\n  _push(_ssrRenderComponent(_component_testimonialSection, null, null, _parent))\n  _push(`</div><div class=\"${_ssrRenderClass([{ 'animate__animated animate__fadeIn': $data.contactVisible }, \"section\"])}\" data-v-c730f5b1>`)\n  _push(_ssrRenderComponent(_component_contactSection, null, null, _parent))\n  _push(`</div></main></div>`)\n}\n\nimport \"/Users/alansantos/Desktop/PROJETOS/PORTIFÓLIO/portifolio/pages/index.vue?vue&type=style&index=0&scoped=c730f5b1&lang.css\"\n\nimport { useSSRContext as __vite_useSSRContext } from 'vue'\nconst _sfc_setup = _sfc_main.setup\n_sfc_main.setup = (props, ctx) => {\n  const ssrContext = __vite_useSSRContext()\n  ;(ssrContext.modules || (ssrContext.modules = new Set())).add(\"pages/index.vue\")\n  return _sfc_setup ? _sfc_setup(props, ctx) : undefined\n}\nimport _export_sfc from '\u0000plugin-vue:export-helper'\nexport default /*#__PURE__*/_export_sfc(_sfc_main, [['ssrRender',_sfc_ssrRender],['__scopeId',\"data-v-c730f5b1\"]])",
-      "start": 1704504957030,
-      "end": 1704504957039,
+      "start": 1704505700680,
+      "end": 1704505700683,
       "order": "normal",
       "sourcemaps": {
         "version": 3,
@@ -83,119 +83,119 @@
     },
     {
       "name": "vite:vue-jsx",
-      "start": 1704504957039,
-      "end": 1704504957039,
+      "start": 1704505700683,
+      "end": 1704505700683,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1704504957039,
-      "end": 1704504957039,
+      "start": 1704505700683,
+      "end": 1704505700683,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1704504957039,
-      "end": 1704504957039,
+      "start": 1704505700683,
+      "end": 1704505700683,
       "order": "normal"
     },
     {
       "name": "nuxt:remove-plugin-metadata",
-      "start": 1704504957039,
-      "end": 1704504957039,
+      "start": 1704505700683,
+      "end": 1704505700683,
       "order": "normal"
     },
     {
       "name": "nuxt:remove-plugin-metadata",
-      "start": 1704504957039,
-      "end": 1704504957039,
+      "start": 1704505700683,
+      "end": 1704505700683,
       "order": "normal"
     },
     {
       "name": "nuxt:components:imports",
-      "start": 1704504957039,
-      "end": 1704504957039,
+      "start": 1704505700683,
+      "end": 1704505700683,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1704504957039,
-      "end": 1704504957039,
+      "start": 1704505700683,
+      "end": 1704505700683,
       "order": "normal"
     },
     {
       "name": "ssr-styles",
-      "start": 1704504957039,
-      "end": 1704504957142,
+      "start": 1704505700683,
+      "end": 1704505700785,
       "order": "normal"
     },
     {
       "name": "vite:define",
       "result": "import initialSection from \"~/components/initialSection.vue\";\nimport aboutSection from \"../components/aboutSection.vue\";\nimport expirienceSection from \"../components/expirienceSection.vue\";\nimport stackSection from \"../components/stackSection.vue\";\nimport testimonialSection from \"../components/testimonialSection.vue\";\nimport contactSection from \"../components/contactSection.vue\";\nconst _sfc_main = {\n  name: \"IndexPage\",\n  layout: \"default\",\n  components: {\n    initialSection,\n    aboutSection,\n    expirienceSection,\n    stackSection,\n    testimonialSection,\n    contactSection\n  },\n  data() {\n    return {\n      aboutVisible: false,\n      expirienceVisible: false,\n      stackVisible: false,\n      testimonialVisible: false,\n      contactVisible: false\n    };\n  },\n  methods: {\n    handleScroll() {\n      const sections = [\n        { ref: \"aboutSection\", prop: \"aboutVisible\" },\n        { ref: \"expirienceSection\", prop: \"expirienceVisible\" },\n        { ref: \"stackSection\", prop: \"stackVisible\" },\n        { ref: \"testimonialSection\", prop: \"testimonialVisible\" },\n        { ref: \"contactSection\", prop: \"contactVisible\" }\n      ];\n      sections.forEach(({ ref, prop }) => {\n        const section = this.$refs[ref];\n        const rect = section.getBoundingClientRect();\n        this[prop] = rect.top < (void 0).innerHeight && rect.bottom >= 0;\n      });\n    }\n  },\n  mounted() {\n    (void 0).addEventListener(\"scroll\", this.handleScroll);\n  },\n  beforeDestroy() {\n    (void 0).removeEventListener(\"scroll\", this.handleScroll);\n  }\n};\nimport { resolveComponent as _resolveComponent } from \"vue\";\nimport { ssrRenderComponent as _ssrRenderComponent, ssrRenderClass as _ssrRenderClass, ssrRenderAttrs as _ssrRenderAttrs } from \"vue/server-renderer\";\nfunction _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $options) {\n  const _component_NuxtLayout = _resolveComponent(\"NuxtLayout\");\n  const _component_initialSection = _resolveComponent(\"initialSection\");\n  const _component_aboutSection = _resolveComponent(\"aboutSection\");\n  const _component_expirienceSection = _resolveComponent(\"expirienceSection\");\n  const _component_stackSection = _resolveComponent(\"stackSection\");\n  const _component_testimonialSection = _resolveComponent(\"testimonialSection\");\n  const _component_contactSection = _resolveComponent(\"contactSection\");\n  _push(`<div${_ssrRenderAttrs(_attrs)} data-v-c730f5b1>`);\n  _push(_ssrRenderComponent(_component_NuxtLayout, { name: \"default\" }, null, _parent));\n  _push(`<main data-v-c730f5b1>`);\n  _push(_ssrRenderComponent(_component_initialSection, null, null, _parent));\n  _push(`<div class=\"${_ssrRenderClass([{ \"animate__animated animate__fadeIn\": $data.aboutVisible }, \"section\"])}\" data-v-c730f5b1>`);\n  _push(_ssrRenderComponent(_component_aboutSection, null, null, _parent));\n  _push(`</div><div class=\"${_ssrRenderClass([{ \"animate__animated animate__fadeIn\": $data.expirienceVisible }, \"section\"])}\" data-v-c730f5b1>`);\n  _push(_ssrRenderComponent(_component_expirienceSection, null, null, _parent));\n  _push(`</div><div class=\"${_ssrRenderClass([{ \"animate__animated animate__fadeIn\": $data.stackVisible }, \"section\"])}\" data-v-c730f5b1>`);\n  _push(_ssrRenderComponent(_component_stackSection, null, null, _parent));\n  _push(`</div><div class=\"${_ssrRenderClass([{ \"animate__animated animate__fadeIn\": $data.testimonialVisible }, \"section\"])}\" data-v-c730f5b1>`);\n  _push(_ssrRenderComponent(_component_testimonialSection, null, null, _parent));\n  _push(`</div><div class=\"${_ssrRenderClass([{ \"animate__animated animate__fadeIn\": $data.contactVisible }, \"section\"])}\" data-v-c730f5b1>`);\n  _push(_ssrRenderComponent(_component_contactSection, null, null, _parent));\n  _push(`</div></main></div>`);\n}\nimport \"/Users/alansantos/Desktop/PROJETOS/PORTIFÓLIO/portifolio/pages/index.vue?vue&type=style&index=0&scoped=c730f5b1&lang.css\";\nimport { useSSRContext as __vite_useSSRContext } from \"vue\";\nconst _sfc_setup = _sfc_main.setup;\n_sfc_main.setup = (props, ctx) => {\n  const ssrContext = __vite_useSSRContext();\n  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add(\"pages/index.vue\");\n  return _sfc_setup ? _sfc_setup(props, ctx) : void 0;\n};\nimport _export_sfc from \"\\0plugin-vue:export-helper\";\nexport default /* @__PURE__ */ _export_sfc(_sfc_main, [[\"ssrRender\", _sfc_ssrRender], [\"__scopeId\", \"data-v-c730f5b1\"]]);\n",
-      "start": 1704504957143,
-      "end": 1704504957389,
+      "start": 1704505700786,
+      "end": 1704505701053,
       "order": "normal",
       "sourcemaps": "{\n  \"version\": 3,\n  \"sources\": [\"/Users/alansantos/Desktop/PROJETOS/PORTIFÓLIO/portifolio/pages/index.vue\"],\n  \"sourcesContent\": [\"\\nimport initialSection from \\\"~/components/initialSection.vue\\\";\\nimport aboutSection from \\\"../components/aboutSection.vue\\\";\\nimport expirienceSection from \\\"../components/expirienceSection.vue\\\";\\nimport stackSection from \\\"../components/stackSection.vue\\\";\\nimport testimonialSection from \\\"../components/testimonialSection.vue\\\";\\nimport contactSection from \\\"../components/contactSection.vue\\\";\\n\\nconst _sfc_main = {\\n  name: \\\"IndexPage\\\",\\n  layout: \\\"default\\\",\\n  components: {\\n    initialSection,\\n    aboutSection,\\n    expirienceSection,\\n    stackSection,\\n    testimonialSection,\\n    contactSection\\n  },\\n  data() {\\n    return {\\n      aboutVisible: false,\\n      expirienceVisible: false,\\n      stackVisible: false,\\n      testimonialVisible: false,\\n      contactVisible: false,\\n    };\\n  },\\n  methods: {\\n    handleScroll() {\\n      const sections = [\\n        { ref: 'aboutSection', prop: 'aboutVisible' },\\n        { ref: 'expirienceSection', prop: 'expirienceVisible' },\\n        { ref: 'stackSection', prop: 'stackVisible' },\\n        { ref: 'testimonialSection', prop: 'testimonialVisible' },\\n        { ref: 'contactSection', prop: 'contactVisible' },\\n      ];\\n\\n      sections.forEach(({ ref, prop }) => {\\n        const section = this.$refs[ref];\\n        const rect = section.getBoundingClientRect();\\n\\n        this[prop] = rect.top < window.innerHeight && rect.bottom >= 0;\\n      });\\n    },\\n  },\\n  mounted() {\\n    window.addEventListener('scroll', this.handleScroll);\\n  },\\n  beforeDestroy() {\\n    window.removeEventListener('scroll', this.handleScroll);\\n  },\\n};\\n\\nimport { resolveComponent as _resolveComponent } from \\\"vue\\\"\\nimport { ssrRenderComponent as _ssrRenderComponent, ssrRenderClass as _ssrRenderClass, ssrRenderAttrs as _ssrRenderAttrs } from \\\"vue/server-renderer\\\"\\n\\nfunction _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $options) {\\n  const _component_NuxtLayout = _resolveComponent(\\\"NuxtLayout\\\")\\n  const _component_initialSection = _resolveComponent(\\\"initialSection\\\")\\n  const _component_aboutSection = _resolveComponent(\\\"aboutSection\\\")\\n  const _component_expirienceSection = _resolveComponent(\\\"expirienceSection\\\")\\n  const _component_stackSection = _resolveComponent(\\\"stackSection\\\")\\n  const _component_testimonialSection = _resolveComponent(\\\"testimonialSection\\\")\\n  const _component_contactSection = _resolveComponent(\\\"contactSection\\\")\\n\\n  _push(`<div${_ssrRenderAttrs(_attrs)} data-v-c730f5b1>`)\\n  _push(_ssrRenderComponent(_component_NuxtLayout, { name: \\\"default\\\" }, null, _parent))\\n  _push(`<main data-v-c730f5b1>`)\\n  _push(_ssrRenderComponent(_component_initialSection, null, null, _parent))\\n  _push(`<div class=\\\"${_ssrRenderClass([{ 'animate__animated animate__fadeIn': $data.aboutVisible }, \\\"section\\\"])}\\\" data-v-c730f5b1>`)\\n  _push(_ssrRenderComponent(_component_aboutSection, null, null, _parent))\\n  _push(`</div><div class=\\\"${_ssrRenderClass([{ 'animate__animated animate__fadeIn': $data.expirienceVisible }, \\\"section\\\"])}\\\" data-v-c730f5b1>`)\\n  _push(_ssrRenderComponent(_component_expirienceSection, null, null, _parent))\\n  _push(`</div><div class=\\\"${_ssrRenderClass([{ 'animate__animated animate__fadeIn': $data.stackVisible }, \\\"section\\\"])}\\\" data-v-c730f5b1>`)\\n  _push(_ssrRenderComponent(_component_stackSection, null, null, _parent))\\n  _push(`</div><div class=\\\"${_ssrRenderClass([{ 'animate__animated animate__fadeIn': $data.testimonialVisible }, \\\"section\\\"])}\\\" data-v-c730f5b1>`)\\n  _push(_ssrRenderComponent(_component_testimonialSection, null, null, _parent))\\n  _push(`</div><div class=\\\"${_ssrRenderClass([{ 'animate__animated animate__fadeIn': $data.contactVisible }, \\\"section\\\"])}\\\" data-v-c730f5b1>`)\\n  _push(_ssrRenderComponent(_component_contactSection, null, null, _parent))\\n  _push(`</div></main></div>`)\\n}\\n\\nimport \\\"/Users/alansantos/Desktop/PROJETOS/PORTIFÓLIO/portifolio/pages/index.vue?vue&type=style&index=0&scoped=c730f5b1&lang.css\\\"\\n\\nimport { useSSRContext as __vite_useSSRContext } from 'vue'\\nconst _sfc_setup = _sfc_main.setup\\n_sfc_main.setup = (props, ctx) => {\\n  const ssrContext = __vite_useSSRContext()\\n  ;(ssrContext.modules || (ssrContext.modules = new Set())).add(\\\"pages/index.vue\\\")\\n  return _sfc_setup ? _sfc_setup(props, ctx) : undefined\\n}\\nimport _export_sfc from '\\u0000plugin-vue:export-helper'\\nexport default /*#__PURE__*/_export_sfc(_sfc_main, [['ssrRender',_sfc_ssrRender],['__scopeId',\\\"data-v-c730f5b1\\\"]])\"],\n  \"mappings\": \"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\",\n  \"names\": []\n}\n"
     },
     {
       "name": "vite:css-post",
-      "start": 1704504957389,
-      "end": 1704504957389,
+      "start": 1704505701053,
+      "end": 1704505701053,
       "order": "normal"
     },
     {
       "name": "vite:build-html",
-      "start": 1704504957389,
-      "end": 1704504957389,
+      "start": 1704505701053,
+      "end": 1704505701053,
       "order": "normal"
     },
     {
       "name": "vite:worker-import-meta-url",
-      "start": 1704504957389,
-      "end": 1704504957389,
+      "start": 1704505701053,
+      "end": 1704505701053,
       "order": "normal"
     },
     {
       "name": "vite:asset-import-meta-url",
-      "start": 1704504957389,
-      "end": 1704504957389,
+      "start": 1704505701053,
+      "end": 1704505701053,
       "order": "normal"
     },
     {
       "name": "commonjs",
-      "start": 1704504957389,
-      "end": 1704504957389,
+      "start": 1704505701053,
+      "end": 1704505701054,
       "order": "normal"
     },
     {
       "name": "vite:dynamic-import-vars",
-      "start": 1704504957389,
-      "end": 1704504957389,
+      "start": 1704505701054,
+      "end": 1704505701054,
       "order": "normal"
     },
     {
       "name": "vite:import-glob",
-      "start": 1704504957389,
-      "end": 1704504957389,
+      "start": 1704505701054,
+      "end": 1704505701054,
       "order": "normal"
     },
     {
       "name": "nuxt:composable-keys",
-      "start": 1704504957389,
-      "end": 1704504957389,
+      "start": 1704505701054,
+      "end": 1704505701054,
       "order": "post"
     },
     {
       "name": "nuxt:composable-keys",
-      "start": 1704504957389,
-      "end": 1704504957389,
+      "start": 1704505701054,
+      "end": 1704505701054,
       "order": "post"
     },
     {
       "name": "nuxt:imports-transform",
       "result": "import { ref } from 'vue';\nimport initialSection from \"~/components/initialSection.vue\";\nimport aboutSection from \"../components/aboutSection.vue\";\nimport expirienceSection from \"../components/expirienceSection.vue\";\nimport stackSection from \"../components/stackSection.vue\";\nimport testimonialSection from \"../components/testimonialSection.vue\";\nimport contactSection from \"../components/contactSection.vue\";\nconst _sfc_main = {\n  name: \"IndexPage\",\n  layout: \"default\",\n  components: {\n    initialSection,\n    aboutSection,\n    expirienceSection,\n    stackSection,\n    testimonialSection,\n    contactSection\n  },\n  data() {\n    return {\n      aboutVisible: false,\n      expirienceVisible: false,\n      stackVisible: false,\n      testimonialVisible: false,\n      contactVisible: false\n    };\n  },\n  methods: {\n    handleScroll() {\n      const sections = [\n        { ref: \"aboutSection\", prop: \"aboutVisible\" },\n        { ref: \"expirienceSection\", prop: \"expirienceVisible\" },\n        { ref: \"stackSection\", prop: \"stackVisible\" },\n        { ref: \"testimonialSection\", prop: \"testimonialVisible\" },\n        { ref: \"contactSection\", prop: \"contactVisible\" }\n      ];\n      sections.forEach(({ ref, prop }) => {\n        const section = this.$refs[ref];\n        const rect = section.getBoundingClientRect();\n        this[prop] = rect.top < (void 0).innerHeight && rect.bottom >= 0;\n      });\n    }\n  },\n  mounted() {\n    (void 0).addEventListener(\"scroll\", this.handleScroll);\n  },\n  beforeDestroy() {\n    (void 0).removeEventListener(\"scroll\", this.handleScroll);\n  }\n};\nimport { resolveComponent as _resolveComponent } from \"vue\";\nimport { ssrRenderComponent as _ssrRenderComponent, ssrRenderClass as _ssrRenderClass, ssrRenderAttrs as _ssrRenderAttrs } from \"vue/server-renderer\";\nfunction _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $options) {\n  const _component_NuxtLayout = _resolveComponent(\"NuxtLayout\");\n  const _component_initialSection = _resolveComponent(\"initialSection\");\n  const _component_aboutSection = _resolveComponent(\"aboutSection\");\n  const _component_expirienceSection = _resolveComponent(\"expirienceSection\");\n  const _component_stackSection = _resolveComponent(\"stackSection\");\n  const _component_testimonialSection = _resolveComponent(\"testimonialSection\");\n  const _component_contactSection = _resolveComponent(\"contactSection\");\n  _push(`<div${_ssrRenderAttrs(_attrs)} data-v-c730f5b1>`);\n  _push(_ssrRenderComponent(_component_NuxtLayout, { name: \"default\" }, null, _parent));\n  _push(`<main data-v-c730f5b1>`);\n  _push(_ssrRenderComponent(_component_initialSection, null, null, _parent));\n  _push(`<div class=\"${_ssrRenderClass([{ \"animate__animated animate__fadeIn\": $data.aboutVisible }, \"section\"])}\" data-v-c730f5b1>`);\n  _push(_ssrRenderComponent(_component_aboutSection, null, null, _parent));\n  _push(`</div><div class=\"${_ssrRenderClass([{ \"animate__animated animate__fadeIn\": $data.expirienceVisible }, \"section\"])}\" data-v-c730f5b1>`);\n  _push(_ssrRenderComponent(_component_expirienceSection, null, null, _parent));\n  _push(`</div><div class=\"${_ssrRenderClass([{ \"animate__animated animate__fadeIn\": $data.stackVisible }, \"section\"])}\" data-v-c730f5b1>`);\n  _push(_ssrRenderComponent(_component_stackSection, null, null, _parent));\n  _push(`</div><div class=\"${_ssrRenderClass([{ \"animate__animated animate__fadeIn\": $data.testimonialVisible }, \"section\"])}\" data-v-c730f5b1>`);\n  _push(_ssrRenderComponent(_component_testimonialSection, null, null, _parent));\n  _push(`</div><div class=\"${_ssrRenderClass([{ \"animate__animated animate__fadeIn\": $data.contactVisible }, \"section\"])}\" data-v-c730f5b1>`);\n  _push(_ssrRenderComponent(_component_contactSection, null, null, _parent));\n  _push(`</div></main></div>`);\n}\nimport \"/Users/alansantos/Desktop/PROJETOS/PORTIFÓLIO/portifolio/pages/index.vue?vue&type=style&index=0&scoped=c730f5b1&lang.css\";\nimport { useSSRContext as __vite_useSSRContext } from \"vue\";\nconst _sfc_setup = _sfc_main.setup;\n_sfc_main.setup = (props, ctx) => {\n  const ssrContext = __vite_useSSRContext();\n  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add(\"pages/index.vue\");\n  return _sfc_setup ? _sfc_setup(props, ctx) : void 0;\n};\nimport _export_sfc from \"\\0plugin-vue:export-helper\";\nexport default /* @__PURE__ */ _export_sfc(_sfc_main, [[\"ssrRender\", _sfc_ssrRender], [\"__scopeId\", \"data-v-c730f5b1\"]]);\n",
-      "start": 1704504957389,
-      "end": 1704504957391,
+      "start": 1704505701054,
+      "end": 1704505701056,
       "order": "post",
       "sourcemaps": {
         "version": 3,
@@ -209,8 +209,8 @@
     {
       "name": "nuxt:imports-transform",
       "result": "import { ref } from 'vue';\nimport initialSection from \"~/components/initialSection.vue\";\nimport aboutSection from \"../components/aboutSection.vue\";\nimport expirienceSection from \"../components/expirienceSection.vue\";\nimport stackSection from \"../components/stackSection.vue\";\nimport testimonialSection from \"../components/testimonialSection.vue\";\nimport contactSection from \"../components/contactSection.vue\";\nconst _sfc_main = {\n  name: \"IndexPage\",\n  layout: \"default\",\n  components: {\n    initialSection,\n    aboutSection,\n    expirienceSection,\n    stackSection,\n    testimonialSection,\n    contactSection\n  },\n  data() {\n    return {\n      aboutVisible: false,\n      expirienceVisible: false,\n      stackVisible: false,\n      testimonialVisible: false,\n      contactVisible: false\n    };\n  },\n  methods: {\n    handleScroll() {\n      const sections = [\n        { ref: \"aboutSection\", prop: \"aboutVisible\" },\n        { ref: \"expirienceSection\", prop: \"expirienceVisible\" },\n        { ref: \"stackSection\", prop: \"stackVisible\" },\n        { ref: \"testimonialSection\", prop: \"testimonialVisible\" },\n        { ref: \"contactSection\", prop: \"contactVisible\" }\n      ];\n      sections.forEach(({ ref, prop }) => {\n        const section = this.$refs[ref];\n        const rect = section.getBoundingClientRect();\n        this[prop] = rect.top < (void 0).innerHeight && rect.bottom >= 0;\n      });\n    }\n  },\n  mounted() {\n    (void 0).addEventListener(\"scroll\", this.handleScroll);\n  },\n  beforeDestroy() {\n    (void 0).removeEventListener(\"scroll\", this.handleScroll);\n  }\n};\nimport { resolveComponent as _resolveComponent } from \"vue\";\nimport { ssrRenderComponent as _ssrRenderComponent, ssrRenderClass as _ssrRenderClass, ssrRenderAttrs as _ssrRenderAttrs } from \"vue/server-renderer\";\nfunction _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $options) {\n  const _component_NuxtLayout = _resolveComponent(\"NuxtLayout\");\n  const _component_initialSection = _resolveComponent(\"initialSection\");\n  const _component_aboutSection = _resolveComponent(\"aboutSection\");\n  const _component_expirienceSection = _resolveComponent(\"expirienceSection\");\n  const _component_stackSection = _resolveComponent(\"stackSection\");\n  const _component_testimonialSection = _resolveComponent(\"testimonialSection\");\n  const _component_contactSection = _resolveComponent(\"contactSection\");\n  _push(`<div${_ssrRenderAttrs(_attrs)} data-v-c730f5b1>`);\n  _push(_ssrRenderComponent(_component_NuxtLayout, { name: \"default\" }, null, _parent));\n  _push(`<main data-v-c730f5b1>`);\n  _push(_ssrRenderComponent(_component_initialSection, null, null, _parent));\n  _push(`<div class=\"${_ssrRenderClass([{ \"animate__animated animate__fadeIn\": $data.aboutVisible }, \"section\"])}\" data-v-c730f5b1>`);\n  _push(_ssrRenderComponent(_component_aboutSection, null, null, _parent));\n  _push(`</div><div class=\"${_ssrRenderClass([{ \"animate__animated animate__fadeIn\": $data.expirienceVisible }, \"section\"])}\" data-v-c730f5b1>`);\n  _push(_ssrRenderComponent(_component_expirienceSection, null, null, _parent));\n  _push(`</div><div class=\"${_ssrRenderClass([{ \"animate__animated animate__fadeIn\": $data.stackVisible }, \"section\"])}\" data-v-c730f5b1>`);\n  _push(_ssrRenderComponent(_component_stackSection, null, null, _parent));\n  _push(`</div><div class=\"${_ssrRenderClass([{ \"animate__animated animate__fadeIn\": $data.testimonialVisible }, \"section\"])}\" data-v-c730f5b1>`);\n  _push(_ssrRenderComponent(_component_testimonialSection, null, null, _parent));\n  _push(`</div><div class=\"${_ssrRenderClass([{ \"animate__animated animate__fadeIn\": $data.contactVisible }, \"section\"])}\" data-v-c730f5b1>`);\n  _push(_ssrRenderComponent(_component_contactSection, null, null, _parent));\n  _push(`</div></main></div>`);\n}\nimport \"/Users/alansantos/Desktop/PROJETOS/PORTIFÓLIO/portifolio/pages/index.vue?vue&type=style&index=0&scoped=c730f5b1&lang.css\";\nimport { useSSRContext as __vite_useSSRContext } from \"vue\";\nconst _sfc_setup = _sfc_main.setup;\n_sfc_main.setup = (props, ctx) => {\n  const ssrContext = __vite_useSSRContext();\n  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add(\"pages/index.vue\");\n  return _sfc_setup ? _sfc_setup(props, ctx) : void 0;\n};\nimport _export_sfc from \"\\0plugin-vue:export-helper\";\nexport default /* @__PURE__ */ _export_sfc(_sfc_main, [[\"ssrRender\", _sfc_ssrRender], [\"__scopeId\", \"data-v-c730f5b1\"]]);\n",
-      "start": 1704504957389,
-      "end": 1704504957391,
+      "start": 1704505701054,
+      "end": 1704505701056,
       "order": "post",
       "sourcemaps": {
         "version": 3,
@@ -223,39 +223,39 @@
     },
     {
       "name": "unctx:transform",
-      "start": 1704504957391,
-      "end": 1704504957391,
+      "start": 1704505701056,
+      "end": 1704505701056,
       "order": "post"
     },
     {
       "name": "unctx:transform",
-      "start": 1704504957391,
-      "end": 1704504957391,
+      "start": 1704505701056,
+      "end": 1704505701056,
       "order": "post"
     },
     {
       "name": "nuxt:pages-macros-transform",
-      "start": 1704504957391,
-      "end": 1704504957391,
+      "start": 1704505701056,
+      "end": 1704505701056,
       "order": "post"
     },
     {
       "name": "nuxt:pages-macros-transform",
-      "start": 1704504957391,
-      "end": 1704504957391,
+      "start": 1704505701056,
+      "end": 1704505701056,
       "order": "post"
     },
     {
       "name": "nuxt:tree-shake-template",
-      "start": 1704504957391,
-      "end": 1704504957391,
+      "start": 1704505701056,
+      "end": 1704505701056,
       "order": "post"
     },
     {
       "name": "nuxt:components-loader",
       "result": "import { default as __nuxt_component_0 } from \"/Users/alansantos/Desktop/PROJETOS/PORTIFÓLIO/portifolio/node_modules/nuxt/dist/app/components/nuxt-layout\";\nimport { default as __nuxt_component_1 } from \"/Users/alansantos/Desktop/PROJETOS/PORTIFÓLIO/portifolio/components/initialSection.vue\";\nimport { default as __nuxt_component_2 } from \"/Users/alansantos/Desktop/PROJETOS/PORTIFÓLIO/portifolio/components/aboutSection.vue\";\nimport { default as __nuxt_component_3 } from \"/Users/alansantos/Desktop/PROJETOS/PORTIFÓLIO/portifolio/components/expirienceSection.vue\";\nimport { default as __nuxt_component_4 } from \"/Users/alansantos/Desktop/PROJETOS/PORTIFÓLIO/portifolio/components/stackSection.vue\";\nimport { default as __nuxt_component_5 } from \"/Users/alansantos/Desktop/PROJETOS/PORTIFÓLIO/portifolio/components/testimonialSection.vue\";\nimport { default as __nuxt_component_6 } from \"/Users/alansantos/Desktop/PROJETOS/PORTIFÓLIO/portifolio/components/contactSection.vue\";\nimport { ref } from 'vue';\nimport initialSection from \"~/components/initialSection.vue\";\nimport aboutSection from \"../components/aboutSection.vue\";\nimport expirienceSection from \"../components/expirienceSection.vue\";\nimport stackSection from \"../components/stackSection.vue\";\nimport testimonialSection from \"../components/testimonialSection.vue\";\nimport contactSection from \"../components/contactSection.vue\";\nconst _sfc_main = {\n  name: \"IndexPage\",\n  layout: \"default\",\n  components: {\n    initialSection,\n    aboutSection,\n    expirienceSection,\n    stackSection,\n    testimonialSection,\n    contactSection\n  },\n  data() {\n    return {\n      aboutVisible: false,\n      expirienceVisible: false,\n      stackVisible: false,\n      testimonialVisible: false,\n      contactVisible: false\n    };\n  },\n  methods: {\n    handleScroll() {\n      const sections = [\n        { ref: \"aboutSection\", prop: \"aboutVisible\" },\n        { ref: \"expirienceSection\", prop: \"expirienceVisible\" },\n        { ref: \"stackSection\", prop: \"stackVisible\" },\n        { ref: \"testimonialSection\", prop: \"testimonialVisible\" },\n        { ref: \"contactSection\", prop: \"contactVisible\" }\n      ];\n      sections.forEach(({ ref, prop }) => {\n        const section = this.$refs[ref];\n        const rect = section.getBoundingClientRect();\n        this[prop] = rect.top < (void 0).innerHeight && rect.bottom >= 0;\n      });\n    }\n  },\n  mounted() {\n    (void 0).addEventListener(\"scroll\", this.handleScroll);\n  },\n  beforeDestroy() {\n    (void 0).removeEventListener(\"scroll\", this.handleScroll);\n  }\n};\nimport { resolveComponent as _resolveComponent } from \"vue\";\nimport { ssrRenderComponent as _ssrRenderComponent, ssrRenderClass as _ssrRenderClass, ssrRenderAttrs as _ssrRenderAttrs } from \"vue/server-renderer\";\nfunction _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $options) {\n  const _component_NuxtLayout = __nuxt_component_0;\n  const _component_initialSection = __nuxt_component_1;\n  const _component_aboutSection = __nuxt_component_2;\n  const _component_expirienceSection = __nuxt_component_3;\n  const _component_stackSection = __nuxt_component_4;\n  const _component_testimonialSection = __nuxt_component_5;\n  const _component_contactSection = __nuxt_component_6;\n  _push(`<div${_ssrRenderAttrs(_attrs)} data-v-c730f5b1>`);\n  _push(_ssrRenderComponent(_component_NuxtLayout, { name: \"default\" }, null, _parent));\n  _push(`<main data-v-c730f5b1>`);\n  _push(_ssrRenderComponent(_component_initialSection, null, null, _parent));\n  _push(`<div class=\"${_ssrRenderClass([{ \"animate__animated animate__fadeIn\": $data.aboutVisible }, \"section\"])}\" data-v-c730f5b1>`);\n  _push(_ssrRenderComponent(_component_aboutSection, null, null, _parent));\n  _push(`</div><div class=\"${_ssrRenderClass([{ \"animate__animated animate__fadeIn\": $data.expirienceVisible }, \"section\"])}\" data-v-c730f5b1>`);\n  _push(_ssrRenderComponent(_component_expirienceSection, null, null, _parent));\n  _push(`</div><div class=\"${_ssrRenderClass([{ \"animate__animated animate__fadeIn\": $data.stackVisible }, \"section\"])}\" data-v-c730f5b1>`);\n  _push(_ssrRenderComponent(_component_stackSection, null, null, _parent));\n  _push(`</div><div class=\"${_ssrRenderClass([{ \"animate__animated animate__fadeIn\": $data.testimonialVisible }, \"section\"])}\" data-v-c730f5b1>`);\n  _push(_ssrRenderComponent(_component_testimonialSection, null, null, _parent));\n  _push(`</div><div class=\"${_ssrRenderClass([{ \"animate__animated animate__fadeIn\": $data.contactVisible }, \"section\"])}\" data-v-c730f5b1>`);\n  _push(_ssrRenderComponent(_component_contactSection, null, null, _parent));\n  _push(`</div></main></div>`);\n}\nimport \"/Users/alansantos/Desktop/PROJETOS/PORTIFÓLIO/portifolio/pages/index.vue?vue&type=style&index=0&scoped=c730f5b1&lang.css\";\nimport { useSSRContext as __vite_useSSRContext } from \"vue\";\nconst _sfc_setup = _sfc_main.setup;\n_sfc_main.setup = (props, ctx) => {\n  const ssrContext = __vite_useSSRContext();\n  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add(\"pages/index.vue\");\n  return _sfc_setup ? _sfc_setup(props, ctx) : void 0;\n};\nimport _export_sfc from \"\\0plugin-vue:export-helper\";\nexport default /* @__PURE__ */ _export_sfc(_sfc_main, [[\"ssrRender\", _sfc_ssrRender], [\"__scopeId\", \"data-v-c730f5b1\"]]);\n",
-      "start": 1704504957391,
-      "end": 1704504957391,
+      "start": 1704505701056,
+      "end": 1704505701056,
       "order": "post",
       "sourcemaps": {
         "version": 3,
@@ -268,20 +268,20 @@
     },
     {
       "name": "nuxt:tree-shake-composables:transform",
-      "start": 1704504957391,
-      "end": 1704504957391,
+      "start": 1704505701056,
+      "end": 1704505701056,
       "order": "post"
     },
     {
       "name": "vite:build-import-analysis",
-      "start": 1704504957391,
-      "end": 1704504957392,
+      "start": 1704505701056,
+      "end": 1704505701057,
       "order": "normal"
     },
     {
       "name": "vite:reporter",
-      "start": 1704504957392,
-      "end": 1704504957392,
+      "start": 1704505701057,
+      "end": 1704505701057,
       "order": "normal"
     }
   ]

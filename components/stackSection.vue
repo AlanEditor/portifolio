@@ -21,7 +21,7 @@
                 class="group relative opacity-75 hover:opacity-100 hover:border-white rounded-lg p-6"
               >
                 <div class="overflow-hidden rounded-lg bg-gray-900">
-                  <img :src="`/img/${stack}.png`" class="object-cover object-center hover:scale-105 transition duration-300" />
+                  <img :src="`..src/assets/img/${stack}.png`" class="object-cover object-center hover:scale-105 transition duration-300" />
                 </div>
                 <div
                   class="mt-4 flex items-center justify-between space-x-8 text-base font-medium text-gray-900"

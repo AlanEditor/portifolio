@@ -4,69 +4,69 @@
     {
       "name": "vite:load-fallback",
       "result": "<template>\n  <div id=\"contact\">\n    <div class=\"relative isolate -z-10 mt-32 sm:mt-40\">\n      <div class=\"mx-auto max-w-7xl sm:px-6 lg:px-8\">\n        <div\n          class=\"mx-auto flex max-w-2xl flex-col gap-16 bg-white/5 px-6 py-16 ring-1 ring-white/10 sm:rounded-3xl sm:p-8 lg:mx-0 lg:max-w-none lg:flex-row lg:items-center lg:py-20 xl:gap-x-20 xl:px-20\"\n        >\n          <div class=\"w-full flex-auto\">\n            <h2 class=\"text-3xl font-bold tracking-tight text-white sm:text-4xl text-center\">{{ getTranslation('Vamos trabalhar juntos', actualLanguage) }}</h2>\n            <p\n              class=\"mt-6 text-lg leading-8 text-gray-300 text-center\"\n            >{{getTranslation('Entre em contato', actualLanguage) }}</p>\n            <div\n              class=\"mt-10 md:flex justify-center gap-x-24 gap-y-3 text-base leading-7 text-white sm:grid-cols-2\"\n            >\n              <div v-for=\"contact in contacts\" :key=\"contact.name\" class=\"flex gap-x-3 mb-10 justify-center\">\n                <i :class=\"contact.icon\" style=\"font-size: 32px;\"></i>\n                <p class=\"mt-1\">{{ contact.value }}</p>\n              </div>\n            </div>\n          </div>\n        </div>\n      </div>\n      <div\n        class=\"absolute inset-x-0 -top-16 -z-10 flex transform-gpu justify-center overflow-hidden blur-3xl\"\n        aria-hidden=\"true\"\n      >\n        <div\n          class=\"aspect-[1318/752] w-[82.375rem] flex-none bg-gradient-to-r from-[#80caff] to-[#4f46e5] opacity-25\"\n          style=\"clip-path: polygon(73.6% 51.7%, 91.7% 11.8%, 100% 46.4%, 97.4% 82.2%, 92.5% 84.9%, 75.7% 64%, 55.3% 47.5%, 46.5% 49.4%, 45% 62.9%, 50.3% 87.2%, 21.3% 64.1%, 0.1% 100%, 5.4% 51.1%, 21.4% 63.9%, 58.9% 0.2%, 73.6% 51.7%)\"\n        />\n      </div>\n    </div>\n  </div>\n</template>\n\n<script setup>\nconst contacts = [\n    {\n        name: \"Email\",\n        icon: \"bi bi-envelope-fill\",\n        value: \"alansantos04@hotmail.com\",\n    },\n    {\n        name: \"Fone\",\n        icon: \"bi bi-whatsapp\",\n        value: \"+55 (13) 98862-1433\",\n    }\n]\n\n</script>\n\n<script>\nimport { getTranslation } from '~/services/translationService';\n\nexport default {\n  name: \"contactSection\",\n  data() {\n    return {\n      actualLanguage: this.$router.currentRoute.value.query.lang\n    };\n  },\n  methods: {\n    getTranslation(key, language) {\n      return getTranslation(key, language);\n    }\n  },\n  watch: {\n    $route(to, from) {\n      this.actualLanguage = to.query.lang;\n    }\n  }\n};\n</script>\n",
-      "start": 1704504957425,
-      "end": 1704504957475,
+      "start": 1704505701094,
+      "end": 1704505701131,
       "sourcemaps": null
     },
     {
       "name": "nuxt:layer-aliasing",
-      "start": 1704504957475,
-      "end": 1704504957475,
+      "start": 1704505701131,
+      "end": 1704505701131,
       "order": "pre"
     },
     {
       "name": "nuxt:layer-aliasing",
-      "start": 1704504957475,
-      "end": 1704504957475,
+      "start": 1704505701131,
+      "end": 1704505701131,
       "order": "pre"
     },
     {
       "name": "nuxt:server-devonly:transform",
-      "start": 1704504957475,
-      "end": 1704504957475,
+      "start": 1704505701131,
+      "end": 1704505701131,
       "order": "pre"
     },
     {
       "name": "nuxt:server-devonly:transform",
-      "start": 1704504957475,
-      "end": 1704504957475,
+      "start": 1704505701131,
+      "end": 1704505701131,
       "order": "pre"
     },
     {
       "name": "nuxt:client-fallback-auto-id",
-      "start": 1704504957475,
-      "end": 1704504957475,
+      "start": 1704505701131,
+      "end": 1704505701131,
       "order": "pre"
     },
     {
       "name": "vite:css",
-      "start": 1704504957475,
-      "end": 1704504957475,
+      "start": 1704505701131,
+      "end": 1704505701131,
       "order": "normal"
     },
     {
       "name": "vite:esbuild",
-      "start": 1704504957475,
-      "end": 1704504957475,
+      "start": 1704505701131,
+      "end": 1704505701131,
       "order": "normal"
     },
     {
       "name": "vite:json",
-      "start": 1704504957475,
-      "end": 1704504957475,
+      "start": 1704505701131,
+      "end": 1704505701131,
       "order": "normal"
     },
     {
       "name": "vite:worker",
-      "start": 1704504957475,
-      "end": 1704504957475,
+      "start": 1704505701131,
+      "end": 1704505701131,
       "order": "normal"
     },
     {
       "name": "vite:vue",
       "result": "import { unref as _unref, mergeProps as _mergeProps } from \"vue\"\nimport { ssrRenderClass as _ssrRenderClass, ssrRenderStyle as _ssrRenderStyle, ssrRenderAttrs as _ssrRenderAttrs, ssrInterpolate as _ssrInterpolate, ssrRenderList as _ssrRenderList } from \"vue/server-renderer\"\n\n\nimport { getTranslation } from '~/services/translationService';\n\nconst __default__ = {\n  name: \"contactSection\",\n  data() {\n    return {\n      actualLanguage: this.$router.currentRoute.value.query.lang\n    };\n  },\n  methods: {\n    getTranslation(key, language) {\n      return getTranslation(key, language);\n    }\n  },\n  watch: {\n    $route(to, from) {\n      this.actualLanguage = to.query.lang;\n    }\n  }\n};\n\n\nconst _sfc_main = /*#__PURE__*/Object.assign(__default__, {\n  __ssrInlineRender: true,\n  setup(__props) {\n\nconst contacts = [\n    {\n        name: \"Email\",\n        icon: \"bi bi-envelope-fill\",\n        value: \"alansantos04@hotmail.com\",\n    },\n    {\n        name: \"Fone\",\n        icon: \"bi bi-whatsapp\",\n        value: \"+55 (13) 98862-1433\",\n    }\n]\n\n\nreturn (_ctx, _push, _parent, _attrs) => {\n  _push(`<div${\n    _ssrRenderAttrs(_mergeProps({ id: \"contact\" }, _attrs))\n  }><div class=\"relative isolate -z-10 mt-32 sm:mt-40\"><div class=\"mx-auto max-w-7xl sm:px-6 lg:px-8\"><div class=\"mx-auto flex max-w-2xl flex-col gap-16 bg-white/5 px-6 py-16 ring-1 ring-white/10 sm:rounded-3xl sm:p-8 lg:mx-0 lg:max-w-none lg:flex-row lg:items-center lg:py-20 xl:gap-x-20 xl:px-20\"><div class=\"w-full flex-auto\"><h2 class=\"text-3xl font-bold tracking-tight text-white sm:text-4xl text-center\">${\n    _ssrInterpolate(_unref(getTranslation)('Vamos trabalhar juntos', _ctx.actualLanguage))\n  }</h2><p class=\"mt-6 text-lg leading-8 text-gray-300 text-center\">${\n    _ssrInterpolate(_unref(getTranslation)('Entre em contato', _ctx.actualLanguage))\n  }</p><div class=\"mt-10 md:flex justify-center gap-x-24 gap-y-3 text-base leading-7 text-white sm:grid-cols-2\"><!--[-->`)\n  _ssrRenderList(contacts, (contact) => {\n    _push(`<div class=\"flex gap-x-3 mb-10 justify-center\"><i class=\"${\n      _ssrRenderClass(contact.icon)\n    }\" style=\"${\n      _ssrRenderStyle({\"font-size\":\"32px\"})\n    }\"></i><p class=\"mt-1\">${\n      _ssrInterpolate(contact.value)\n    }</p></div>`)\n  })\n  _push(`<!--]--></div></div></div></div><div class=\"absolute inset-x-0 -top-16 -z-10 flex transform-gpu justify-center overflow-hidden blur-3xl\" aria-hidden=\"true\"><div class=\"aspect-[1318/752] w-[82.375rem] flex-none bg-gradient-to-r from-[#80caff] to-[#4f46e5] opacity-25\" style=\"${_ssrRenderStyle({\"clip-path\":\"polygon(73.6% 51.7%, 91.7% 11.8%, 100% 46.4%, 97.4% 82.2%, 92.5% 84.9%, 75.7% 64%, 55.3% 47.5%, 46.5% 49.4%, 45% 62.9%, 50.3% 87.2%, 21.3% 64.1%, 0.1% 100%, 5.4% 51.1%, 21.4% 63.9%, 58.9% 0.2%, 73.6% 51.7%)\"})}\"></div></div></div></div>`)\n}\n}\n\n})\n\n\n\nimport { useSSRContext as __vite_useSSRContext } from 'vue'\nconst _sfc_setup = _sfc_main.setup\n_sfc_main.setup = (props, ctx) => {\n  const ssrContext = __vite_useSSRContext()\n  ;(ssrContext.modules || (ssrContext.modules = new Set())).add(\"components/contactSection.vue\")\n  return _sfc_setup ? _sfc_setup(props, ctx) : undefined\n}\nexport default _sfc_main",
-      "start": 1704504957475,
-      "end": 1704504957478,
+      "start": 1704505701131,
+      "end": 1704505701134,
       "order": "normal",
       "sourcemaps": {
         "version": 3,
@@ -82,176 +82,176 @@
     },
     {
       "name": "vite:vue-jsx",
-      "start": 1704504957478,
-      "end": 1704504957478,
+      "start": 1704505701134,
+      "end": 1704505701134,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1704504957478,
-      "end": 1704504957478,
+      "start": 1704505701134,
+      "end": 1704505701134,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1704504957478,
-      "end": 1704504957478,
+      "start": 1704505701134,
+      "end": 1704505701134,
       "order": "normal"
     },
     {
       "name": "nuxt:remove-plugin-metadata",
-      "start": 1704504957478,
-      "end": 1704504957478,
+      "start": 1704505701134,
+      "end": 1704505701134,
       "order": "normal"
     },
     {
       "name": "nuxt:remove-plugin-metadata",
-      "start": 1704504957478,
-      "end": 1704504957478,
+      "start": 1704505701134,
+      "end": 1704505701134,
       "order": "normal"
     },
     {
       "name": "nuxt:components:imports",
-      "start": 1704504957478,
-      "end": 1704504957478,
+      "start": 1704505701134,
+      "end": 1704505701134,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1704504957478,
-      "end": 1704504957478,
+      "start": 1704505701134,
+      "end": 1704505701134,
       "order": "normal"
     },
     {
       "name": "ssr-styles",
-      "start": 1704504957478,
-      "end": 1704504957478,
+      "start": 1704505701134,
+      "end": 1704505701134,
       "order": "normal"
     },
     {
       "name": "vite:define",
-      "start": 1704504957478,
-      "end": 1704504957478,
+      "start": 1704505701134,
+      "end": 1704505701134,
       "order": "normal"
     },
     {
       "name": "vite:css-post",
-      "start": 1704504957478,
-      "end": 1704504957478,
+      "start": 1704505701134,
+      "end": 1704505701134,
       "order": "normal"
     },
     {
       "name": "vite:build-html",
-      "start": 1704504957478,
-      "end": 1704504957478,
+      "start": 1704505701134,
+      "end": 1704505701134,
       "order": "normal"
     },
     {
       "name": "vite:worker-import-meta-url",
-      "start": 1704504957478,
-      "end": 1704504957478,
+      "start": 1704505701134,
+      "end": 1704505701134,
       "order": "normal"
     },
     {
       "name": "vite:asset-import-meta-url",
-      "start": 1704504957478,
-      "end": 1704504957478,
+      "start": 1704505701134,
+      "end": 1704505701134,
       "order": "normal"
     },
     {
       "name": "commonjs",
-      "start": 1704504957478,
-      "end": 1704504957478,
+      "start": 1704505701134,
+      "end": 1704505701134,
       "order": "normal"
     },
     {
       "name": "vite:dynamic-import-vars",
-      "start": 1704504957478,
-      "end": 1704504957478,
+      "start": 1704505701134,
+      "end": 1704505701134,
       "order": "normal"
     },
     {
       "name": "vite:import-glob",
-      "start": 1704504957478,
-      "end": 1704504957479,
+      "start": 1704505701134,
+      "end": 1704505701134,
       "order": "normal"
     },
     {
       "name": "nuxt:composable-keys",
-      "start": 1704504957479,
-      "end": 1704504957479,
+      "start": 1704505701134,
+      "end": 1704505701134,
       "order": "post"
     },
     {
       "name": "nuxt:composable-keys",
-      "start": 1704504957479,
-      "end": 1704504957479,
+      "start": 1704505701134,
+      "end": 1704505701134,
       "order": "post"
     },
     {
       "name": "nuxt:imports-transform",
-      "start": 1704504957479,
-      "end": 1704504957479,
+      "start": 1704505701134,
+      "end": 1704505701135,
       "order": "post"
     },
     {
       "name": "nuxt:imports-transform",
-      "start": 1704504957479,
-      "end": 1704504957479,
+      "start": 1704505701134,
+      "end": 1704505701135,
       "order": "post"
     },
     {
       "name": "unctx:transform",
-      "start": 1704504957479,
-      "end": 1704504957479,
+      "start": 1704505701135,
+      "end": 1704505701135,
       "order": "post"
     },
     {
       "name": "unctx:transform",
-      "start": 1704504957479,
-      "end": 1704504957479,
+      "start": 1704505701135,
+      "end": 1704505701135,
       "order": "post"
     },
     {
       "name": "nuxt:pages-macros-transform",
-      "start": 1704504957479,
-      "end": 1704504957479,
+      "start": 1704505701135,
+      "end": 1704505701135,
       "order": "post"
     },
     {
       "name": "nuxt:pages-macros-transform",
-      "start": 1704504957479,
-      "end": 1704504957479,
+      "start": 1704505701135,
+      "end": 1704505701135,
       "order": "post"
     },
     {
       "name": "nuxt:tree-shake-template",
-      "start": 1704504957479,
-      "end": 1704504957479,
+      "start": 1704505701135,
+      "end": 1704505701135,
       "order": "post"
     },
     {
       "name": "nuxt:components-loader",
-      "start": 1704504957480,
-      "end": 1704504957480,
+      "start": 1704505701135,
+      "end": 1704505701135,
       "order": "post"
     },
     {
       "name": "nuxt:tree-shake-composables:transform",
-      "start": 1704504957480,
-      "end": 1704504957480,
+      "start": 1704505701135,
+      "end": 1704505701135,
       "order": "post"
     },
     {
       "name": "vite:build-import-analysis",
-      "start": 1704504957480,
-      "end": 1704504957480,
+      "start": 1704505701135,
+      "end": 1704505701135,
       "order": "normal"
     },
     {
       "name": "vite:reporter",
-      "start": 1704504957480,
-      "end": 1704504957480,
+      "start": 1704505701135,
+      "end": 1704505701135,
       "order": "normal"
     }
   ]
