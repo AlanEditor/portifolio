@@ -4,57 +4,57 @@
     {
       "name": "vite:load-fallback",
       "result": "<template>\n  <div class=\"mt-32\">\n    <div class=\"mt-6 grid grid-cols-1 lg:grid-cols-4 gap-x-8\">\n      <div class=\"overflow-hidden rounded-lg bg-gray-900 hover:scale-105 transition duration-300\">\n        <a href=\"https://www.ensinio.com\" target=\"_blank\">\n          <img src=\"../../src/assets/img/ensinio.png\" class=\"object-cover object-center\" />\n        </a>\n      </div>\n      <div class=\"overflow-hidden rounded-lg bg-gray-900 hover:scale-105 transition duration-300\">\n        <a href=\"https://www.iporto.com.br\" target=\"_blank\">\n          <img src=\"../../src/assets/img/iporto.png\" class=\"object-cover object-center\" />\n        </a>\n      </div>\n      <div class=\"overflow-hidden rounded-lg bg-gray-900 hover:scale-105 transition duration-300\">\n        <a href=\"https://casadege.com.br\" target=\"_blank\">\n          <img src=\"../../src/assets/img/casa_de_ge.png\" class=\"object-cover object-center\" />\n        </a>\n      </div>\n      <div class=\"overflow-hidden rounded-lg bg-gray-900 hover:scale-105 transition duration-300\">\n        <img src=\"../../src/assets/img/cm.png\" class=\"object-cover object-center\" />\n      </div>\n      <div\n        class=\"mt-4 flex items-center justify-between space-x-8 text-base font-medium text-gray-900\"\n      ></div>\n    </div>\n  </div>\n</template>\n\n<script>\nconst jobs = [\n  {\n    company: \"Ensinio\",\n    imageSrc: `ensinio.png`,\n    link: \"https://www.ensinio.com\"\n  },\n  {\n    company: \"iPORTO\",\n    imageSrc: `iporto.png`,\n    link: \"https://iporto.com.br/\"\n  },\n  {\n    company: \"Casa de Gê\",\n    imageSrc: `casa_de_ge.png`,\n    link: \"https://casadege.com.br/\"\n  },\n  {\n    company: \"Congregação Mariana\",\n    imageSrc: `cm.png`\n  }\n];\n</script>",
-      "start": 1704507458410,
-      "end": 1704507458490,
+      "start": 1704507640232,
+      "end": 1704507640316,
       "sourcemaps": null
     },
     {
       "name": "nuxt:layer-aliasing",
-      "start": 1704507458490,
-      "end": 1704507458490,
+      "start": 1704507640316,
+      "end": 1704507640316,
       "order": "pre"
     },
     {
       "name": "nuxt:server-devonly:transform",
-      "start": 1704507458490,
-      "end": 1704507458490,
+      "start": 1704507640316,
+      "end": 1704507640316,
       "order": "pre"
     },
     {
       "name": "nuxt:client-fallback-auto-id",
-      "start": 1704507458490,
-      "end": 1704507458490,
+      "start": 1704507640316,
+      "end": 1704507640316,
       "order": "pre"
     },
     {
       "name": "vite:css",
-      "start": 1704507458490,
-      "end": 1704507458490,
+      "start": 1704507640316,
+      "end": 1704507640316,
       "order": "normal"
     },
     {
       "name": "vite:esbuild",
-      "start": 1704507458490,
-      "end": 1704507458490,
+      "start": 1704507640316,
+      "end": 1704507640316,
       "order": "normal"
     },
     {
       "name": "vite:json",
-      "start": 1704507458490,
-      "end": 1704507458490,
+      "start": 1704507640316,
+      "end": 1704507640316,
       "order": "normal"
     },
     {
       "name": "vite:worker",
-      "start": 1704507458490,
-      "end": 1704507458490,
+      "start": 1704507640316,
+      "end": 1704507640316,
       "order": "normal"
     },
     {
       "name": "vite:vue",
       "result": "\nconst jobs = [\n  {\n    company: \"Ensinio\",\n    imageSrc: `ensinio.png`,\n    link: \"https://www.ensinio.com\"\n  },\n  {\n    company: \"iPORTO\",\n    imageSrc: `iporto.png`,\n    link: \"https://iporto.com.br/\"\n  },\n  {\n    company: \"Casa de Gê\",\n    imageSrc: `casa_de_ge.png`,\n    link: \"https://casadege.com.br/\"\n  },\n  {\n    company: \"Congregação Mariana\",\n    imageSrc: `cm.png`\n  }\n];\n\nconst _sfc_main = {}\nimport { createElementVNode as _createElementVNode, createStaticVNode as _createStaticVNode, openBlock as _openBlock, createElementBlock as _createElementBlock } from \"vue\"\nimport _imports_0 from '../../src/assets/img/ensinio.png'\nimport _imports_1 from '../../src/assets/img/iporto.png'\nimport _imports_2 from '../../src/assets/img/casa_de_ge.png'\nimport _imports_3 from '../../src/assets/img/cm.png'\n\n\nconst _hoisted_1 = { class: \"mt-32\" }\nconst _hoisted_2 = /*#__PURE__*/_createStaticVNode(\"<div class=\\\"mt-6 grid grid-cols-1 lg:grid-cols-4 gap-x-8\\\"><div class=\\\"overflow-hidden rounded-lg bg-gray-900 hover:scale-105 transition duration-300\\\"><a href=\\\"https://www.ensinio.com\\\" target=\\\"_blank\\\"><img src=\\\"\" + _imports_0 + \"\\\" class=\\\"object-cover object-center\\\"></a></div><div class=\\\"overflow-hidden rounded-lg bg-gray-900 hover:scale-105 transition duration-300\\\"><a href=\\\"https://www.iporto.com.br\\\" target=\\\"_blank\\\"><img src=\\\"\" + _imports_1 + \"\\\" class=\\\"object-cover object-center\\\"></a></div><div class=\\\"overflow-hidden rounded-lg bg-gray-900 hover:scale-105 transition duration-300\\\"><a href=\\\"https://casadege.com.br\\\" target=\\\"_blank\\\"><img src=\\\"\" + _imports_2 + \"\\\" class=\\\"object-cover object-center\\\"></a></div><div class=\\\"overflow-hidden rounded-lg bg-gray-900 hover:scale-105 transition duration-300\\\"><img src=\\\"\" + _imports_3 + \"\\\" class=\\\"object-cover object-center\\\"></div><div class=\\\"mt-4 flex items-center justify-between space-x-8 text-base font-medium text-gray-900\\\"></div></div>\", 1)\nconst _hoisted_3 = [\n  _hoisted_2\n]\n\nfunction _sfc_render(_ctx, _cache, $props, $setup, $data, $options) {\n  return (_openBlock(), _createElementBlock(\"div\", _hoisted_1, _hoisted_3))\n}\n\n\nimport _export_sfc from '\u0000plugin-vue:export-helper'\nexport default /*#__PURE__*/_export_sfc(_sfc_main, [['render',_sfc_render]])",
-      "start": 1704507458490,
-      "end": 1704507458492,
+      "start": 1704507640316,
+      "end": 1704507640318,
       "order": "normal",
       "sourcemaps": {
         "mappings": ""
@@ -62,152 +62,152 @@
     },
     {
       "name": "vite:vue-jsx",
-      "start": 1704507458492,
-      "end": 1704507458492,
+      "start": 1704507640319,
+      "end": 1704507640319,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1704507458492,
-      "end": 1704507458492,
+      "start": 1704507640319,
+      "end": 1704507640319,
       "order": "normal"
     },
     {
       "name": "nuxt:remove-plugin-metadata",
-      "start": 1704507458492,
-      "end": 1704507458492,
+      "start": 1704507640319,
+      "end": 1704507640319,
       "order": "normal"
     },
     {
       "name": "nuxt:chunk-error",
-      "start": 1704507458493,
-      "end": 1704507458493,
+      "start": 1704507640319,
+      "end": 1704507640319,
       "order": "normal"
     },
     {
       "name": "nuxt:components:imports",
-      "start": 1704507458493,
-      "end": 1704507458493,
+      "start": 1704507640319,
+      "end": 1704507640319,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1704507458493,
-      "end": 1704507458493,
+      "start": 1704507640319,
+      "end": 1704507640319,
       "order": "normal"
     },
     {
       "name": "ssr-styles",
-      "start": 1704507458493,
-      "end": 1704507458493,
+      "start": 1704507640319,
+      "end": 1704507640319,
       "order": "normal"
     },
     {
       "name": "vite:define",
-      "start": 1704507458493,
-      "end": 1704507458493,
+      "start": 1704507640319,
+      "end": 1704507640319,
       "order": "normal"
     },
     {
       "name": "vite:css-post",
-      "start": 1704507458493,
-      "end": 1704507458493,
+      "start": 1704507640319,
+      "end": 1704507640319,
       "order": "normal"
     },
     {
       "name": "vite:build-html",
-      "start": 1704507458493,
-      "end": 1704507458493,
+      "start": 1704507640319,
+      "end": 1704507640319,
       "order": "normal"
     },
     {
       "name": "vite:worker-import-meta-url",
-      "start": 1704507458493,
-      "end": 1704507458493,
+      "start": 1704507640319,
+      "end": 1704507640319,
       "order": "normal"
     },
     {
       "name": "vite:asset-import-meta-url",
-      "start": 1704507458493,
-      "end": 1704507458493,
+      "start": 1704507640319,
+      "end": 1704507640319,
       "order": "normal"
     },
     {
       "name": "commonjs",
-      "start": 1704507458493,
-      "end": 1704507458493,
+      "start": 1704507640319,
+      "end": 1704507640319,
       "order": "normal"
     },
     {
       "name": "vite:dynamic-import-vars",
-      "start": 1704507458493,
-      "end": 1704507458493,
+      "start": 1704507640319,
+      "end": 1704507640319,
       "order": "normal"
     },
     {
       "name": "vite:import-glob",
-      "start": 1704507458493,
-      "end": 1704507458493,
+      "start": 1704507640319,
+      "end": 1704507640319,
       "order": "normal"
     },
     {
       "name": "nuxt:composable-keys",
-      "start": 1704507458493,
-      "end": 1704507458493,
+      "start": 1704507640319,
+      "end": 1704507640319,
       "order": "post"
     },
     {
       "name": "nuxt:imports-transform",
-      "start": 1704507458493,
-      "end": 1704507458494,
+      "start": 1704507640319,
+      "end": 1704507640321,
       "order": "post"
     },
     {
       "name": "unctx:transform",
-      "start": 1704507458494,
-      "end": 1704507458494,
+      "start": 1704507640321,
+      "end": 1704507640321,
       "order": "post"
     },
     {
       "name": "nuxt:pages-macros-transform",
-      "start": 1704507458494,
-      "end": 1704507458494,
+      "start": 1704507640321,
+      "end": 1704507640321,
       "order": "post"
     },
     {
       "name": "nuxt:runtime-paths-dep",
-      "start": 1704507458494,
-      "end": 1704507458494,
+      "start": 1704507640321,
+      "end": 1704507640321,
       "order": "post"
     },
     {
       "name": "nuxt:route-injection-plugin",
-      "start": 1704507458494,
-      "end": 1704507458494,
+      "start": 1704507640321,
+      "end": 1704507640321,
       "order": "post"
     },
     {
       "name": "nuxt:components-loader",
-      "start": 1704507458494,
-      "end": 1704507458494,
+      "start": 1704507640321,
+      "end": 1704507640321,
       "order": "post"
     },
     {
       "name": "nuxt:tree-shake-composables:transform",
-      "start": 1704507458494,
-      "end": 1704507458494,
+      "start": 1704507640321,
+      "end": 1704507640321,
       "order": "post"
     },
     {
       "name": "vite:build-import-analysis",
-      "start": 1704507458494,
-      "end": 1704507458495,
+      "start": 1704507640321,
+      "end": 1704507640321,
       "order": "normal"
     },
     {
       "name": "vite:reporter",
-      "start": 1704507458495,
-      "end": 1704507458495,
+      "start": 1704507640321,
+      "end": 1704507640321,
       "order": "normal"
     }
   ]

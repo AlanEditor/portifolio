@@ -4,69 +4,69 @@
     {
       "name": "vite:load-fallback",
       "result": "<template>\n  <div class=\"bg-image\" id=\"stack\">\n    <div>\n      <div class=\"bg-gradient-to-t from-black bottom-0 py-24 sm:py-32\">\n        <div class=\"mx-auto max-w-7xl px-6 lg:px-8\">\n          <div class=\"grid grid-cols-1 items-center gap-x-8 gap-y-16 lg:grid-cols-2\">\n            <div class=\"mx-auto w-full max-w-xl lg:mx-0\">\n              <h2\n                class=\"mt-2 text-3xl font-bold tracking-tight text-white sm:text-4xl lg:text-6xl text-center lg:text-left\"\n              >{{ getTranslation('Minha Stack', actualLanguage) }}</h2>\n              <p\n                class=\"mt-6 text-lg leading-8 text-gray-300 text-center lg:text-left\"\n              >{{ getTranslation('descricao da stack', actualLanguage) }}</p>\n            </div>\n              <stackImagesComponent />\n          </div>\n        </div>\n      </div>\n    </div>\n  </div>\n</template>\n\n<script setup>\nconst technologies = [\"laravel\", \"php\", \"vue\", \"docker\", \"mysql\", \"node\"];\n</script>\n\n<script>\nimport { getTranslation } from \"~/services/translationService\";\nimport stackImagesComponent from \"./images/stackImagesComponent.vue\";\n\nexport default {\n  name: \"expirienceSection\",\n  components: {\n    stackImagesComponent\n  },\n  data() {\n    return {\n      actualLanguage: this.$router.currentRoute.value.query.lang\n    };\n  },\n  methods: {\n    getTranslation(key, language) {\n      return getTranslation(key, language);\n    }\n  },\n  watch: {\n    $route(to, from) {\n      this.actualLanguage = to.query.lang;\n    }\n  }\n};\n</script>\n\n<style scoped>\n.bg-image {\n  position: relative;\n  overflow: hidden;\n}\n\n.bg-image::after {\n  content: \"\";\n  position: absolute;\n  top: 0;\n  left: 0;\n  width: 100%;\n  height: 100%;\n  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),\n    url(\"../src/assets/img/vscode.png\");\n  filter: blur(5px);\n  z-index: -1;\n  opacity: 1;\n  backdrop-filter: blur(5px);\n  background-size: 100%; /* Adicione esta linha */\n}\n</style>",
-      "start": 1704507462070,
-      "end": 1704507462089,
+      "start": 1704507644379,
+      "end": 1704507644388,
       "sourcemaps": null
     },
     {
       "name": "nuxt:layer-aliasing",
-      "start": 1704507462089,
-      "end": 1704507462089,
+      "start": 1704507644388,
+      "end": 1704507644388,
       "order": "pre"
     },
     {
       "name": "nuxt:layer-aliasing",
-      "start": 1704507462089,
-      "end": 1704507462089,
+      "start": 1704507644388,
+      "end": 1704507644388,
       "order": "pre"
     },
     {
       "name": "nuxt:server-devonly:transform",
-      "start": 1704507462089,
-      "end": 1704507462089,
+      "start": 1704507644388,
+      "end": 1704507644388,
       "order": "pre"
     },
     {
       "name": "nuxt:server-devonly:transform",
-      "start": 1704507462089,
-      "end": 1704507462089,
+      "start": 1704507644388,
+      "end": 1704507644388,
       "order": "pre"
     },
     {
       "name": "nuxt:client-fallback-auto-id",
-      "start": 1704507462089,
-      "end": 1704507462089,
+      "start": 1704507644388,
+      "end": 1704507644388,
       "order": "pre"
     },
     {
       "name": "vite:css",
-      "start": 1704507462089,
-      "end": 1704507462089,
+      "start": 1704507644388,
+      "end": 1704507644388,
       "order": "normal"
     },
     {
       "name": "vite:esbuild",
-      "start": 1704507462089,
-      "end": 1704507462089,
+      "start": 1704507644388,
+      "end": 1704507644388,
       "order": "normal"
     },
     {
       "name": "vite:json",
-      "start": 1704507462089,
-      "end": 1704507462089,
+      "start": 1704507644388,
+      "end": 1704507644388,
       "order": "normal"
     },
     {
       "name": "vite:worker",
-      "start": 1704507462089,
-      "end": 1704507462089,
+      "start": 1704507644388,
+      "end": 1704507644388,
       "order": "normal"
     },
     {
       "name": "vite:vue",
       "result": "import { unref as _unref, mergeProps as _mergeProps } from \"vue\"\nimport { ssrRenderComponent as _ssrRenderComponent, ssrRenderAttrs as _ssrRenderAttrs, ssrInterpolate as _ssrInterpolate } from \"vue/server-renderer\"\n\n\nimport { getTranslation } from \"~/services/translationService\";\nimport stackImagesComponent from \"./images/stackImagesComponent.vue\";\n\nconst __default__ = {\n  name: \"expirienceSection\",\n  components: {\n    stackImagesComponent\n  },\n  data() {\n    return {\n      actualLanguage: this.$router.currentRoute.value.query.lang\n    };\n  },\n  methods: {\n    getTranslation(key, language) {\n      return getTranslation(key, language);\n    }\n  },\n  watch: {\n    $route(to, from) {\n      this.actualLanguage = to.query.lang;\n    }\n  }\n};\n\n\nconst _sfc_main = /*#__PURE__*/Object.assign(__default__, {\n  __ssrInlineRender: true,\n  setup(__props) {\n\nconst technologies = [\"laravel\", \"php\", \"vue\", \"docker\", \"mysql\", \"node\"];\n\nreturn (_ctx, _push, _parent, _attrs) => {\n  _push(`<div${\n    _ssrRenderAttrs(_mergeProps({\n      class: \"bg-image\",\n      id: \"stack\"\n    }, _attrs))\n  } data-v-64d206ff><div data-v-64d206ff><div class=\"bg-gradient-to-t from-black bottom-0 py-24 sm:py-32\" data-v-64d206ff><div class=\"mx-auto max-w-7xl px-6 lg:px-8\" data-v-64d206ff><div class=\"grid grid-cols-1 items-center gap-x-8 gap-y-16 lg:grid-cols-2\" data-v-64d206ff><div class=\"mx-auto w-full max-w-xl lg:mx-0\" data-v-64d206ff><h2 class=\"mt-2 text-3xl font-bold tracking-tight text-white sm:text-4xl lg:text-6xl text-center lg:text-left\" data-v-64d206ff>${\n    _ssrInterpolate(_unref(getTranslation)('Minha Stack', _ctx.actualLanguage))\n  }</h2><p class=\"mt-6 text-lg leading-8 text-gray-300 text-center lg:text-left\" data-v-64d206ff>${\n    _ssrInterpolate(_unref(getTranslation)('descricao da stack', _ctx.actualLanguage))\n  }</p></div>`)\n  _push(_ssrRenderComponent(stackImagesComponent, null, null, _parent))\n  _push(`</div></div></div></div></div>`)\n}\n}\n\n})\n\n\nimport \"/Users/alansantos/Desktop/PROJETOS/PORTIFÓLIO/portifolio/components/stackSection.vue?vue&type=style&index=0&scoped=64d206ff&lang.css\"\n\nimport { useSSRContext as __vite_useSSRContext } from 'vue'\nconst _sfc_setup = _sfc_main.setup\n_sfc_main.setup = (props, ctx) => {\n  const ssrContext = __vite_useSSRContext()\n  ;(ssrContext.modules || (ssrContext.modules = new Set())).add(\"components/stackSection.vue\")\n  return _sfc_setup ? _sfc_setup(props, ctx) : undefined\n}\nimport _export_sfc from '\u0000plugin-vue:export-helper'\nexport default /*#__PURE__*/_export_sfc(_sfc_main, [['__scopeId',\"data-v-64d206ff\"]])",
-      "start": 1704507462089,
-      "end": 1704507462092,
+      "start": 1704507644388,
+      "end": 1704507644391,
       "order": "normal",
       "sourcemaps": {
         "version": 3,
@@ -82,176 +82,176 @@
     },
     {
       "name": "vite:vue-jsx",
-      "start": 1704507462092,
-      "end": 1704507462092,
+      "start": 1704507644391,
+      "end": 1704507644391,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1704507462092,
-      "end": 1704507462092,
+      "start": 1704507644391,
+      "end": 1704507644391,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1704507462092,
-      "end": 1704507462092,
+      "start": 1704507644391,
+      "end": 1704507644391,
       "order": "normal"
     },
     {
       "name": "nuxt:remove-plugin-metadata",
-      "start": 1704507462092,
-      "end": 1704507462092,
+      "start": 1704507644391,
+      "end": 1704507644391,
       "order": "normal"
     },
     {
       "name": "nuxt:remove-plugin-metadata",
-      "start": 1704507462092,
-      "end": 1704507462092,
+      "start": 1704507644391,
+      "end": 1704507644391,
       "order": "normal"
     },
     {
       "name": "nuxt:components:imports",
-      "start": 1704507462092,
-      "end": 1704507462092,
+      "start": 1704507644391,
+      "end": 1704507644391,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1704507462092,
-      "end": 1704507462092,
+      "start": 1704507644391,
+      "end": 1704507644391,
       "order": "normal"
     },
     {
       "name": "ssr-styles",
-      "start": 1704507462092,
-      "end": 1704507462092,
+      "start": 1704507644391,
+      "end": 1704507644391,
       "order": "normal"
     },
     {
       "name": "vite:define",
-      "start": 1704507462092,
-      "end": 1704507462092,
+      "start": 1704507644391,
+      "end": 1704507644391,
       "order": "normal"
     },
     {
       "name": "vite:css-post",
-      "start": 1704507462092,
-      "end": 1704507462092,
+      "start": 1704507644391,
+      "end": 1704507644391,
       "order": "normal"
     },
     {
       "name": "vite:build-html",
-      "start": 1704507462092,
-      "end": 1704507462092,
+      "start": 1704507644391,
+      "end": 1704507644391,
       "order": "normal"
     },
     {
       "name": "vite:worker-import-meta-url",
-      "start": 1704507462092,
-      "end": 1704507462092,
+      "start": 1704507644391,
+      "end": 1704507644391,
       "order": "normal"
     },
     {
       "name": "vite:asset-import-meta-url",
-      "start": 1704507462092,
-      "end": 1704507462092,
+      "start": 1704507644391,
+      "end": 1704507644391,
       "order": "normal"
     },
     {
       "name": "commonjs",
-      "start": 1704507462092,
-      "end": 1704507462092,
+      "start": 1704507644391,
+      "end": 1704507644391,
       "order": "normal"
     },
     {
       "name": "vite:dynamic-import-vars",
-      "start": 1704507462092,
-      "end": 1704507462092,
+      "start": 1704507644391,
+      "end": 1704507644391,
       "order": "normal"
     },
     {
       "name": "vite:import-glob",
-      "start": 1704507462092,
-      "end": 1704507462092,
+      "start": 1704507644391,
+      "end": 1704507644391,
       "order": "normal"
     },
     {
       "name": "nuxt:composable-keys",
-      "start": 1704507462092,
-      "end": 1704507462092,
+      "start": 1704507644391,
+      "end": 1704507644391,
       "order": "post"
     },
     {
       "name": "nuxt:composable-keys",
-      "start": 1704507462092,
-      "end": 1704507462092,
+      "start": 1704507644391,
+      "end": 1704507644391,
       "order": "post"
     },
     {
       "name": "nuxt:imports-transform",
-      "start": 1704507462092,
-      "end": 1704507462093,
+      "start": 1704507644391,
+      "end": 1704507644392,
       "order": "post"
     },
     {
       "name": "nuxt:imports-transform",
-      "start": 1704507462092,
-      "end": 1704507462093,
+      "start": 1704507644391,
+      "end": 1704507644392,
       "order": "post"
     },
     {
       "name": "unctx:transform",
-      "start": 1704507462093,
-      "end": 1704507462093,
+      "start": 1704507644392,
+      "end": 1704507644392,
       "order": "post"
     },
     {
       "name": "unctx:transform",
-      "start": 1704507462093,
-      "end": 1704507462093,
+      "start": 1704507644392,
+      "end": 1704507644392,
       "order": "post"
     },
     {
       "name": "nuxt:pages-macros-transform",
-      "start": 1704507462093,
-      "end": 1704507462093,
+      "start": 1704507644392,
+      "end": 1704507644392,
       "order": "post"
     },
     {
       "name": "nuxt:pages-macros-transform",
-      "start": 1704507462093,
-      "end": 1704507462093,
+      "start": 1704507644392,
+      "end": 1704507644392,
       "order": "post"
     },
     {
       "name": "nuxt:tree-shake-template",
-      "start": 1704507462093,
-      "end": 1704507462093,
+      "start": 1704507644392,
+      "end": 1704507644392,
       "order": "post"
     },
     {
       "name": "nuxt:components-loader",
-      "start": 1704507462093,
-      "end": 1704507462093,
+      "start": 1704507644392,
+      "end": 1704507644392,
       "order": "post"
     },
     {
       "name": "nuxt:tree-shake-composables:transform",
-      "start": 1704507462093,
-      "end": 1704507462093,
+      "start": 1704507644392,
+      "end": 1704507644392,
       "order": "post"
     },
     {
       "name": "vite:build-import-analysis",
-      "start": 1704507462093,
-      "end": 1704507462094,
+      "start": 1704507644392,
+      "end": 1704507644392,
       "order": "normal"
     },
     {
       "name": "vite:reporter",
-      "start": 1704507462094,
-      "end": 1704507462094,
+      "start": 1704507644392,
+      "end": 1704507644392,
       "order": "normal"
     }
   ]

@@ -527,7 +527,7 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: void 0,
-    component: () => import("./assets/index-fqD1WU4o.js").then(function(n) {
+    component: () => import("./assets/index-OCpyaFXL.js").then(function(n) {
       return n.i;
     }).then((m) => m.default || m)
   }

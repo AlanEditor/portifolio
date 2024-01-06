@@ -43,7 +43,7 @@
               target="_blank"
               class="mr-4 px-6 py-3 bg-transparent text-white rounded-lg"
             >
-            <i class="bi bi-github mr-2"></i> LinkedIn
+            <i class="bi bi-github mr-2"></i> GitHub
             </a>
           </div>
           <div class="my-10 flex justify-center md:justify-start mx-2">
