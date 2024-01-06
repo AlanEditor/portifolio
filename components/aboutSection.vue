@@ -36,14 +36,14 @@
               target="_blank"
               class="mr-4 px-6 py-3 bg-transparent text-white rounded-lg"
             >
-              <Icon name="uil:linkedin" color="white" size="20px" class="mr-2" />LinkedIn
+              <i class="bi bi-linkedin mr-2"></i> LinkedIn
             </a>
             <a
               href="https://github.com/AlanEditor"
               target="_blank"
               class="mr-4 px-6 py-3 bg-transparent text-white rounded-lg"
             >
-              <Icon name="uil:github" color="white" size="20px" class="mr-2" />GitHub
+            <i class="bi bi-github mr-2"></i> LinkedIn
             </a>
           </div>
           <div class="my-10 flex justify-center md:justify-start mx-2">

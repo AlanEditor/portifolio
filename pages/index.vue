@@ -10,7 +10,6 @@
       >
         <aboutSection />
       </div>
-
       <div
         ref="expirienceSection"
         class="section"

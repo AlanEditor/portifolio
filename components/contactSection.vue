@@ -13,9 +13,9 @@
             <div
               class="mt-10 md:flex justify-center gap-x-24 gap-y-3 text-base leading-7 text-white sm:grid-cols-2"
             >
-              <div v-for="contact in contacts" :key="contact.name" class="flex gap-x-3">
-                  <Icon :name="contact.icon" class="h-10 w-10 mb-2" /> 
-                  <p class="mt-1">{{ contact.value }}</p>
+              <div v-for="contact in contacts" :key="contact.name" class="flex gap-x-3 mb-10 justify-center">
+                <i :class="contact.icon" style="font-size: 32px;"></i>
+                <p class="mt-1">{{ contact.value }}</p>
               </div>
             </div>
           </div>
@@ -38,12 +38,12 @@
 const contacts = [
     {
         name: "Email",
-        icon: "ic:outline-email",
+        icon: "bi bi-envelope-fill",
         value: "alansantos04@hotmail.com",
     },
     {
         name: "Fone",
-        icon: "ic:twotone-whatsapp",
+        icon: "bi bi-whatsapp",
         value: "+55 (13) 98862-1433",
     }
 ]
