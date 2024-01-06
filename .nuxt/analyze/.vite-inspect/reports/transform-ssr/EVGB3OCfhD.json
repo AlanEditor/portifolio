@@ -4,57 +4,57 @@
     {
       "name": "vite:load-fallback",
       "result": "{\n    \"Sobre\": {\n        \"pt\": \"Sobre\",\n        \"en\": \"About\"\n    },\n    \"Projetos\": {\n        \"pt\": \"Projetos\",\n        \"en\": \"Projects\"\n    },\n    \"Tecnologias\": {\n        \"pt\": \"Tecnologias\",\n        \"en\": \"Technologies\"\n    },\n    \"Recomendações\": {\n        \"pt\": \"Recomendações\",\n        \"en\": \"Testimonials\"\n    },\n    \"Contato\": {\n        \"pt\": \"Contato\",\n        \"en\": \"Contact\"\n    },\n    \"Engenheiro de Software\": {\n        \"pt\": \"Engenheiro de Software\",\n        \"en\": \"Software Engineer\"\n    },\n    \"Olá\": {\n        \"pt\": \"Olá\",\n        \"en\": \"Hi\"\n    },\n    \"Sobre-mim\": {\n        \"pt\": \"me chamo Alan Santos, sou engenheiro de software pleno. Especialista em desenvolvimento web com mais de 3 anos de experiência. Possuo experiência com equipes multidiciplinares e inovadoras. Atuei em projetos de grande escala, gerando alto valor.\",\n        \"en\": \"my name is Alan Santos, and I am a full-stack software engineer. I specialize in web development with over 3 years of experience. I have worked in diverse and innovative teams, contributing to large-scale projects that deliver significant value.\"\n    },\n    \"Projetos em que atuei\": {\n        \"pt\": \"Projetos em que atuei\",\n        \"en\": \"Projects I have worked on\"\n    },\n    \"descricao de projeto\": {\n        \"pt\": \"Com anos de experiência, autei em desenvolvimento de produtos de grande escala e segmentos diversos em ambientes ágeis. Atualmente, também, estou desenvolvendo uma plataforma de e-learning interna como projeto social.\",\n        \"en\": \"With over 3 years of experience, I have worked on large-scale projects in various industries. Currently, I am developing an internal e-learning platform as a project social.\"\n    },\n    \"Minha Stack\": {\n        \"pt\": \"Minha Stack\",\n        \"en\": \"My Stack\"\n    },\n    \"descricao da stack\": {\n        \"pt\": \"Ao longo dos anos pude aprimorar meus conhecimentos e me especializar nessas tecnologias.\",\n        \"en\": \"Through my years of learning and specialization, I have improved my knowledge and specialize in these technologies.\"\n    },\n    \"provas-sociais\": {\n        \"pt\": \"Recomendações\",\n        \"en\": \"What they have been talking about me\"\n    },\n    \"Gabriel Valério\": {\n        \"pt\": \"Alan assumiu a desafiadora tarefa de desenvolver uma plataforma online interna para os associados da Federação das Congregações Marianas de Santos, através da nossa Seção de Tecnologia. Sem dúvidas, um projeto que provou ser extremamente inovador. Seu trabalho não apenas elevou o padrão de nossas iniciativas tecnológicas, mas também criou um modelo que pode ser replicado em outras organizações semelhantes.\",\n        \"en\": \"Alan took on the challenging task of developing an internal online platform for the members of the Federation of Marian Congregations of Santos, through our Technology Section. Undoubtedly, a project that proved to be extremely innovative. His work not only raised the standard of our technological initiatives but also created a model that can be replicated in other similar organizations.\"\n      },\n      \"Luis Guilherme\": {\n        \"pt\": \"Um excelente parceiro de serviço, sempre bem humorado, deixa o clima super leve e agradável no time, além de ser muito profissional e caprichoso nas entregas!\",\n        \"en\": \"An excellent service partner, always cheerful, brings a super light and pleasant atmosphere to the team, and is very professional and meticulous in deliveries!\"\n      },\n      \"Adriano Christian\": {\n        \"pt\": \"Tive o privilégio de trabalhar lado a lado com o Alan nesses últimos meses no escopo de Backend da Ensinio. Sua dedicação e habilidades técnicas excepcionais fazem dele um profissional excelente. Seu comprometimento com a excelência e sua atitude positiva têm um impacto significativo no nível das entregas. Cumprindo as datas sem abdicar de qualidade, sua ética de trabalho exemplar serve como um modelo para todos nós.\",\n        \"en\": \"I had the privilege of working side by side with Alan in recent months in the Backend scope of Ensinio. His dedication and exceptional technical skills make him an excellent professional. His commitment to excellence and positive attitude have a significant impact on the level of deliveries. Meeting deadlines without compromising quality, his exemplary work ethic serves as a model for all of us.\"\n      },\n      \"Gabriel Coutinho\": {\n        \"pt\": \"[...] Alan também é um profissional excepcional. Atenção aos detalhes, comprometimento e qualidade nas entregas sempre foram características visíveis em todos momentos que tive oportunidade de trocar conhecimento com ele.\",\n        \"en\": \"[...] Alan is also an exceptional professional. Attention to detail, commitment, and quality in deliveries have always been visible characteristics in every moment I had the opportunity to exchange knowledge with him.\"\n      },\n      \"Vamos trabalhar juntos\": {\n        \"pt\": \"Vamos trabalhar juntos!\",\n        \"en\": \"Let's work together!\"\n      },\n      \"Entre em contato\": {\n        \"pt\": \"Entre em contato. Um grande projeto nos espera.\",\n        \"en\": \"Contact me. A big project awaits us.\"\n      }\n    \n}",
-      "start": 1704584845948,
-      "end": 1704584845987,
+      "start": 1704585115576,
+      "end": 1704585115690,
       "sourcemaps": null
     },
     {
       "name": "nuxt:layer-aliasing",
-      "start": 1704584845987,
-      "end": 1704584845987,
+      "start": 1704585115690,
+      "end": 1704585115690,
       "order": "pre"
     },
     {
       "name": "nuxt:layer-aliasing",
-      "start": 1704584845987,
-      "end": 1704584845987,
+      "start": 1704585115690,
+      "end": 1704585115690,
       "order": "pre"
     },
     {
       "name": "nuxt:server-devonly:transform",
-      "start": 1704584845987,
-      "end": 1704584845987,
+      "start": 1704585115690,
+      "end": 1704585115690,
       "order": "pre"
     },
     {
       "name": "nuxt:server-devonly:transform",
-      "start": 1704584845987,
-      "end": 1704584845987,
+      "start": 1704585115690,
+      "end": 1704585115690,
       "order": "pre"
     },
     {
       "name": "nuxt:client-fallback-auto-id",
-      "start": 1704584845987,
-      "end": 1704584845987,
+      "start": 1704585115690,
+      "end": 1704585115690,
       "order": "pre"
     },
     {
       "name": "vite:css",
-      "start": 1704584845987,
-      "end": 1704584845987,
+      "start": 1704585115690,
+      "end": 1704585115690,
       "order": "normal"
     },
     {
       "name": "vite:esbuild",
-      "start": 1704584845987,
-      "end": 1704584845987,
+      "start": 1704585115690,
+      "end": 1704585115690,
       "order": "normal"
     },
     {
       "name": "vite:json",
       "result": "export const Sobre = {\n\tpt: \"Sobre\",\n\ten: \"About\"\n};\nexport const Projetos = {\n\tpt: \"Projetos\",\n\ten: \"Projects\"\n};\nexport const Tecnologias = {\n\tpt: \"Tecnologias\",\n\ten: \"Technologies\"\n};\nexport const Contato = {\n\tpt: \"Contato\",\n\ten: \"Contact\"\n};\nexport default {\n\tSobre: Sobre,\n\tProjetos: Projetos,\n\tTecnologias: Tecnologias,\n\t\"Recomendações\": {\n\tpt: \"Recomendações\",\n\ten: \"Testimonials\"\n},\n\tContato: Contato,\n\t\"Engenheiro de Software\": {\n\tpt: \"Engenheiro de Software\",\n\ten: \"Software Engineer\"\n},\n\t\"Olá\": {\n\tpt: \"Olá\",\n\ten: \"Hi\"\n},\n\t\"Sobre-mim\": {\n\tpt: \"me chamo Alan Santos, sou engenheiro de software pleno. Especialista em desenvolvimento web com mais de 3 anos de experiência. Possuo experiência com equipes multidiciplinares e inovadoras. Atuei em projetos de grande escala, gerando alto valor.\",\n\ten: \"my name is Alan Santos, and I am a full-stack software engineer. I specialize in web development with over 3 years of experience. I have worked in diverse and innovative teams, contributing to large-scale projects that deliver significant value.\"\n},\n\t\"Projetos em que atuei\": {\n\tpt: \"Projetos em que atuei\",\n\ten: \"Projects I have worked on\"\n},\n\t\"descricao de projeto\": {\n\tpt: \"Com anos de experiência, autei em desenvolvimento de produtos de grande escala e segmentos diversos em ambientes ágeis. Atualmente, também, estou desenvolvendo uma plataforma de e-learning interna como projeto social.\",\n\ten: \"With over 3 years of experience, I have worked on large-scale projects in various industries. Currently, I am developing an internal e-learning platform as a project social.\"\n},\n\t\"Minha Stack\": {\n\tpt: \"Minha Stack\",\n\ten: \"My Stack\"\n},\n\t\"descricao da stack\": {\n\tpt: \"Ao longo dos anos pude aprimorar meus conhecimentos e me especializar nessas tecnologias.\",\n\ten: \"Through my years of learning and specialization, I have improved my knowledge and specialize in these technologies.\"\n},\n\t\"provas-sociais\": {\n\tpt: \"Recomendações\",\n\ten: \"What they have been talking about me\"\n},\n\t\"Gabriel Valério\": {\n\tpt: \"Alan assumiu a desafiadora tarefa de desenvolver uma plataforma online interna para os associados da Federação das Congregações Marianas de Santos, através da nossa Seção de Tecnologia. Sem dúvidas, um projeto que provou ser extremamente inovador. Seu trabalho não apenas elevou o padrão de nossas iniciativas tecnológicas, mas também criou um modelo que pode ser replicado em outras organizações semelhantes.\",\n\ten: \"Alan took on the challenging task of developing an internal online platform for the members of the Federation of Marian Congregations of Santos, through our Technology Section. Undoubtedly, a project that proved to be extremely innovative. His work not only raised the standard of our technological initiatives but also created a model that can be replicated in other similar organizations.\"\n},\n\t\"Luis Guilherme\": {\n\tpt: \"Um excelente parceiro de serviço, sempre bem humorado, deixa o clima super leve e agradável no time, além de ser muito profissional e caprichoso nas entregas!\",\n\ten: \"An excellent service partner, always cheerful, brings a super light and pleasant atmosphere to the team, and is very professional and meticulous in deliveries!\"\n},\n\t\"Adriano Christian\": {\n\tpt: \"Tive o privilégio de trabalhar lado a lado com o Alan nesses últimos meses no escopo de Backend da Ensinio. Sua dedicação e habilidades técnicas excepcionais fazem dele um profissional excelente. Seu comprometimento com a excelência e sua atitude positiva têm um impacto significativo no nível das entregas. Cumprindo as datas sem abdicar de qualidade, sua ética de trabalho exemplar serve como um modelo para todos nós.\",\n\ten: \"I had the privilege of working side by side with Alan in recent months in the Backend scope of Ensinio. His dedication and exceptional technical skills make him an excellent professional. His commitment to excellence and positive attitude have a significant impact on the level of deliveries. Meeting deadlines without compromising quality, his exemplary work ethic serves as a model for all of us.\"\n},\n\t\"Gabriel Coutinho\": {\n\tpt: \"[...] Alan também é um profissional excepcional. Atenção aos detalhes, comprometimento e qualidade nas entregas sempre foram características visíveis em todos momentos que tive oportunidade de trocar conhecimento com ele.\",\n\ten: \"[...] Alan is also an exceptional professional. Attention to detail, commitment, and quality in deliveries have always been visible characteristics in every moment I had the opportunity to exchange knowledge with him.\"\n},\n\t\"Vamos trabalhar juntos\": {\n\tpt: \"Vamos trabalhar juntos!\",\n\ten: \"Let's work together!\"\n},\n\t\"Entre em contato\": {\n\tpt: \"Entre em contato. Um grande projeto nos espera.\",\n\ten: \"Contact me. A big project awaits us.\"\n}\n};\n",
-      "start": 1704584845987,
-      "end": 1704584845988,
+      "start": 1704585115690,
+      "end": 1704585115690,
       "order": "normal",
       "sourcemaps": {
         "mappings": ""
@@ -62,188 +62,188 @@
     },
     {
       "name": "vite:worker",
-      "start": 1704584845988,
-      "end": 1704584845988,
+      "start": 1704585115690,
+      "end": 1704585115690,
       "order": "normal"
     },
     {
       "name": "vite:vue",
-      "start": 1704584845988,
-      "end": 1704584845988,
+      "start": 1704585115690,
+      "end": 1704585115690,
       "order": "normal"
     },
     {
       "name": "vite:vue-jsx",
-      "start": 1704584845988,
-      "end": 1704584845988,
+      "start": 1704585115690,
+      "end": 1704585115690,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1704584845988,
-      "end": 1704584845988,
+      "start": 1704585115690,
+      "end": 1704585115690,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1704584845988,
-      "end": 1704584845988,
+      "start": 1704585115690,
+      "end": 1704585115690,
       "order": "normal"
     },
     {
       "name": "nuxt:remove-plugin-metadata",
-      "start": 1704584845988,
-      "end": 1704584845988,
+      "start": 1704585115690,
+      "end": 1704585115690,
       "order": "normal"
     },
     {
       "name": "nuxt:remove-plugin-metadata",
-      "start": 1704584845988,
-      "end": 1704584845988,
+      "start": 1704585115690,
+      "end": 1704585115690,
       "order": "normal"
     },
     {
       "name": "nuxt:components:imports",
-      "start": 1704584845988,
-      "end": 1704584845988,
+      "start": 1704585115690,
+      "end": 1704585115690,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1704584845988,
-      "end": 1704584845988,
+      "start": 1704585115690,
+      "end": 1704585115690,
       "order": "normal"
     },
     {
       "name": "ssr-styles",
-      "start": 1704584845988,
-      "end": 1704584845988,
+      "start": 1704585115690,
+      "end": 1704585115690,
       "order": "normal"
     },
     {
       "name": "vite:define",
-      "start": 1704584845988,
-      "end": 1704584845988,
+      "start": 1704585115690,
+      "end": 1704585115690,
       "order": "normal"
     },
     {
       "name": "vite:css-post",
-      "start": 1704584845988,
-      "end": 1704584845988,
+      "start": 1704585115690,
+      "end": 1704585115690,
       "order": "normal"
     },
     {
       "name": "vite:build-html",
-      "start": 1704584845988,
-      "end": 1704584845988,
+      "start": 1704585115690,
+      "end": 1704585115690,
       "order": "normal"
     },
     {
       "name": "vite:worker-import-meta-url",
-      "start": 1704584845988,
-      "end": 1704584845988,
+      "start": 1704585115690,
+      "end": 1704585115690,
       "order": "normal"
     },
     {
       "name": "vite:asset-import-meta-url",
-      "start": 1704584845988,
-      "end": 1704584845988,
+      "start": 1704585115690,
+      "end": 1704585115690,
       "order": "normal"
     },
     {
       "name": "commonjs",
-      "start": 1704584845988,
-      "end": 1704584845988,
+      "start": 1704585115690,
+      "end": 1704585115690,
       "order": "normal"
     },
     {
       "name": "vite:dynamic-import-vars",
-      "start": 1704584845988,
-      "end": 1704584845988,
+      "start": 1704585115690,
+      "end": 1704585115690,
       "order": "normal"
     },
     {
       "name": "vite:import-glob",
-      "start": 1704584845988,
-      "end": 1704584845988,
+      "start": 1704585115690,
+      "end": 1704585115690,
       "order": "normal"
     },
     {
       "name": "nuxt:composable-keys",
-      "start": 1704584845988,
-      "end": 1704584845988,
+      "start": 1704585115690,
+      "end": 1704585115691,
       "order": "post"
     },
     {
       "name": "nuxt:composable-keys",
-      "start": 1704584845988,
-      "end": 1704584845988,
+      "start": 1704585115690,
+      "end": 1704585115691,
       "order": "post"
     },
     {
       "name": "nuxt:imports-transform",
-      "start": 1704584845988,
-      "end": 1704584845988,
+      "start": 1704585115691,
+      "end": 1704585115691,
       "order": "post"
     },
     {
       "name": "nuxt:imports-transform",
-      "start": 1704584845988,
-      "end": 1704584845988,
+      "start": 1704585115691,
+      "end": 1704585115691,
       "order": "post"
     },
     {
       "name": "unctx:transform",
-      "start": 1704584845988,
-      "end": 1704584845988,
+      "start": 1704585115691,
+      "end": 1704585115691,
       "order": "post"
     },
     {
       "name": "unctx:transform",
-      "start": 1704584845988,
-      "end": 1704584845988,
+      "start": 1704585115691,
+      "end": 1704585115691,
       "order": "post"
     },
     {
       "name": "nuxt:pages-macros-transform",
-      "start": 1704584845988,
-      "end": 1704584845988,
+      "start": 1704585115691,
+      "end": 1704585115691,
       "order": "post"
     },
     {
       "name": "nuxt:pages-macros-transform",
-      "start": 1704584845988,
-      "end": 1704584845988,
+      "start": 1704585115691,
+      "end": 1704585115691,
       "order": "post"
     },
     {
       "name": "nuxt:tree-shake-template",
-      "start": 1704584845988,
-      "end": 1704584845988,
+      "start": 1704585115691,
+      "end": 1704585115691,
       "order": "post"
     },
     {
       "name": "nuxt:components-loader",
-      "start": 1704584845988,
-      "end": 1704584845988,
+      "start": 1704585115691,
+      "end": 1704585115691,
       "order": "post"
     },
     {
       "name": "nuxt:tree-shake-composables:transform",
-      "start": 1704584845988,
-      "end": 1704584845988,
+      "start": 1704585115691,
+      "end": 1704585115691,
       "order": "post"
     },
     {
       "name": "vite:build-import-analysis",
-      "start": 1704584845988,
-      "end": 1704584845988,
+      "start": 1704585115691,
+      "end": 1704585115691,
       "order": "normal"
     },
     {
       "name": "vite:reporter",
-      "start": 1704584845988,
-      "end": 1704584845988,
+      "start": 1704585115691,
+      "end": 1704585115691,
       "order": "normal"
     }
   ]
