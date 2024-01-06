@@ -3,58 +3,58 @@
   "transforms": [
     {
       "name": "vite:load-fallback",
-      "result": "<template>\n  <div>\n    <NuxtLayout name=\"default\" />\n    <main>\n        <initialSection />\n      <div\n        ref=\"aboutSection\"\n        class=\"section\"\n        :class=\"{ 'animate__animated animate__fadeIn': aboutVisible }\"\n      >\n        <aboutSection />\n      </div>\n\n      <div\n        ref=\"expirienceSection\"\n        class=\"section\"\n        :class=\"{ 'animate__animated animate__fadeIn': expirienceVisible }\"\n      >\n        <expirienceSection />\n      </div>\n\n      <div\n        ref=\"stackSection\"\n        class=\"section\"\n        :class=\"{ 'animate__animated animate__fadeIn': stackVisible }\"\n      >\n        <stackSection />\n      </div>\n\n      <div\n        ref=\"testimonialSection\"\n        class=\"section\"\n        :class=\"{ 'animate__animated animate__fadeIn': testimonialVisible }\"\n      >\n        <testimonialSection />\n      </div>\n\n      <div\n        ref=\"contactSection\"\n        class=\"section\"\n        :class=\"{ 'animate__animated animate__fadeIn': contactVisible }\"\n      >\n        <contactSection />\n      </div>\n    </main>\n  </div>\n</template>\n\n<script>\nimport initialSection from \"~/components/initialSection.vue\";\nimport aboutSection from \"../components/aboutSection.vue\";\nimport expirienceSection from \"../components/expirienceSection.vue\";\nimport stackSection from \"../components/stackSection.vue\";\nimport testimonialSection from \"../components/testimonialSection.vue\";\nimport contactSection from \"../components/contactSection.vue\";\n\nexport default {\n  name: \"IndexPage\",\n  layout: \"default\",\n  components: {\n    initialSection,\n    aboutSection,\n    expirienceSection,\n    stackSection,\n    testimonialSection,\n    contactSection\n  },\n  data() {\n    return {\n      aboutVisible: false,\n      expirienceVisible: false,\n      stackVisible: false,\n      testimonialVisible: false,\n      contactVisible: false,\n    };\n  },\n  methods: {\n    handleScroll() {\n      const sections = [\n        { ref: 'aboutSection', prop: 'aboutVisible' },\n        { ref: 'expirienceSection', prop: 'expirienceVisible' },\n        { ref: 'stackSection', prop: 'stackVisible' },\n        { ref: 'testimonialSection', prop: 'testimonialVisible' },\n        { ref: 'contactSection', prop: 'contactVisible' },\n      ];\n\n      sections.forEach(({ ref, prop }) => {\n        const section = this.$refs[ref];\n        const rect = section.getBoundingClientRect();\n\n        this[prop] = rect.top < window.innerHeight && rect.bottom >= 0;\n      });\n    },\n  },\n  mounted() {\n    window.addEventListener('scroll', this.handleScroll);\n  },\n  beforeDestroy() {\n    window.removeEventListener('scroll', this.handleScroll);\n  },\n};\n</script>\n\n<style scoped>\nbody {\n  background-color: #000000;\n}\n.section {\n  opacity: 0;\n  transition: opacity 1s ease;\n}\n\n.animate__fadeIn {\n  opacity: 1;\n}\n</style>",
-      "start": 1704502655774,
-      "end": 1704502656135,
+      "result": "<template>\n  <div>\n    <NuxtLayout name=\"default\" />\n    <main>\n        <initialSection />\n      <div\n        ref=\"aboutSection\"\n        class=\"section\"\n        :class=\"{ 'animate__animated animate__fadeIn': aboutVisible }\"\n      >\n        <aboutSection />\n      </div>\n      <div\n        ref=\"expirienceSection\"\n        class=\"section\"\n        :class=\"{ 'animate__animated animate__fadeIn': expirienceVisible }\"\n      >\n        <expirienceSection />\n      </div>\n\n      <div\n        ref=\"stackSection\"\n        class=\"section\"\n        :class=\"{ 'animate__animated animate__fadeIn': stackVisible }\"\n      >\n        <stackSection />\n      </div>\n\n      <div\n        ref=\"testimonialSection\"\n        class=\"section\"\n        :class=\"{ 'animate__animated animate__fadeIn': testimonialVisible }\"\n      >\n        <testimonialSection />\n      </div>\n\n      <div\n        ref=\"contactSection\"\n        class=\"section\"\n        :class=\"{ 'animate__animated animate__fadeIn': contactVisible }\"\n      >\n        <contactSection />\n      </div>\n    </main>\n  </div>\n</template>\n\n<script>\nimport initialSection from \"~/components/initialSection.vue\";\nimport aboutSection from \"../components/aboutSection.vue\";\nimport expirienceSection from \"../components/expirienceSection.vue\";\nimport stackSection from \"../components/stackSection.vue\";\nimport testimonialSection from \"../components/testimonialSection.vue\";\nimport contactSection from \"../components/contactSection.vue\";\n\nexport default {\n  name: \"IndexPage\",\n  layout: \"default\",\n  components: {\n    initialSection,\n    aboutSection,\n    expirienceSection,\n    stackSection,\n    testimonialSection,\n    contactSection\n  },\n  data() {\n    return {\n      aboutVisible: false,\n      expirienceVisible: false,\n      stackVisible: false,\n      testimonialVisible: false,\n      contactVisible: false,\n    };\n  },\n  methods: {\n    handleScroll() {\n      const sections = [\n        { ref: 'aboutSection', prop: 'aboutVisible' },\n        { ref: 'expirienceSection', prop: 'expirienceVisible' },\n        { ref: 'stackSection', prop: 'stackVisible' },\n        { ref: 'testimonialSection', prop: 'testimonialVisible' },\n        { ref: 'contactSection', prop: 'contactVisible' },\n      ];\n\n      sections.forEach(({ ref, prop }) => {\n        const section = this.$refs[ref];\n        const rect = section.getBoundingClientRect();\n\n        this[prop] = rect.top < window.innerHeight && rect.bottom >= 0;\n      });\n    },\n  },\n  mounted() {\n    window.addEventListener('scroll', this.handleScroll);\n  },\n  beforeDestroy() {\n    window.removeEventListener('scroll', this.handleScroll);\n  },\n};\n</script>\n\n<style scoped>\nbody {\n  background-color: #000000;\n}\n.section {\n  opacity: 0;\n  transition: opacity 1s ease;\n}\n\n.animate__fadeIn {\n  opacity: 1;\n}\n</style>",
+      "start": 1704503900520,
+      "end": 1704503900915,
       "sourcemaps": null
     },
     {
       "name": "nuxt:layer-aliasing",
-      "start": 1704502656135,
-      "end": 1704502656135,
+      "start": 1704503900915,
+      "end": 1704503900915,
       "order": "pre"
     },
     {
       "name": "nuxt:server-devonly:transform",
-      "start": 1704502656135,
-      "end": 1704502656135,
+      "start": 1704503900915,
+      "end": 1704503900916,
       "order": "pre"
     },
     {
       "name": "nuxt:client-fallback-auto-id",
-      "start": 1704502656135,
-      "end": 1704502656135,
+      "start": 1704503900916,
+      "end": 1704503900916,
       "order": "pre"
     },
     {
       "name": "vite:css",
-      "start": 1704502656135,
-      "end": 1704502656135,
+      "start": 1704503900916,
+      "end": 1704503900916,
       "order": "normal"
     },
     {
       "name": "vite:esbuild",
-      "start": 1704502656135,
-      "end": 1704502656135,
+      "start": 1704503900916,
+      "end": 1704503900916,
       "order": "normal"
     },
     {
       "name": "vite:json",
-      "start": 1704502656135,
-      "end": 1704502656135,
+      "start": 1704503900916,
+      "end": 1704503900916,
       "order": "normal"
     },
     {
       "name": "vite:worker",
-      "start": 1704502656135,
-      "end": 1704502656135,
+      "start": 1704503900916,
+      "end": 1704503900916,
       "order": "normal"
     },
     {
       "name": "vite:vue",
-      "result": "\nimport initialSection from \"~/components/initialSection.vue\";\nimport aboutSection from \"../components/aboutSection.vue\";\nimport expirienceSection from \"../components/expirienceSection.vue\";\nimport stackSection from \"../components/stackSection.vue\";\nimport testimonialSection from \"../components/testimonialSection.vue\";\nimport contactSection from \"../components/contactSection.vue\";\n\nconst _sfc_main = {\n  name: \"IndexPage\",\n  layout: \"default\",\n  components: {\n    initialSection,\n    aboutSection,\n    expirienceSection,\n    stackSection,\n    testimonialSection,\n    contactSection\n  },\n  data() {\n    return {\n      aboutVisible: false,\n      expirienceVisible: false,\n      stackVisible: false,\n      testimonialVisible: false,\n      contactVisible: false,\n    };\n  },\n  methods: {\n    handleScroll() {\n      const sections = [\n        { ref: 'aboutSection', prop: 'aboutVisible' },\n        { ref: 'expirienceSection', prop: 'expirienceVisible' },\n        { ref: 'stackSection', prop: 'stackVisible' },\n        { ref: 'testimonialSection', prop: 'testimonialVisible' },\n        { ref: 'contactSection', prop: 'contactVisible' },\n      ];\n\n      sections.forEach(({ ref, prop }) => {\n        const section = this.$refs[ref];\n        const rect = section.getBoundingClientRect();\n\n        this[prop] = rect.top < window.innerHeight && rect.bottom >= 0;\n      });\n    },\n  },\n  mounted() {\n    window.addEventListener('scroll', this.handleScroll);\n  },\n  beforeDestroy() {\n    window.removeEventListener('scroll', this.handleScroll);\n  },\n};\n\nimport { resolveComponent as _resolveComponent, createVNode as _createVNode, normalizeClass as _normalizeClass, createElementVNode as _createElementVNode, openBlock as _openBlock, createElementBlock as _createElementBlock } from \"vue\"\n\nfunction _sfc_render(_ctx, _cache, $props, $setup, $data, $options) {\n  const _component_NuxtLayout = _resolveComponent(\"NuxtLayout\")\n  const _component_initialSection = _resolveComponent(\"initialSection\")\n  const _component_aboutSection = _resolveComponent(\"aboutSection\")\n  const _component_expirienceSection = _resolveComponent(\"expirienceSection\")\n  const _component_stackSection = _resolveComponent(\"stackSection\")\n  const _component_testimonialSection = _resolveComponent(\"testimonialSection\")\n  const _component_contactSection = _resolveComponent(\"contactSection\")\n\n  return (_openBlock(), _createElementBlock(\"div\", null, [\n    _createVNode(_component_NuxtLayout, { name: \"default\" }),\n    _createElementVNode(\"main\", null, [\n      _createVNode(_component_initialSection),\n      _createElementVNode(\"div\", {\n        ref: \"aboutSection\",\n        class: _normalizeClass([\"section\", { 'animate__animated animate__fadeIn': $data.aboutVisible }])\n      }, [\n        _createVNode(_component_aboutSection)\n      ], 2),\n      _createElementVNode(\"div\", {\n        ref: \"expirienceSection\",\n        class: _normalizeClass([\"section\", { 'animate__animated animate__fadeIn': $data.expirienceVisible }])\n      }, [\n        _createVNode(_component_expirienceSection)\n      ], 2),\n      _createElementVNode(\"div\", {\n        ref: \"stackSection\",\n        class: _normalizeClass([\"section\", { 'animate__animated animate__fadeIn': $data.stackVisible }])\n      }, [\n        _createVNode(_component_stackSection)\n      ], 2),\n      _createElementVNode(\"div\", {\n        ref: \"testimonialSection\",\n        class: _normalizeClass([\"section\", { 'animate__animated animate__fadeIn': $data.testimonialVisible }])\n      }, [\n        _createVNode(_component_testimonialSection)\n      ], 2),\n      _createElementVNode(\"div\", {\n        ref: \"contactSection\",\n        class: _normalizeClass([\"section\", { 'animate__animated animate__fadeIn': $data.contactVisible }])\n      }, [\n        _createVNode(_component_contactSection)\n      ], 2)\n    ])\n  ]))\n}\n\nimport \"/Users/alansantos/Desktop/PROJETOS/PORTIFÓLIO/portifolio/pages/index.vue?vue&type=style&index=0&scoped=1cc738bc&lang.css\"\n\nimport _export_sfc from '\u0000plugin-vue:export-helper'\nexport default /*#__PURE__*/_export_sfc(_sfc_main, [['render',_sfc_render],['__scopeId',\"data-v-1cc738bc\"]])",
-      "start": 1704502656135,
-      "end": 1704502656152,
+      "result": "\nimport initialSection from \"~/components/initialSection.vue\";\nimport aboutSection from \"../components/aboutSection.vue\";\nimport expirienceSection from \"../components/expirienceSection.vue\";\nimport stackSection from \"../components/stackSection.vue\";\nimport testimonialSection from \"../components/testimonialSection.vue\";\nimport contactSection from \"../components/contactSection.vue\";\n\nconst _sfc_main = {\n  name: \"IndexPage\",\n  layout: \"default\",\n  components: {\n    initialSection,\n    aboutSection,\n    expirienceSection,\n    stackSection,\n    testimonialSection,\n    contactSection\n  },\n  data() {\n    return {\n      aboutVisible: false,\n      expirienceVisible: false,\n      stackVisible: false,\n      testimonialVisible: false,\n      contactVisible: false,\n    };\n  },\n  methods: {\n    handleScroll() {\n      const sections = [\n        { ref: 'aboutSection', prop: 'aboutVisible' },\n        { ref: 'expirienceSection', prop: 'expirienceVisible' },\n        { ref: 'stackSection', prop: 'stackVisible' },\n        { ref: 'testimonialSection', prop: 'testimonialVisible' },\n        { ref: 'contactSection', prop: 'contactVisible' },\n      ];\n\n      sections.forEach(({ ref, prop }) => {\n        const section = this.$refs[ref];\n        const rect = section.getBoundingClientRect();\n\n        this[prop] = rect.top < window.innerHeight && rect.bottom >= 0;\n      });\n    },\n  },\n  mounted() {\n    window.addEventListener('scroll', this.handleScroll);\n  },\n  beforeDestroy() {\n    window.removeEventListener('scroll', this.handleScroll);\n  },\n};\n\nimport { resolveComponent as _resolveComponent, createVNode as _createVNode, normalizeClass as _normalizeClass, createElementVNode as _createElementVNode, openBlock as _openBlock, createElementBlock as _createElementBlock } from \"vue\"\n\nfunction _sfc_render(_ctx, _cache, $props, $setup, $data, $options) {\n  const _component_NuxtLayout = _resolveComponent(\"NuxtLayout\")\n  const _component_initialSection = _resolveComponent(\"initialSection\")\n  const _component_aboutSection = _resolveComponent(\"aboutSection\")\n  const _component_expirienceSection = _resolveComponent(\"expirienceSection\")\n  const _component_stackSection = _resolveComponent(\"stackSection\")\n  const _component_testimonialSection = _resolveComponent(\"testimonialSection\")\n  const _component_contactSection = _resolveComponent(\"contactSection\")\n\n  return (_openBlock(), _createElementBlock(\"div\", null, [\n    _createVNode(_component_NuxtLayout, { name: \"default\" }),\n    _createElementVNode(\"main\", null, [\n      _createVNode(_component_initialSection),\n      _createElementVNode(\"div\", {\n        ref: \"aboutSection\",\n        class: _normalizeClass([\"section\", { 'animate__animated animate__fadeIn': $data.aboutVisible }])\n      }, [\n        _createVNode(_component_aboutSection)\n      ], 2),\n      _createElementVNode(\"div\", {\n        ref: \"expirienceSection\",\n        class: _normalizeClass([\"section\", { 'animate__animated animate__fadeIn': $data.expirienceVisible }])\n      }, [\n        _createVNode(_component_expirienceSection)\n      ], 2),\n      _createElementVNode(\"div\", {\n        ref: \"stackSection\",\n        class: _normalizeClass([\"section\", { 'animate__animated animate__fadeIn': $data.stackVisible }])\n      }, [\n        _createVNode(_component_stackSection)\n      ], 2),\n      _createElementVNode(\"div\", {\n        ref: \"testimonialSection\",\n        class: _normalizeClass([\"section\", { 'animate__animated animate__fadeIn': $data.testimonialVisible }])\n      }, [\n        _createVNode(_component_testimonialSection)\n      ], 2),\n      _createElementVNode(\"div\", {\n        ref: \"contactSection\",\n        class: _normalizeClass([\"section\", { 'animate__animated animate__fadeIn': $data.contactVisible }])\n      }, [\n        _createVNode(_component_contactSection)\n      ], 2)\n    ])\n  ]))\n}\n\nimport \"/Users/alansantos/Desktop/PROJETOS/PORTIFÓLIO/portifolio/pages/index.vue?vue&type=style&index=0&scoped=c730f5b1&lang.css\"\n\nimport _export_sfc from '\u0000plugin-vue:export-helper'\nexport default /*#__PURE__*/_export_sfc(_sfc_main, [['render',_sfc_render],['__scopeId',\"data-v-c730f5b1\"]])",
+      "start": 1704503900916,
+      "end": 1704503900923,
       "order": "normal",
       "sourcemaps": {
         "mappings": ""
@@ -62,105 +62,105 @@
     },
     {
       "name": "vite:vue-jsx",
-      "start": 1704502656152,
-      "end": 1704502656152,
+      "start": 1704503900923,
+      "end": 1704503900923,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1704502656152,
-      "end": 1704502656152,
+      "start": 1704503900923,
+      "end": 1704503900923,
       "order": "normal"
     },
     {
       "name": "nuxt:remove-plugin-metadata",
-      "start": 1704502656152,
-      "end": 1704502656152,
+      "start": 1704503900923,
+      "end": 1704503900923,
       "order": "normal"
     },
     {
       "name": "nuxt:chunk-error",
-      "start": 1704502656152,
-      "end": 1704502656152,
+      "start": 1704503900923,
+      "end": 1704503900923,
       "order": "normal"
     },
     {
       "name": "nuxt:components:imports",
-      "start": 1704502656152,
-      "end": 1704502656152,
+      "start": 1704503900923,
+      "end": 1704503900923,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1704502656152,
-      "end": 1704502656152,
+      "start": 1704503900923,
+      "end": 1704503900923,
       "order": "normal"
     },
     {
       "name": "ssr-styles",
-      "start": 1704502656152,
-      "end": 1704502656152,
+      "start": 1704503900923,
+      "end": 1704503900923,
       "order": "normal"
     },
     {
       "name": "vite:define",
-      "start": 1704502656152,
-      "end": 1704502656152,
+      "start": 1704503900923,
+      "end": 1704503900923,
       "order": "normal"
     },
     {
       "name": "vite:css-post",
-      "start": 1704502656152,
-      "end": 1704502656152,
+      "start": 1704503900923,
+      "end": 1704503900923,
       "order": "normal"
     },
     {
       "name": "vite:build-html",
-      "start": 1704502656152,
-      "end": 1704502656152,
+      "start": 1704503900923,
+      "end": 1704503900923,
       "order": "normal"
     },
     {
       "name": "vite:worker-import-meta-url",
-      "start": 1704502656152,
-      "end": 1704502656152,
+      "start": 1704503900923,
+      "end": 1704503900923,
       "order": "normal"
     },
     {
       "name": "vite:asset-import-meta-url",
-      "start": 1704502656152,
-      "end": 1704502656152,
+      "start": 1704503900923,
+      "end": 1704503900923,
       "order": "normal"
     },
     {
       "name": "commonjs",
-      "start": 1704502656152,
-      "end": 1704502656152,
+      "start": 1704503900923,
+      "end": 1704503900923,
       "order": "normal"
     },
     {
       "name": "vite:dynamic-import-vars",
-      "start": 1704502656152,
-      "end": 1704502656152,
+      "start": 1704503900924,
+      "end": 1704503900924,
       "order": "normal"
     },
     {
       "name": "vite:import-glob",
-      "start": 1704502656152,
-      "end": 1704502656152,
+      "start": 1704503900924,
+      "end": 1704503900924,
       "order": "normal"
     },
     {
       "name": "nuxt:composable-keys",
-      "start": 1704502656152,
-      "end": 1704502656152,
+      "start": 1704503900924,
+      "end": 1704503900924,
       "order": "post"
     },
     {
       "name": "nuxt:imports-transform",
-      "result": "import { ref } from 'vue';\n\nimport initialSection from \"~/components/initialSection.vue\";\nimport aboutSection from \"../components/aboutSection.vue\";\nimport expirienceSection from \"../components/expirienceSection.vue\";\nimport stackSection from \"../components/stackSection.vue\";\nimport testimonialSection from \"../components/testimonialSection.vue\";\nimport contactSection from \"../components/contactSection.vue\";\n\nconst _sfc_main = {\n  name: \"IndexPage\",\n  layout: \"default\",\n  components: {\n    initialSection,\n    aboutSection,\n    expirienceSection,\n    stackSection,\n    testimonialSection,\n    contactSection\n  },\n  data() {\n    return {\n      aboutVisible: false,\n      expirienceVisible: false,\n      stackVisible: false,\n      testimonialVisible: false,\n      contactVisible: false,\n    };\n  },\n  methods: {\n    handleScroll() {\n      const sections = [\n        { ref: 'aboutSection', prop: 'aboutVisible' },\n        { ref: 'expirienceSection', prop: 'expirienceVisible' },\n        { ref: 'stackSection', prop: 'stackVisible' },\n        { ref: 'testimonialSection', prop: 'testimonialVisible' },\n        { ref: 'contactSection', prop: 'contactVisible' },\n      ];\n\n      sections.forEach(({ ref, prop }) => {\n        const section = this.$refs[ref];\n        const rect = section.getBoundingClientRect();\n\n        this[prop] = rect.top < window.innerHeight && rect.bottom >= 0;\n      });\n    },\n  },\n  mounted() {\n    window.addEventListener('scroll', this.handleScroll);\n  },\n  beforeDestroy() {\n    window.removeEventListener('scroll', this.handleScroll);\n  },\n};\n\nimport { resolveComponent as _resolveComponent, createVNode as _createVNode, normalizeClass as _normalizeClass, createElementVNode as _createElementVNode, openBlock as _openBlock, createElementBlock as _createElementBlock } from \"vue\"\n\nfunction _sfc_render(_ctx, _cache, $props, $setup, $data, $options) {\n  const _component_NuxtLayout = _resolveComponent(\"NuxtLayout\")\n  const _component_initialSection = _resolveComponent(\"initialSection\")\n  const _component_aboutSection = _resolveComponent(\"aboutSection\")\n  const _component_expirienceSection = _resolveComponent(\"expirienceSection\")\n  const _component_stackSection = _resolveComponent(\"stackSection\")\n  const _component_testimonialSection = _resolveComponent(\"testimonialSection\")\n  const _component_contactSection = _resolveComponent(\"contactSection\")\n\n  return (_openBlock(), _createElementBlock(\"div\", null, [\n    _createVNode(_component_NuxtLayout, { name: \"default\" }),\n    _createElementVNode(\"main\", null, [\n      _createVNode(_component_initialSection),\n      _createElementVNode(\"div\", {\n        ref: \"aboutSection\",\n        class: _normalizeClass([\"section\", { 'animate__animated animate__fadeIn': $data.aboutVisible }])\n      }, [\n        _createVNode(_component_aboutSection)\n      ], 2),\n      _createElementVNode(\"div\", {\n        ref: \"expirienceSection\",\n        class: _normalizeClass([\"section\", { 'animate__animated animate__fadeIn': $data.expirienceVisible }])\n      }, [\n        _createVNode(_component_expirienceSection)\n      ], 2),\n      _createElementVNode(\"div\", {\n        ref: \"stackSection\",\n        class: _normalizeClass([\"section\", { 'animate__animated animate__fadeIn': $data.stackVisible }])\n      }, [\n        _createVNode(_component_stackSection)\n      ], 2),\n      _createElementVNode(\"div\", {\n        ref: \"testimonialSection\",\n        class: _normalizeClass([\"section\", { 'animate__animated animate__fadeIn': $data.testimonialVisible }])\n      }, [\n        _createVNode(_component_testimonialSection)\n      ], 2),\n      _createElementVNode(\"div\", {\n        ref: \"contactSection\",\n        class: _normalizeClass([\"section\", { 'animate__animated animate__fadeIn': $data.contactVisible }])\n      }, [\n        _createVNode(_component_contactSection)\n      ], 2)\n    ])\n  ]))\n}\n\nimport \"/Users/alansantos/Desktop/PROJETOS/PORTIFÓLIO/portifolio/pages/index.vue?vue&type=style&index=0&scoped=1cc738bc&lang.css\"\n\nimport _export_sfc from '\u0000plugin-vue:export-helper'\nexport default /*#__PURE__*/_export_sfc(_sfc_main, [['render',_sfc_render],['__scopeId',\"data-v-1cc738bc\"]])",
-      "start": 1704502656152,
-      "end": 1704502656154,
+      "result": "import { ref } from 'vue';\n\nimport initialSection from \"~/components/initialSection.vue\";\nimport aboutSection from \"../components/aboutSection.vue\";\nimport expirienceSection from \"../components/expirienceSection.vue\";\nimport stackSection from \"../components/stackSection.vue\";\nimport testimonialSection from \"../components/testimonialSection.vue\";\nimport contactSection from \"../components/contactSection.vue\";\n\nconst _sfc_main = {\n  name: \"IndexPage\",\n  layout: \"default\",\n  components: {\n    initialSection,\n    aboutSection,\n    expirienceSection,\n    stackSection,\n    testimonialSection,\n    contactSection\n  },\n  data() {\n    return {\n      aboutVisible: false,\n      expirienceVisible: false,\n      stackVisible: false,\n      testimonialVisible: false,\n      contactVisible: false,\n    };\n  },\n  methods: {\n    handleScroll() {\n      const sections = [\n        { ref: 'aboutSection', prop: 'aboutVisible' },\n        { ref: 'expirienceSection', prop: 'expirienceVisible' },\n        { ref: 'stackSection', prop: 'stackVisible' },\n        { ref: 'testimonialSection', prop: 'testimonialVisible' },\n        { ref: 'contactSection', prop: 'contactVisible' },\n      ];\n\n      sections.forEach(({ ref, prop }) => {\n        const section = this.$refs[ref];\n        const rect = section.getBoundingClientRect();\n\n        this[prop] = rect.top < window.innerHeight && rect.bottom >= 0;\n      });\n    },\n  },\n  mounted() {\n    window.addEventListener('scroll', this.handleScroll);\n  },\n  beforeDestroy() {\n    window.removeEventListener('scroll', this.handleScroll);\n  },\n};\n\nimport { resolveComponent as _resolveComponent, createVNode as _createVNode, normalizeClass as _normalizeClass, createElementVNode as _createElementVNode, openBlock as _openBlock, createElementBlock as _createElementBlock } from \"vue\"\n\nfunction _sfc_render(_ctx, _cache, $props, $setup, $data, $options) {\n  const _component_NuxtLayout = _resolveComponent(\"NuxtLayout\")\n  const _component_initialSection = _resolveComponent(\"initialSection\")\n  const _component_aboutSection = _resolveComponent(\"aboutSection\")\n  const _component_expirienceSection = _resolveComponent(\"expirienceSection\")\n  const _component_stackSection = _resolveComponent(\"stackSection\")\n  const _component_testimonialSection = _resolveComponent(\"testimonialSection\")\n  const _component_contactSection = _resolveComponent(\"contactSection\")\n\n  return (_openBlock(), _createElementBlock(\"div\", null, [\n    _createVNode(_component_NuxtLayout, { name: \"default\" }),\n    _createElementVNode(\"main\", null, [\n      _createVNode(_component_initialSection),\n      _createElementVNode(\"div\", {\n        ref: \"aboutSection\",\n        class: _normalizeClass([\"section\", { 'animate__animated animate__fadeIn': $data.aboutVisible }])\n      }, [\n        _createVNode(_component_aboutSection)\n      ], 2),\n      _createElementVNode(\"div\", {\n        ref: \"expirienceSection\",\n        class: _normalizeClass([\"section\", { 'animate__animated animate__fadeIn': $data.expirienceVisible }])\n      }, [\n        _createVNode(_component_expirienceSection)\n      ], 2),\n      _createElementVNode(\"div\", {\n        ref: \"stackSection\",\n        class: _normalizeClass([\"section\", { 'animate__animated animate__fadeIn': $data.stackVisible }])\n      }, [\n        _createVNode(_component_stackSection)\n      ], 2),\n      _createElementVNode(\"div\", {\n        ref: \"testimonialSection\",\n        class: _normalizeClass([\"section\", { 'animate__animated animate__fadeIn': $data.testimonialVisible }])\n      }, [\n        _createVNode(_component_testimonialSection)\n      ], 2),\n      _createElementVNode(\"div\", {\n        ref: \"contactSection\",\n        class: _normalizeClass([\"section\", { 'animate__animated animate__fadeIn': $data.contactVisible }])\n      }, [\n        _createVNode(_component_contactSection)\n      ], 2)\n    ])\n  ]))\n}\n\nimport \"/Users/alansantos/Desktop/PROJETOS/PORTIFÓLIO/portifolio/pages/index.vue?vue&type=style&index=0&scoped=c730f5b1&lang.css\"\n\nimport _export_sfc from '\u0000plugin-vue:export-helper'\nexport default /*#__PURE__*/_export_sfc(_sfc_main, [['render',_sfc_render],['__scopeId',\"data-v-c730f5b1\"]])",
+      "start": 1704503900924,
+      "end": 1704503900926,
       "order": "post",
       "sourcemaps": {
         "version": 3,
@@ -173,15 +173,15 @@
     },
     {
       "name": "unctx:transform",
-      "start": 1704502656155,
-      "end": 1704502656155,
+      "start": 1704503900926,
+      "end": 1704503900926,
       "order": "post"
     },
     {
       "name": "nuxt:pages-macros-transform",
       "result": "\nconst __nuxt_page_meta = null\nexport default __nuxt_page_meta\n",
-      "start": 1704502656155,
-      "end": 1704502656156,
+      "start": 1704503900926,
+      "end": 1704503900927,
       "order": "post",
       "sourcemaps": {
         "version": 3,
@@ -194,38 +194,38 @@
     },
     {
       "name": "nuxt:runtime-paths-dep",
-      "start": 1704502656156,
-      "end": 1704502656156,
+      "start": 1704503900927,
+      "end": 1704503900927,
       "order": "post"
     },
     {
       "name": "nuxt:route-injection-plugin",
-      "start": 1704502656156,
-      "end": 1704502656156,
+      "start": 1704503900928,
+      "end": 1704503900928,
       "order": "post"
     },
     {
       "name": "nuxt:components-loader",
-      "start": 1704502656156,
-      "end": 1704502656156,
+      "start": 1704503900928,
+      "end": 1704503900928,
       "order": "post"
     },
     {
       "name": "nuxt:tree-shake-composables:transform",
-      "start": 1704502656156,
-      "end": 1704502656157,
+      "start": 1704503900928,
+      "end": 1704503900928,
       "order": "post"
     },
     {
       "name": "vite:build-import-analysis",
-      "start": 1704502656157,
-      "end": 1704502656157,
+      "start": 1704503900928,
+      "end": 1704503900928,
       "order": "normal"
     },
     {
       "name": "vite:reporter",
-      "start": 1704502656157,
-      "end": 1704502656157,
+      "start": 1704503900928,
+      "end": 1704503900928,
       "order": "normal"
     }
   ]
