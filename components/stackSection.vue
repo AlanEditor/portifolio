@@ -12,22 +12,7 @@
                 class="mt-6 text-lg leading-8 text-gray-300 text-center lg:text-left"
               >{{ getTranslation('descricao da stack', actualLanguage) }}</p>
             </div>
-            <div
-              class="mx-auto grid w-full max-w-lg grid-cols-3 items-center gap-y-5 sm:gap-y-5 lg:mx-0 lg:max-w-none lg:pl-8"
-            >
-              <div
-                v-for="(stack, index) in technologies"
-                :key="index"
-                class="group relative opacity-75 hover:opacity-100 hover:border-white rounded-lg p-6"
-              >
-                <div class="overflow-hidden rounded-lg bg-gray-900">
-                  <img :src="`..src/assets/img/${stack}.png`" class="object-cover object-center hover:scale-105 transition duration-300" />
-                </div>
-                <div
-                  class="mt-4 flex items-center justify-between space-x-8 text-base font-medium text-gray-900"
-                ></div>
-              </div>
-            </div>
+              <stackImagesComponent />
           </div>
         </div>
       </div>
@@ -40,9 +25,14 @@ const technologies = ["laravel", "php", "vue", "docker", "mysql", "node"];
 </script>
 
 <script>
-import { getTranslation } from '~/services/translationService';
+import { getTranslation } from "~/services/translationService";
+import stackImagesComponent from "./images/stackImagesComponent.vue";
+
 export default {
   name: "expirienceSection",
+  components: {
+    stackImagesComponent
+  },
   data() {
     return {
       actualLanguage: this.$router.currentRoute.value.query.lang
@@ -62,7 +52,6 @@ export default {
 </script>
 
 <style scoped>
-
 .bg-image {
   position: relative;
   overflow: hidden;
@@ -75,7 +64,8 @@ export default {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../src/assets/img/vscode.png");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../src/assets/img/vscode.png");
   filter: blur(5px);
   z-index: -1;
   opacity: 1;
