@@ -1,0 +1,288 @@
+{
+  "resolvedId": "/Users/alansantos/Desktop/PROJETOS/PORTIFÓLIO/portifolio/components/aboutSection.vue?vue&type=style&index=0&scoped=4528c4e9&lang.css",
+  "transforms": [
+    {
+      "name": "vite:vue",
+      "result": "\n.bg-image {\n  background: linear-gradient(to bottom, #000004, #291b31);\n}\n\na {\n  position: relative;\n  display: inline-block;\n  text-decoration: none;\n  color: #ffffff;\n}\n\na::after {\n  content: \"\";\n  position: absolute;\n  left: 0;\n  bottom: -2px;\n  width: 100%;\n  height: 2px;\n  background-color: rgb(76, 155, 181);\n  transform: scaleX(0);\n  transition: transform 0.1s ease;\n}\n\na:hover::after {\n  transform: scaleX(1);\n}\n",
+      "start": 1704584728720,
+      "end": 1704584728720,
+      "sourcemaps": {
+        "version": 3,
+        "sources": [
+          "/Users/alansantos/Desktop/PROJETOS/PORTIFÓLIO/portifolio/components/aboutSection.vue"
+        ],
+        "names": [],
+        "mappings": ";AAsGA,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE;EACR,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AAC1D;;AAEA,EAAE;EACA,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;EAClB,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;EACrB,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC;EACrB,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AAChB;;AAEA,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE;EACP,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC;EACX,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;EAClB,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC;EACP,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC;EACZ,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC;EACX,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC;EACX,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC;EACnC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;EACpB,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC;AACjC;;AAEA,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE;EACb,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AACtB",
+        "file": "/Users/alansantos/Desktop/PROJETOS/PORTIFÓLIO/portifolio/components/aboutSection.vue",
+        "sourceRoot": "",
+        "sourcesContent": [
+          "<template>\n  <div id=\"about\">\n    <div class=\"relative z-10 bg-gray-900 pb-20 sm:pb-24 xl:pb-0\">\n      <div class=\"absolute inset-0 overflow-hidden\" aria-hidden=\"true\">\n        <div class=\"absolute left-[calc(50%-19rem)] top-[calc(50%-36rem)] transform-gpu blur-3xl\">\n          <div\n            class=\"aspect-[1097/1023] w-[68.5625rem] bg-gradient-to-r from-[#ff4694] to-[#776fff] opacity-25\"\n            style=\"clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)\"\n          />\n        </div>\n      </div>\n      <div\n        class=\"mx-auto flex max-w-7xl flex-col items-center gap-x-8 gap-y-10 px-6 sm:gap-y-8 lg:px-8 xl:flex-row xl:items-stretch\"\n      >\n        <div class=\"-mt-8 w-full max-w-2xl xl:-mb-8 xl:w-96 xl:flex-none\">\n          <div class=\"relative aspect-square h-full md:-mx-8 xl:mx-0 xl:aspect-auto\">\n            <img\n              class=\"absolute inset-0 h-full w-full rounded-2xl bg-image hover:scale-105 transition duration-300 object-cover shadow-2xl\"\n              src=\"../src/assets/img/alan.png\"\n              alt\n            />\n          </div>\n        </div>\n        <div class=\"w-full max-w-2xl xl:max-w-none xl:flex-auto xl:px-16 xl:py-24\">\n          <figure class=\"relative isolate pt-6 sm:pt-2\">\n            <blockquote class=\"leading-8 text-white sm:leading-9\">\n              <h1 class=\"text-6xl font-bold\">{{ getTranslation('Olá', actualLanguage)}},</h1>\n              <p\n                class=\"mt-6 text-lg\"\n              >{{ getTranslation('Sobre-mim', actualLanguage)}}</p>\n            </blockquote>\n          </figure>\n          <div class=\"mt-10\">\n            <a\n              href=\"https://www.linkedin.com/in/alan-santos-profile/\"\n              target=\"_blank\"\n              class=\"mr-4 px-6 py-3 bg-transparent text-white rounded-lg\"\n            >\n              <i class=\"bi bi-linkedin mr-2\"></i> LinkedIn\n            </a>\n            <a\n              href=\"https://github.com/AlanEditor\"\n              target=\"_blank\"\n              class=\"mr-4 px-6 py-3 bg-transparent text-white rounded-lg\"\n            >\n            <i class=\"bi bi-github mr-2\"></i> GitHub\n            </a>\n          </div>\n          <div class=\"my-10 flex justify-center md:justify-start mx-2\">\n            <button\n              type=\"button\"\n              class=\"px-6 py-3 bg-transparent border border-white hover:border-blue-500 hover:text-blue-500 text-white rounded-lg\"\n              style=\"z-index: 1000;\"\n              @click=\"openPdfInNewTab()\"\n            >Download CV</button>\n          </div>\n        </div>\n      </div>\n    </div>\n  </div>\n</template>\n\n<script>\nimport { getTranslation } from \"~/services/translationService\";\nexport default {\n  name: \"aboutSection\",\n  data() {\n    return {\n      actualLanguage: this.$router.currentRoute.value.query.lang\n    };\n  },\n  methods: {\n    downloadFile() {\n      const file = this.actualLanguage === 'en' ? 'alan_santos_cv_english.pdf' : 'alan_santos_cv.pdf';\n      const fileUrl = \"/files/\" + file;\n      const link = document.createElement(\"a\");\n      link.href = fileUrl;\n      link.download = file;\n      link.click();\n    },\n    openPdfInNewTab() {\n      const file = this.actualLanguage === 'en' ? 'alan_santos_cv_english.pdf' : 'alan_santos_cv.pdf';\n\n      // Caminho relativo ao diretório public\n      const fileUrl = 'files/' + file;\n\n      // Abre o PDF em uma nova guia ou janela\n      window.open(fileUrl, '_blank');\n    },\n    getTranslation(key, language) {\n      return getTranslation(key, language);\n    },\n  },\n  watch: {\n      $route(to, from) {\n        this.actualLanguage = to.query.lang;\n      }\n    }\n};\n</script>\n\n<style scoped>\n.bg-image {\n  background: linear-gradient(to bottom, #000004, #291b31);\n}\n\na {\n  position: relative;\n  display: inline-block;\n  text-decoration: none;\n  color: #ffffff;\n}\n\na::after {\n  content: \"\";\n  position: absolute;\n  left: 0;\n  bottom: -2px;\n  width: 100%;\n  height: 2px;\n  background-color: rgb(76, 155, 181);\n  transform: scaleX(0);\n  transition: transform 0.1s ease;\n}\n\na:hover::after {\n  transform: scaleX(1);\n}\n</style>"
+        ]
+      }
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1704584728720,
+      "end": 1704584728720,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1704584728720,
+      "end": 1704584728720,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1704584728720,
+      "end": 1704584728720,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1704584728720,
+      "end": 1704584728720,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:client-fallback-auto-id",
+      "start": 1704584728720,
+      "end": 1704584728720,
+      "order": "pre"
+    },
+    {
+      "name": "vite:css",
+      "result": ".bg-image{background:linear-gradient(180deg,#000004,#291b31)}a{color:#fff;display:inline-block;position:relative;text-decoration:none}a:after{background-color:#4c9bb5;bottom:-2px;content:\"\";height:2px;left:0;position:absolute;transform:scaleX(0);transition:transform .1s ease;width:100%}a:hover:after{transform:scaleX(1)}",
+      "start": 1704584728720,
+      "end": 1704584728743,
+      "order": "normal",
+      "sourcemaps": {
+        "file": "/Users/alansantos/Desktop/PROJETOS/PORTIFÓLIO/portifolio/components/aboutSection.vue",
+        "mappings": "AACA,UACE,kDACF,CAEA,EAIE,UAAc,CAFd,oBAAqB,CADrB,iBAAkB,CAElB,oBAEF,CAEA,QAOE,wBAAmC,CAHnC,WAAY,CAHZ,UAAW,CAKX,UAAW,CAHX,MAAO,CADP,iBAAkB,CAMlB,mBAAoB,CACpB,6BAA+B,CAJ/B,UAKF,CAEA,cACE,mBACF",
+        "names": [],
+        "sources": [
+          "/Users/alansantos/Desktop/PROJETOS/PORTIFÓLIO/portifolio/components/aboutSection.vue"
+        ],
+        "sourcesContent": [
+          "\n.bg-image {\n  background: linear-gradient(to bottom, #000004, #291b31);\n}\n\na {\n  position: relative;\n  display: inline-block;\n  text-decoration: none;\n  color: #ffffff;\n}\n\na::after {\n  content: \"\";\n  position: absolute;\n  left: 0;\n  bottom: -2px;\n  width: 100%;\n  height: 2px;\n  background-color: rgb(76, 155, 181);\n  transform: scaleX(0);\n  transition: transform 0.1s ease;\n}\n\na:hover::after {\n  transform: scaleX(1);\n}\n"
+        ],
+        "version": 3
+      }
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1704584728743,
+      "end": 1704584728743,
+      "order": "normal"
+    },
+    {
+      "name": "vite:json",
+      "start": 1704584728743,
+      "end": 1704584728743,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1704584728743,
+      "end": 1704584728743,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue",
+      "result": ".bg-image[data-v-4528c4e9]{background:linear-gradient(180deg,#000004,#291b31)}a[data-v-4528c4e9]{color:#fff;display:inline-block;position:relative;text-decoration:none}a[data-v-4528c4e9]:after{background-color:#4c9bb5;bottom:-2px;content:\"\";height:2px;left:0;position:absolute;transform:scaleX(0);transition:transform .1s ease;width:100%}a[data-v-4528c4e9]:hover:after{transform:scaleX(1)}",
+      "start": 1704584728743,
+      "end": 1704584728743,
+      "order": "normal",
+      "sourcemaps": {
+        "file": "/Users/alansantos/Desktop/PROJETOS/PORTIFÓLIO/portifolio/components/aboutSection.vue",
+        "mappings": "AAAA,2BAAU,kDAAkD,CAAC,mBAAE,UAAU,CAAC,oBAAoB,CAAC,iBAAiB,CAAC,oBAAoB,CAAC,yBAAQ,wBAAwB,CAAC,WAAW,CAAC,UAAU,CAAC,UAAU,CAAC,MAAM,CAAC,iBAAiB,CAAC,mBAAmB,CAAC,6BAA6B,CAAC,UAAU,CAAC,+BAAc,mBAAmB",
+        "names": [],
+        "sources": [
+          "/Users/alansantos/Desktop/PROJETOS/PORTIFÓLIO/portifolio/components/aboutSection.vue"
+        ],
+        "sourcesContent": [
+          null
+        ],
+        "version": 3
+      }
+    },
+    {
+      "name": "vite:vue-jsx",
+      "start": 1704584728743,
+      "end": 1704584728743,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1704584728743,
+      "end": 1704584728743,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1704584728743,
+      "end": 1704584728743,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1704584728743,
+      "end": 1704584728743,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1704584728743,
+      "end": 1704584728743,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:components:imports",
+      "start": 1704584728744,
+      "end": 1704584728744,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1704584728744,
+      "end": 1704584728744,
+      "order": "normal"
+    },
+    {
+      "name": "ssr-styles",
+      "start": 1704584728744,
+      "end": 1704584728744,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1704584728744,
+      "end": 1704584728744,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "result": "",
+      "start": 1704584728744,
+      "end": 1704584728744,
+      "order": "normal",
+      "sourcemaps": {
+        "mappings": ""
+      }
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1704584728744,
+      "end": 1704584728744,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1704584728744,
+      "end": 1704584728744,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1704584728744,
+      "end": 1704584728744,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1704584728744,
+      "end": 1704584728744,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1704584728744,
+      "end": 1704584728744,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1704584728744,
+      "end": 1704584728744,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1704584728744,
+      "end": 1704584728744,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1704584728744,
+      "end": 1704584728744,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1704584728744,
+      "end": 1704584728744,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1704584728744,
+      "end": 1704584728744,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1704584728744,
+      "end": 1704584728744,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1704584728744,
+      "end": 1704584728744,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1704584728744,
+      "end": 1704584728744,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1704584728744,
+      "end": 1704584728744,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-template",
+      "start": 1704584728744,
+      "end": 1704584728744,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:components-loader",
+      "start": 1704584728744,
+      "end": 1704584728744,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-composables:transform",
+      "start": 1704584728744,
+      "end": 1704584728744,
+      "order": "post"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1704584728744,
+      "end": 1704584728744,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1704584728744,
+      "end": 1704584728744,
+      "order": "normal"
+    }
+  ]
+}

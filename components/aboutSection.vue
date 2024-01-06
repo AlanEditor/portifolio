@@ -51,7 +51,7 @@
               type="button"
               class="px-6 py-3 bg-transparent border border-white hover:border-blue-500 hover:text-blue-500 text-white rounded-lg"
               style="z-index: 1000;"
-              @click="downloadFile"
+              @click="openPdfInNewTab()"
             >Download CV</button>
           </div>
         </div>
@@ -77,6 +77,15 @@ export default {
       link.href = fileUrl;
       link.download = file;
       link.click();
+    },
+    openPdfInNewTab() {
+      const file = this.actualLanguage === 'en' ? 'alan_santos_cv_english.pdf' : 'alan_santos_cv.pdf';
+
+      // Caminho relativo ao diretório public
+      const fileUrl = 'files/' + file;
+
+      // Abre o PDF em uma nova guia ou janela
+      window.open(fileUrl, '_blank');
     },
     getTranslation(key, language) {
       return getTranslation(key, language);

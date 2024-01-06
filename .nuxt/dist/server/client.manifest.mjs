@@ -6,12 +6,12 @@ export default {
     "preload": true,
     "file": "translationService.Z3ELzQ0v.js"
   },
-  "_vue.f36acd1f.ldYtDPSJ.js": {
+  "_vue.f36acd1f.lqVlsQTn.js": {
     "resourceType": "script",
     "module": true,
     "prefetch": true,
     "preload": true,
-    "file": "vue.f36acd1f.ldYtDPSJ.js",
+    "file": "vue.f36acd1f.lqVlsQTn.js",
     "imports": [
       "node_modules/nuxt/dist/app/entry.js"
     ]
@@ -25,7 +25,7 @@ export default {
       "aura.EgrCeJIf.png"
     ],
     "css": [],
-    "file": "default.MFh0xpJk.js",
+    "file": "default.wuzdwMXQ.js",
     "imports": [
       "node_modules/nuxt/dist/app/entry.js",
       "_translationService.Z3ELzQ0v.js"
@@ -51,10 +51,10 @@ export default {
     "prefetch": true,
     "preload": true,
     "css": [],
-    "file": "error-404.1O9LzrS0.js",
+    "file": "error-404.wMl6BGUa.js",
     "imports": [
       "node_modules/nuxt/dist/app/entry.js",
-      "_vue.f36acd1f.ldYtDPSJ.js"
+      "_vue.f36acd1f.lqVlsQTn.js"
     ],
     "isDynamicEntry": true,
     "src": "node_modules/@nuxt/ui-templates/dist/templates/error-404.vue"
@@ -71,9 +71,9 @@ export default {
     "prefetch": true,
     "preload": true,
     "css": [],
-    "file": "error-500.0s5c5Yzi.js",
+    "file": "error-500.921WFjvI.js",
     "imports": [
-      "_vue.f36acd1f.ldYtDPSJ.js",
+      "_vue.f36acd1f.lqVlsQTn.js",
       "node_modules/nuxt/dist/app/entry.js"
     ],
     "isDynamicEntry": true,
@@ -107,7 +107,7 @@ export default {
       "node_modules/@nuxt/ui-templates/dist/templates/error-404.vue",
       "node_modules/@nuxt/ui-templates/dist/templates/error-500.vue"
     ],
-    "file": "entry.xLG0_mUO.js",
+    "file": "entry.vrVgVx2v.js",
     "isEntry": true,
     "src": "node_modules/nuxt/dist/app/entry.js",
     "_globalCSS": true
@@ -133,9 +133,9 @@ export default {
       "vscode.qkYMI2Nt.png"
     ],
     "css": [
-      "index.G57COtAE.css"
+      "index.zITqxRLp.css"
     ],
-    "file": "index.KGADpvGr.js",
+    "file": "index.xH8qGqmy.js",
     "imports": [
       "node_modules/nuxt/dist/app/entry.js",
       "_translationService.Z3ELzQ0v.js"
@@ -143,8 +143,8 @@ export default {
     "isDynamicEntry": true,
     "src": "pages/index.vue"
   },
-  "index.G57COtAE.css": {
-    "file": "index.G57COtAE.css",
+  "index.zITqxRLp.css": {
+    "file": "index.zITqxRLp.css",
     "resourceType": "style",
     "prefetch": true,
     "preload": true

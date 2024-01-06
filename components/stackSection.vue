@@ -6,7 +6,7 @@
           <div class="grid grid-cols-1 items-center gap-x-8 gap-y-16 lg:grid-cols-2">
             <div class="mx-auto w-full max-w-xl lg:mx-0">
               <h2
-                class="mt-2 text-3xl font-bold tracking-tight text-white sm:text-4xl lg:text-6xl text-center lg:text-left"
+                class="mt-2 text-5xl font-bold tracking-tight text-white sm:text-4xl lg:text-6xl text-center lg:text-left"
               >{{ getTranslation('Minha Stack', actualLanguage) }}</h2>
               <p
                 class="mt-6 text-lg leading-8 text-gray-300 text-center lg:text-left"
