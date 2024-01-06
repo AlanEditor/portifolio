@@ -4,57 +4,57 @@
     {
       "name": "vite:load-fallback",
       "result": "<template>\n  <div class=\"bg-black pt-52\" id=\"project\">\n    <div\n      class=\"relative mx-auto -mt-12 max-w-7xl px-4 pb-16 sm:px-6 sm:pb-24 lg:px-8 \"\n    >\n      <div class=\"mx-auto max-w-2xl text-center lg:max-w-4xl\">\n        <h2 class=\"text-5xl font-bold tracking-tight text-white sm:text-6xl\">{{ getTranslation('Projetos em que atuei', actualLanguage) }}</h2>\n        <p\n          class=\"mt-4 text-gray-500\"\n        >{{ getTranslation('descricao de projeto', actualLanguage) }}</p>\n      </div>\n\n      <div class=\"mt-6 grid grid-cols-1 lg:grid-cols-4 \">\n        <div v-for=\"(job, index) in jobs\" :key=\"index\" class=\"group relative opacity-75 hover:opacity-100 hover:scale-105 transition duration-300  hover:border-white  rounded-lg p-6\">\n          <div class=\"overflow-hidden rounded-lg bg-gray-900\">\n            <img :src=\"`/img/${job.imageSrc}`\"  class=\"object-cover object-center\" />\n          </div>\n          <div\n            class=\"mt-4 flex items-center justify-between space-x-8 text-base font-medium text-gray-900\"\n          >\n          </div>\n          <h3 class=\"text-white text-center\">\n              <a :href=\"job.link\" target=\"_blank\">\n                <span aria-hidden=\"true\" class=\"absolute inset-0\" />\n              </a>\n            </h3>\n        </div>\n      </div>\n    </div>\n  </div>\n</template>\n  \n<script setup>\nconst jobs = [\n  {\n    company: \"Ensinio\",\n    imageSrc: `ensinio.png`,\n    link: \"https://www.ensinio.com\",\n\n  },\n  {\n    company: \"iPORTO\",\n    imageSrc: `iporto.png`,\n    link: \"https://iporto.com.br/\",\n  },\n  {\n    company: \"Casa de Gê\",\n    imageSrc: `casa_de_ge.png`,\n    link: \"https://casadege.com.br/\",\n  },\n  {\n    company: \"Congregação Mariana\",\n    imageSrc: `cm.png`,\n  }\n];\n\n</script>\n\n<script>\nimport { getTranslation } from '~/services/translationService';\nexport default {\n  name: \"expirienceSection\",\n  data() {\n    return {\n      actualLanguage: this.$router.currentRoute.value.query.lang\n    };\n  },\n  methods: {\n    getTranslation(key, language) {\n      return getTranslation(key, language);\n    }\n  },\n  watch: {\n    $route(to, from) {\n      this.actualLanguage = to.query.lang;\n    }\n  }\n};\n</script>",
-      "start": 1704504338442,
-      "end": 1704504339103,
+      "start": 1704504952454,
+      "end": 1704504953102,
       "sourcemaps": null
     },
     {
       "name": "nuxt:layer-aliasing",
-      "start": 1704504339103,
-      "end": 1704504339103,
+      "start": 1704504953102,
+      "end": 1704504953102,
       "order": "pre"
     },
     {
       "name": "nuxt:server-devonly:transform",
-      "start": 1704504339103,
-      "end": 1704504339103,
+      "start": 1704504953102,
+      "end": 1704504953102,
       "order": "pre"
     },
     {
       "name": "nuxt:client-fallback-auto-id",
-      "start": 1704504339103,
-      "end": 1704504339103,
+      "start": 1704504953102,
+      "end": 1704504953102,
       "order": "pre"
     },
     {
       "name": "vite:css",
-      "start": 1704504339103,
-      "end": 1704504339103,
+      "start": 1704504953102,
+      "end": 1704504953102,
       "order": "normal"
     },
     {
       "name": "vite:esbuild",
-      "start": 1704504339103,
-      "end": 1704504339103,
+      "start": 1704504953102,
+      "end": 1704504953102,
       "order": "normal"
     },
     {
       "name": "vite:json",
-      "start": 1704504339103,
-      "end": 1704504339103,
+      "start": 1704504953102,
+      "end": 1704504953102,
       "order": "normal"
     },
     {
       "name": "vite:worker",
-      "start": 1704504339103,
-      "end": 1704504339103,
+      "start": 1704504953102,
+      "end": 1704504953102,
       "order": "normal"
     },
     {
       "name": "vite:vue",
       "result": "import { unref as _unref, toDisplayString as _toDisplayString, createElementVNode as _createElementVNode, renderList as _renderList, Fragment as _Fragment, openBlock as _openBlock, createElementBlock as _createElementBlock } from \"vue\"\n\nconst _hoisted_1 = {\n  class: \"bg-black pt-52\",\n  id: \"project\"\n}\nconst _hoisted_2 = { class: \"relative mx-auto -mt-12 max-w-7xl px-4 pb-16 sm:px-6 sm:pb-24 lg:px-8\" }\nconst _hoisted_3 = { class: \"mx-auto max-w-2xl text-center lg:max-w-4xl\" }\nconst _hoisted_4 = { class: \"text-5xl font-bold tracking-tight text-white sm:text-6xl\" }\nconst _hoisted_5 = { class: \"mt-4 text-gray-500\" }\nconst _hoisted_6 = { class: \"mt-6 grid grid-cols-1 lg:grid-cols-4\" }\nconst _hoisted_7 = { class: \"overflow-hidden rounded-lg bg-gray-900\" }\nconst _hoisted_8 = [\"src\"]\nconst _hoisted_9 = /*#__PURE__*/_createElementVNode(\"div\", { class: \"mt-4 flex items-center justify-between space-x-8 text-base font-medium text-gray-900\" }, null, -1)\nconst _hoisted_10 = { class: \"text-white text-center\" }\nconst _hoisted_11 = [\"href\"]\nconst _hoisted_12 = /*#__PURE__*/_createElementVNode(\"span\", {\n  \"aria-hidden\": \"true\",\n  class: \"absolute inset-0\"\n}, null, -1)\nconst _hoisted_13 = [\n  _hoisted_12\n]\n\n\nimport { getTranslation } from '~/services/translationService';\nconst __default__ = {\n  name: \"expirienceSection\",\n  data() {\n    return {\n      actualLanguage: this.$router.currentRoute.value.query.lang\n    };\n  },\n  methods: {\n    getTranslation(key, language) {\n      return getTranslation(key, language);\n    }\n  },\n  watch: {\n    $route(to, from) {\n      this.actualLanguage = to.query.lang;\n    }\n  }\n};\n\n\nconst _sfc_main = /*#__PURE__*/Object.assign(__default__, {\n  setup(__props) {\n\nconst jobs = [\n  {\n    company: \"Ensinio\",\n    imageSrc: `ensinio.png`,\n    link: \"https://www.ensinio.com\",\n\n  },\n  {\n    company: \"iPORTO\",\n    imageSrc: `iporto.png`,\n    link: \"https://iporto.com.br/\",\n  },\n  {\n    company: \"Casa de Gê\",\n    imageSrc: `casa_de_ge.png`,\n    link: \"https://casadege.com.br/\",\n  },\n  {\n    company: \"Congregação Mariana\",\n    imageSrc: `cm.png`,\n  }\n];\n\n\nreturn (_ctx, _cache) => {\n  return (_openBlock(), _createElementBlock(\"div\", _hoisted_1, [\n    _createElementVNode(\"div\", _hoisted_2, [\n      _createElementVNode(\"div\", _hoisted_3, [\n        _createElementVNode(\"h2\", _hoisted_4, _toDisplayString(_unref(getTranslation)('Projetos em que atuei', _ctx.actualLanguage)), 1),\n        _createElementVNode(\"p\", _hoisted_5, _toDisplayString(_unref(getTranslation)('descricao de projeto', _ctx.actualLanguage)), 1)\n      ]),\n      _createElementVNode(\"div\", _hoisted_6, [\n        (_openBlock(), _createElementBlock(_Fragment, null, _renderList(jobs, (job, index) => {\n          return _createElementVNode(\"div\", {\n            key: index,\n            class: \"group relative opacity-75 hover:opacity-100 hover:scale-105 transition duration-300 hover:border-white rounded-lg p-6\"\n          }, [\n            _createElementVNode(\"div\", _hoisted_7, [\n              _createElementVNode(\"img\", {\n                src: `/img/${job.imageSrc}`,\n                class: \"object-cover object-center\"\n              }, null, 8, _hoisted_8)\n            ]),\n            _hoisted_9,\n            _createElementVNode(\"h3\", _hoisted_10, [\n              _createElementVNode(\"a\", {\n                href: job.link,\n                target: \"_blank\"\n              }, _hoisted_13, 8, _hoisted_11)\n            ])\n          ])\n        }), 64))\n      ])\n    ])\n  ]))\n}\n}\n\n})\n\n\n\nexport default _sfc_main",
-      "start": 1704504339103,
-      "end": 1704504339106,
+      "start": 1704504953102,
+      "end": 1704504953106,
       "order": "normal",
       "sourcemaps": {
         "mappings": ""
@@ -62,152 +62,152 @@
     },
     {
       "name": "vite:vue-jsx",
-      "start": 1704504339106,
-      "end": 1704504339106,
+      "start": 1704504953106,
+      "end": 1704504953106,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1704504339106,
-      "end": 1704504339106,
+      "start": 1704504953106,
+      "end": 1704504953106,
       "order": "normal"
     },
     {
       "name": "nuxt:remove-plugin-metadata",
-      "start": 1704504339106,
-      "end": 1704504339106,
+      "start": 1704504953106,
+      "end": 1704504953106,
       "order": "normal"
     },
     {
       "name": "nuxt:chunk-error",
-      "start": 1704504339106,
-      "end": 1704504339106,
+      "start": 1704504953106,
+      "end": 1704504953106,
       "order": "normal"
     },
     {
       "name": "nuxt:components:imports",
-      "start": 1704504339106,
-      "end": 1704504339106,
+      "start": 1704504953106,
+      "end": 1704504953106,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1704504339106,
-      "end": 1704504339106,
+      "start": 1704504953106,
+      "end": 1704504953106,
       "order": "normal"
     },
     {
       "name": "ssr-styles",
-      "start": 1704504339106,
-      "end": 1704504339106,
+      "start": 1704504953106,
+      "end": 1704504953106,
       "order": "normal"
     },
     {
       "name": "vite:define",
-      "start": 1704504339106,
-      "end": 1704504339106,
+      "start": 1704504953106,
+      "end": 1704504953106,
       "order": "normal"
     },
     {
       "name": "vite:css-post",
-      "start": 1704504339106,
-      "end": 1704504339106,
+      "start": 1704504953106,
+      "end": 1704504953106,
       "order": "normal"
     },
     {
       "name": "vite:build-html",
-      "start": 1704504339107,
-      "end": 1704504339107,
+      "start": 1704504953106,
+      "end": 1704504953106,
       "order": "normal"
     },
     {
       "name": "vite:worker-import-meta-url",
-      "start": 1704504339107,
-      "end": 1704504339107,
+      "start": 1704504953106,
+      "end": 1704504953106,
       "order": "normal"
     },
     {
       "name": "vite:asset-import-meta-url",
-      "start": 1704504339107,
-      "end": 1704504339107,
+      "start": 1704504953106,
+      "end": 1704504953106,
       "order": "normal"
     },
     {
       "name": "commonjs",
-      "start": 1704504339107,
-      "end": 1704504339107,
+      "start": 1704504953106,
+      "end": 1704504953106,
       "order": "normal"
     },
     {
       "name": "vite:dynamic-import-vars",
-      "start": 1704504339107,
-      "end": 1704504339107,
+      "start": 1704504953106,
+      "end": 1704504953106,
       "order": "normal"
     },
     {
       "name": "vite:import-glob",
-      "start": 1704504339107,
-      "end": 1704504339107,
+      "start": 1704504953106,
+      "end": 1704504953106,
       "order": "normal"
     },
     {
       "name": "nuxt:composable-keys",
-      "start": 1704504339107,
-      "end": 1704504339107,
+      "start": 1704504953106,
+      "end": 1704504953106,
       "order": "post"
     },
     {
       "name": "nuxt:imports-transform",
-      "start": 1704504339107,
-      "end": 1704504339108,
+      "start": 1704504953106,
+      "end": 1704504953107,
       "order": "post"
     },
     {
       "name": "unctx:transform",
-      "start": 1704504339108,
-      "end": 1704504339108,
+      "start": 1704504953107,
+      "end": 1704504953107,
       "order": "post"
     },
     {
       "name": "nuxt:pages-macros-transform",
-      "start": 1704504339108,
-      "end": 1704504339108,
+      "start": 1704504953107,
+      "end": 1704504953107,
       "order": "post"
     },
     {
       "name": "nuxt:runtime-paths-dep",
-      "start": 1704504339108,
-      "end": 1704504339108,
+      "start": 1704504953107,
+      "end": 1704504953107,
       "order": "post"
     },
     {
       "name": "nuxt:route-injection-plugin",
-      "start": 1704504339108,
-      "end": 1704504339108,
+      "start": 1704504953107,
+      "end": 1704504953107,
       "order": "post"
     },
     {
       "name": "nuxt:components-loader",
-      "start": 1704504339108,
-      "end": 1704504339108,
+      "start": 1704504953108,
+      "end": 1704504953108,
       "order": "post"
     },
     {
       "name": "nuxt:tree-shake-composables:transform",
-      "start": 1704504339108,
-      "end": 1704504339108,
+      "start": 1704504953108,
+      "end": 1704504953108,
       "order": "post"
     },
     {
       "name": "vite:build-import-analysis",
-      "start": 1704504339108,
-      "end": 1704504339108,
+      "start": 1704504953108,
+      "end": 1704504953108,
       "order": "normal"
     },
     {
       "name": "vite:reporter",
-      "start": 1704504339108,
-      "end": 1704504339108,
+      "start": 1704504953108,
+      "end": 1704504953108,
       "order": "normal"
     }
   ]

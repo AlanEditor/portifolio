@@ -6,12 +6,12 @@ const client_manifest = {
     "preload": true,
     "file": "translationService.Z3ELzQ0v.js"
   },
-  "_vue.f36acd1f.jSm2CQdC.js": {
+  "_vue.f36acd1f.xhQ6PFB6.js": {
     "resourceType": "script",
     "module": true,
     "prefetch": true,
     "preload": true,
-    "file": "vue.f36acd1f.jSm2CQdC.js",
+    "file": "vue.f36acd1f.xhQ6PFB6.js",
     "imports": [
       "node_modules/nuxt/dist/app/entry.js"
     ]
@@ -25,7 +25,7 @@ const client_manifest = {
       "aura.EgrCeJIf.png"
     ],
     "css": [],
-    "file": "default.mkGUJh7a.js",
+    "file": "default.RlP4B8Is.js",
     "imports": [
       "node_modules/nuxt/dist/app/entry.js",
       "_translationService.Z3ELzQ0v.js"
@@ -51,10 +51,10 @@ const client_manifest = {
     "prefetch": true,
     "preload": true,
     "css": [],
-    "file": "error-404.Hn860pVc.js",
+    "file": "error-404.RDuffR_q.js",
     "imports": [
       "node_modules/nuxt/dist/app/entry.js",
-      "_vue.f36acd1f.jSm2CQdC.js"
+      "_vue.f36acd1f.xhQ6PFB6.js"
     ],
     "isDynamicEntry": true,
     "src": "node_modules/@nuxt/ui-templates/dist/templates/error-404.vue"
@@ -71,9 +71,9 @@ const client_manifest = {
     "prefetch": true,
     "preload": true,
     "css": [],
-    "file": "error-500.84joGJFk.js",
+    "file": "error-500.ffRdVRRy.js",
     "imports": [
-      "_vue.f36acd1f.jSm2CQdC.js",
+      "_vue.f36acd1f.xhQ6PFB6.js",
       "node_modules/nuxt/dist/app/entry.js"
     ],
     "isDynamicEntry": true,
@@ -107,7 +107,7 @@ const client_manifest = {
       "node_modules/@nuxt/ui-templates/dist/templates/error-404.vue",
       "node_modules/@nuxt/ui-templates/dist/templates/error-500.vue"
     ],
-    "file": "entry.Na8e-EQu.js",
+    "file": "entry.PAwNmjfl.js",
     "isEntry": true,
     "src": "node_modules/nuxt/dist/app/entry.js",
     "_globalCSS": true
@@ -125,7 +125,7 @@ const client_manifest = {
     "css": [
       "index.vAK0o-v7.css"
     ],
-    "file": "index.UX2xhICx.js",
+    "file": "index.xZGFwSTT.js",
     "imports": [
       "node_modules/nuxt/dist/app/entry.js",
       "_translationService.Z3ELzQ0v.js"
