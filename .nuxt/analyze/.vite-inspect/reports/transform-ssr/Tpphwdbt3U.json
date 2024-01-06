@@ -1,0 +1,93 @@
+{
+  "resolvedId": "/Users/alansantos/Desktop/PROJETOS/PORTIFO\\u0301LIO/portifolio/node_modules/nuxt-icon/dist/runtime/IconCSS.vue?vue&type=style&index=0&scoped=41e8d397&lang.css?inline&used",
+  "transforms": [
+    {
+      "name": "vite:vue",
+      "result": "[Error]",
+      "start": 1704501785324,
+      "end": 1704501785324,
+      "error": {
+        "message": "ENOENT: no such file or directory, open '/Users/alansantos/Desktop/PROJETOS/PORTIFO\\u0301LIO/portifolio/node_modules/nuxt-icon/dist/runtime/IconCSS.vue'",
+        "stack": [
+          {
+            "functionName": "Object.readFileUtf8",
+            "fileName": "node:internal/fs/sync",
+            "lineNumber": 25,
+            "columnNumber": 18,
+            "source": "    at Object.readFileUtf8 (node:internal/fs/sync:25:18)"
+          },
+          {
+            "functionName": "Object.readFileSync",
+            "fileName": "node:fs",
+            "lineNumber": 441,
+            "columnNumber": 19,
+            "source": "    at Object.readFileSync (node:fs:441:19)"
+          },
+          {
+            "functionName": "getDescriptor",
+            "fileName": "file:///Users/alansantos/Desktop/PROJETOS/PORTIFO%CC%81LIO/portifolio/node_modules/@vitejs/plugin-vue/dist/index.mjs",
+            "lineNumber": 103,
+            "columnNumber": 18,
+            "source": "    at getDescriptor (file:///Users/alansantos/Desktop/PROJETOS/PORTIFO%CC%81LIO/portifolio/node_modules/@vitejs/plugin-vue/dist/index.mjs:103:18)"
+          },
+          {
+            "functionName": "Object.load",
+            "fileName": "file:///Users/alansantos/Desktop/PROJETOS/PORTIFO%CC%81LIO/portifolio/node_modules/@vitejs/plugin-vue/dist/index.mjs",
+            "lineNumber": 2874,
+            "columnNumber": 28,
+            "source": "    at Object.load (file:///Users/alansantos/Desktop/PROJETOS/PORTIFO%CC%81LIO/portifolio/node_modules/@vitejs/plugin-vue/dist/index.mjs:2874:28)"
+          },
+          {
+            "fileName": "file:///Users/alansantos/Desktop/PROJETOS/PORTIFO%CC%81LIO/portifolio/node_modules/vite-plugin-inspect/dist/index.mjs",
+            "lineNumber": 406,
+            "columnNumber": 26,
+            "source": "    at file:///Users/alansantos/Desktop/PROJETOS/PORTIFO%CC%81LIO/portifolio/node_modules/vite-plugin-inspect/dist/index.mjs:406:26"
+          },
+          {
+            "functionName": "plugin.<computed>",
+            "fileName": "file:///Users/alansantos/Desktop/PROJETOS/PORTIFO%CC%81LIO/portifolio/node_modules/vite-plugin-inspect/dist/index.mjs",
+            "lineNumber": 363,
+            "columnNumber": 14,
+            "source": "    at plugin.<computed> (file:///Users/alansantos/Desktop/PROJETOS/PORTIFO%CC%81LIO/portifolio/node_modules/vite-plugin-inspect/dist/index.mjs:363:14)"
+          },
+          {
+            "functionName": "Object.handler",
+            "fileName": "file:///Users/alansantos/Desktop/PROJETOS/PORTIFO%CC%81LIO/portifolio/node_modules/@nuxt/vite-builder/node_modules/vite/dist/node/chunks/dep-R0I0XnyH.js",
+            "lineNumber": 67035,
+            "columnNumber": 19,
+            "source": "    at Object.handler (file:///Users/alansantos/Desktop/PROJETOS/PORTIFO%CC%81LIO/portifolio/node_modules/@nuxt/vite-builder/node_modules/vite/dist/node/chunks/dep-R0I0XnyH.js:67035:19)"
+          },
+          {
+            "fileName": "file:///Users/alansantos/Desktop/PROJETOS/PORTIFO%CC%81LIO/portifolio/node_modules/rollup/dist/es/shared/node-entry.js",
+            "lineNumber": 18667,
+            "columnNumber": 40,
+            "source": "    at file:///Users/alansantos/Desktop/PROJETOS/PORTIFO%CC%81LIO/portifolio/node_modules/rollup/dist/es/shared/node-entry.js:18667:40"
+          },
+          {
+            "functionName": "process.processTicksAndRejections",
+            "fileName": "node:internal/process/task_queues",
+            "lineNumber": 95,
+            "columnNumber": 5,
+            "source": "    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
+          },
+          {
+            "functionName": "async PluginDriver.hookFirstAndGetPlugin",
+            "fileName": "file:///Users/alansantos/Desktop/PROJETOS/PORTIFO%CC%81LIO/portifolio/node_modules/rollup/dist/es/shared/node-entry.js",
+            "lineNumber": 18567,
+            "columnNumber": 28,
+            "source": "    at async PluginDriver.hookFirstAndGetPlugin (file:///Users/alansantos/Desktop/PROJETOS/PORTIFO%CC%81LIO/portifolio/node_modules/rollup/dist/es/shared/node-entry.js:18567:28)"
+          }
+        ],
+        "raw": {
+          "errno": -2,
+          "code": "PLUGIN_ERROR",
+          "syscall": "open",
+          "path": "/Users/alansantos/Desktop/PROJETOS/PORTIFO\\u0301LIO/portifolio/node_modules/nuxt-icon/dist/runtime/IconCSS.vue",
+          "pluginCode": "ENOENT",
+          "plugin": "vite:vue",
+          "hook": "load"
+        }
+      }
+    }
+  ]
+}

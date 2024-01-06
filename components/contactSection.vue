@@ -14,7 +14,7 @@
               class="mt-10 md:flex justify-center gap-x-24 gap-y-3 text-base leading-7 text-white sm:grid-cols-2"
             >
               <div v-for="contact in contacts" :key="contact.name" class="flex gap-x-3">
-                  <Icon :icon="contact.icon" class="h-10 w-10 mb-2" /> 
+                  <Icon :name="contact.icon" class="h-10 w-10 mb-2" /> 
                   <p class="mt-1">{{ contact.value }}</p>
               </div>
             </div>
@@ -51,14 +51,10 @@ const contacts = [
 </script>
 
 <script>
-import { Icon } from '@iconify/vue';
 import { getTranslation } from '~/services/translationService';
 
 export default {
   name: "contactSection",
-  components: {
-    Icon
-  },
   data() {
     return {
       actualLanguage: this.$router.currentRoute.value.query.lang

@@ -19,20 +19,12 @@
         <expirienceSection />
       </div>
 
-      <div class="section">
-        <!-- Divider -->
-      </div>
-
       <div
         ref="stackSection"
         class="section"
         :class="{ 'animate__animated animate__fadeIn': stackVisible }"
       >
         <stackSection />
-      </div>
-
-      <div class="section">
-        <!-- Divider -->
       </div>
 
       <div
@@ -59,7 +51,6 @@ import initialSection from "~/components/initialSection.vue";
 import aboutSection from "../components/aboutSection.vue";
 import expirienceSection from "../components/expirienceSection.vue";
 import stackSection from "../components/stackSection.vue";
-import divider from "../components/divider.vue";
 import testimonialSection from "../components/testimonialSection.vue";
 import contactSection from "../components/contactSection.vue";
 
@@ -71,7 +62,6 @@ export default {
     aboutSection,
     expirienceSection,
     stackSection,
-    divider,
     testimonialSection,
     contactSection
   },

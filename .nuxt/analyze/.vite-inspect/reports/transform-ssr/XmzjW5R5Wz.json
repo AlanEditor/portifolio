@@ -1,0 +1,288 @@
+{
+  "resolvedId": "/Users/alansantos/Desktop/PROJETOS/PORTIFÓLIO/portifolio/components/testimonialSection.vue?vue&type=style&index=0&scoped=b9e264ca&lang.css",
+  "transforms": [
+    {
+      "name": "vite:vue",
+      "result": "\n.scroll-container {\n  max-height: 400px;\n  overflow-y: auto;\n}\n",
+      "start": 1704501785686,
+      "end": 1704501785686,
+      "sourcemaps": {
+        "version": 3,
+        "sources": [
+          "/Users/alansantos/Desktop/PROJETOS/PORTIFÓLIO/portifolio/components/testimonialSection.vue"
+        ],
+        "names": [],
+        "mappings": ";AA4FA,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE;EAChB,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC;EACjB,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC;AAClB",
+        "file": "/Users/alansantos/Desktop/PROJETOS/PORTIFÓLIO/portifolio/components/testimonialSection.vue",
+        "sourceRoot": "",
+        "sourcesContent": [
+          "<template>\n  <div class=\"bg-gradient-to-t from-black to-slate-950 py-24 sm:py-32\" id=\"testimonials\">\n    <div class=\"mx-auto max-w-7xl px-6 lg:px-8\">\n      <div class=\"mx-auto max-w-xl text-center mb-10\">\n        <h2 class=\"text-4xl font-bold tracking-tight text-white sm:text-6xl\">{{ getTranslation('provas-sociais', actualLanguage) }}</h2>\n      </div>\n      <div>\n        <div class=\"scroll-container\">\n          <div class=\"grid-cols-1 lg:grid-cols-1 grid p-12\">\n            <div>\n              <div\n                v-for=\"testimonial in testimonials\"\n                :key=\"testimonial.author.handle\"\n                class=\"pt-8 sm:w-1/2 md:w-full ml-2\"\n              >\n                <figure\n                  class=\"rounded-2xl bg-transparent border border-blue-500 opacity-75 hover:opacity-100 hover:scale-105 transition duration-300 p-8 text-sm leading-6\"\n                >\n                  <blockquote class=\"text-white\">\n                    <p>\"{{ getTranslation(testimonial.author.name, actualLanguage) }}\"</p>\n                  </blockquote>\n                  <figcaption class=\"mt-6 flex items-center gap-x-4\">\n                    <div>\n                      <div class=\"font-semibold text-gray-50\">{{ testimonial.author.name }}</div>\n                    </div>\n                  </figcaption>\n                </figure>\n              </div>\n            </div>\n          </div>\n        </div>\n      </div>\n    </div>\n  </div>\n</template>\n  \n<script setup>\nconst testimonials = [\n  {\n    body:\n      \"Alan assumiu a desafiadora tarefa de desenvolver uma plataforma online interna para os associados da Federação das Congregações Marianas de Santos, através da nossa Seção de Tecnologia. Sem dúvidas, um projeto que provou ser extremamente inovador. Seu trabalho não apenas elevou o padrão de nossas iniciativas tecnológicas, mas também criou um modelo que pode ser replicado em outras organizações semelhantes.\",\n    author: {\n      name: \"Gabriel Valério\"\n    }\n  },\n  {\n    body:\n      \"Um excelente parceiro de serviço, sempre bem humorado, deixa o clima super leve e agradável no time, além de ser muito profissional e caprichoso nas entregas!\",\n    author: {\n      name: \"Luis Guilherme\"\n    }\n  },\n  {\n    body:\n      \"Tive o privilégio de trabalhar lado a lado com o Alan nesses últimos meses no escopo de Backend da Ensinio. Sua dedicação e habilidades técnicas excepcionais fazem dele um profissional excelente. Seu comprometimento com a excelência e sua atitude positiva têm um impacto significativo no nível das entregas. Cumprindo as datas sem abdicar de qualidade, sua ética de trabalho exemplar serve como um modelo para todos nós.\",\n    author: {\n      name: \"Adriano Christian\"\n    }\n  },\n  {\n    body:\n      \"[...] Alan também é um profissional excepcional. Atenção aos detalhes, comprometimento e qualidade nas entregas sempre foram características visíveis em todos momentos que tive oportunidade de trocar conhecimento com ele.\",\n    author: {\n      name: \"Gabriel Coutinho\"\n    }\n  }\n];\n</script>\n\n<script>\nimport { getTranslation } from \"~/services/translationService\";\nexport default {\n  name: \"expirienceSection\",\n  data() {\n    return {\n      actualLanguage: this.$router.currentRoute.value.query.lang\n    };\n  },\n  methods: {\n    getTranslation(key, language) {\n      return getTranslation(key, language);\n    }\n  },\n  watch: {\n    $route(to, from) {\n      this.actualLanguage = to.query.lang;\n    }\n  }\n};\n</script>\n\n<style scoped>\n.scroll-container {\n  max-height: 400px;\n  overflow-y: auto;\n}\n</style>"
+        ]
+      }
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1704501785686,
+      "end": 1704501785686,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1704501785686,
+      "end": 1704501785686,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1704501785686,
+      "end": 1704501785686,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1704501785686,
+      "end": 1704501785686,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:client-fallback-auto-id",
+      "start": 1704501785686,
+      "end": 1704501785686,
+      "order": "pre"
+    },
+    {
+      "name": "vite:css",
+      "result": ".scroll-container{max-height:400px;overflow-y:auto}",
+      "start": 1704501785686,
+      "end": 1704501785710,
+      "order": "normal",
+      "sourcemaps": {
+        "file": "/Users/alansantos/Desktop/PROJETOS/PORTIFÓLIO/portifolio/components/testimonialSection.vue",
+        "mappings": "AACA,kBACE,gBAAiB,CACjB,eACF",
+        "names": [],
+        "sources": [
+          "/Users/alansantos/Desktop/PROJETOS/PORTIFÓLIO/portifolio/components/testimonialSection.vue"
+        ],
+        "sourcesContent": [
+          "\n.scroll-container {\n  max-height: 400px;\n  overflow-y: auto;\n}\n"
+        ],
+        "version": 3
+      }
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1704501785710,
+      "end": 1704501785710,
+      "order": "normal"
+    },
+    {
+      "name": "vite:json",
+      "start": 1704501785710,
+      "end": 1704501785710,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1704501785710,
+      "end": 1704501785710,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue",
+      "result": ".scroll-container[data-v-b9e264ca]{max-height:400px;overflow-y:auto}",
+      "start": 1704501785710,
+      "end": 1704501785711,
+      "order": "normal",
+      "sourcemaps": {
+        "file": "/Users/alansantos/Desktop/PROJETOS/PORTIFÓLIO/portifolio/components/testimonialSection.vue",
+        "mappings": "AAAA,mCAAkB,gBAAgB,CAAC,eAAe",
+        "names": [],
+        "sources": [
+          "/Users/alansantos/Desktop/PROJETOS/PORTIFÓLIO/portifolio/components/testimonialSection.vue"
+        ],
+        "sourcesContent": [
+          null
+        ],
+        "version": 3
+      }
+    },
+    {
+      "name": "vite:vue-jsx",
+      "start": 1704501785711,
+      "end": 1704501785711,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1704501785711,
+      "end": 1704501785711,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1704501785711,
+      "end": 1704501785711,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1704501785711,
+      "end": 1704501785711,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1704501785711,
+      "end": 1704501785711,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:components:imports",
+      "start": 1704501785711,
+      "end": 1704501785711,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1704501785711,
+      "end": 1704501785711,
+      "order": "normal"
+    },
+    {
+      "name": "ssr-styles",
+      "start": 1704501785711,
+      "end": 1704501785711,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1704501785711,
+      "end": 1704501785711,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "result": "",
+      "start": 1704501785711,
+      "end": 1704501785711,
+      "order": "normal",
+      "sourcemaps": {
+        "mappings": ""
+      }
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1704501785711,
+      "end": 1704501785711,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1704501785711,
+      "end": 1704501785711,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1704501785711,
+      "end": 1704501785711,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1704501785711,
+      "end": 1704501785711,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1704501785711,
+      "end": 1704501785711,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1704501785711,
+      "end": 1704501785711,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1704501785711,
+      "end": 1704501785711,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1704501785711,
+      "end": 1704501785711,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1704501785711,
+      "end": 1704501785711,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1704501785711,
+      "end": 1704501785711,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1704501785711,
+      "end": 1704501785711,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1704501785711,
+      "end": 1704501785711,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1704501785711,
+      "end": 1704501785711,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1704501785711,
+      "end": 1704501785711,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-template",
+      "start": 1704501785711,
+      "end": 1704501785711,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:components-loader",
+      "start": 1704501785711,
+      "end": 1704501785711,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-composables:transform",
+      "start": 1704501785711,
+      "end": 1704501785711,
+      "order": "post"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1704501785711,
+      "end": 1704501785711,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1704501785711,
+      "end": 1704501785711,
+      "order": "normal"
+    }
+  ]
+}
