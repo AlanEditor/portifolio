@@ -2,7 +2,7 @@ import { ref, mergeProps, unref, withCtx, createVNode, openBlock, createBlock, F
 import { ssrRenderAttrs, ssrRenderComponent, ssrRenderList, ssrRenderAttr, ssrInterpolate } from "vue/server-renderer";
 import { Dialog, DialogPanel } from "@headlessui/vue";
 import { Bars3Icon, XMarkIcon } from "@heroicons/vue/24/outline";
-import { g as getTranslation } from "./index-OCpyaFXL.js";
+import { g as getTranslation } from "./index-XDqqO_0p.js";
 import { _ as _export_sfc } from "../server.mjs";
 import "vue-router";
 import "#internal/nitro";
@@ -233,4 +233,4 @@ const _default = /* @__PURE__ */ _export_sfc(_sfc_main, [["__scopeId", "data-v-f
 export {
   _default as default
 };
-//# sourceMappingURL=default-5kA4Ow_h.js.map
+//# sourceMappingURL=default-rRy7SY4O.js.map

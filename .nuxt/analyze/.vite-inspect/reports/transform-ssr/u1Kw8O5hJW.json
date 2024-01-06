@@ -4,69 +4,69 @@
     {
       "name": "vite:load-fallback",
       "result": "<template>\n  <div\n    class=\"mx-auto grid w-full max-w-lg grid-cols-3 items-center gap-y-5 sm:gap-y-5 lg:mx-0 lg:max-w-none lg:pl-8\"\n  >\n    <div class=\"group relative opacity-75 hover:opacity-100 hover:border-white rounded-lg p-6\">\n      <div class=\"overflow-hidden rounded-lg bg-gray-900\">\n        <img\n          src=\"../../src/assets/img/laravel.png\"\n          class=\"object-cover object-center hover:scale-105 transition duration-300\"\n        />\n      </div>\n      <div\n        class=\"mt-4 flex items-center justify-between space-x-8 text-base font-medium text-gray-900\"\n      ></div>\n    </div>\n    <div class=\"group relative opacity-75 hover:opacity-100 hover:border-white rounded-lg p-6\">\n      <div class=\"overflow-hidden rounded-lg bg-gray-900\">\n        <img\n          src=\"../../src/assets/img/php.png\"\n          class=\"object-cover object-center hover:scale-105 transition duration-300\"\n        />\n      </div>\n      <div\n        class=\"mt-4 flex items-center justify-between space-x-8 text-base font-medium text-gray-900\"\n      ></div>\n    </div>\n    <div class=\"group relative opacity-75 hover:opacity-100 hover:border-white rounded-lg p-6\">\n      <div class=\"overflow-hidden rounded-lg bg-gray-900\">\n        <img\n          src=\"../../src/assets/img/vue.png\"\n          class=\"object-cover object-center hover:scale-105 transition duration-300\"\n        />\n      </div>\n      <div\n        class=\"mt-4 flex items-center justify-between space-x-8 text-base font-medium text-gray-900\"\n      ></div>\n    </div>\n    <div class=\"group relative opacity-75 hover:opacity-100 hover:border-white rounded-lg p-6\">\n      <div class=\"overflow-hidden rounded-lg bg-gray-900\">\n        <img\n          src=\"../../src/assets/img/docker.png\"\n          class=\"object-cover object-center hover:scale-105 transition duration-300\"\n        />\n      </div>\n      <div\n        class=\"mt-4 flex items-center justify-between space-x-8 text-base font-medium text-gray-900\"\n      ></div>\n    </div>\n    <div class=\"group relative opacity-75 hover:opacity-100 hover:border-white rounded-lg p-6\">\n      <div class=\"overflow-hidden rounded-lg bg-gray-900\">\n        <img\n          src=\"../../src/assets/img/mysql.png\"\n          class=\"object-cover object-center hover:scale-105 transition duration-300\"\n        />\n      </div>\n      <div\n        class=\"mt-4 flex items-center justify-between space-x-8 text-base font-medium text-gray-900\"\n      ></div>\n    </div>\n    <div class=\"group relative opacity-75 hover:opacity-100 hover:border-white rounded-lg p-6\">\n      <div class=\"overflow-hidden rounded-lg bg-gray-900\">\n        <img\n          src=\"../../src/assets/img/node.png\"\n          class=\"object-cover object-center hover:scale-105 transition duration-300\"\n        />\n      </div>\n      <div\n        class=\"mt-4 flex items-center justify-between space-x-8 text-base font-medium text-gray-900\"\n      ></div>\n    </div>\n  </div>\n</template>\n\n<script>\nexport default {};\n</script>\n\n<style lang=\"scss\" scoped>\n</style>",
-      "start": 1704507644451,
-      "end": 1704507644548,
+      "start": 1704507891707,
+      "end": 1704507891770,
       "sourcemaps": null
     },
     {
       "name": "nuxt:layer-aliasing",
-      "start": 1704507644548,
-      "end": 1704507644548,
+      "start": 1704507891770,
+      "end": 1704507891770,
       "order": "pre"
     },
     {
       "name": "nuxt:layer-aliasing",
-      "start": 1704507644548,
-      "end": 1704507644548,
+      "start": 1704507891770,
+      "end": 1704507891770,
       "order": "pre"
     },
     {
       "name": "nuxt:server-devonly:transform",
-      "start": 1704507644548,
-      "end": 1704507644548,
+      "start": 1704507891770,
+      "end": 1704507891770,
       "order": "pre"
     },
     {
       "name": "nuxt:server-devonly:transform",
-      "start": 1704507644548,
-      "end": 1704507644548,
+      "start": 1704507891770,
+      "end": 1704507891770,
       "order": "pre"
     },
     {
       "name": "nuxt:client-fallback-auto-id",
-      "start": 1704507644548,
-      "end": 1704507644548,
+      "start": 1704507891770,
+      "end": 1704507891770,
       "order": "pre"
     },
     {
       "name": "vite:css",
-      "start": 1704507644548,
-      "end": 1704507644548,
+      "start": 1704507891770,
+      "end": 1704507891770,
       "order": "normal"
     },
     {
       "name": "vite:esbuild",
-      "start": 1704507644548,
-      "end": 1704507644548,
+      "start": 1704507891770,
+      "end": 1704507891770,
       "order": "normal"
     },
     {
       "name": "vite:json",
-      "start": 1704507644548,
-      "end": 1704507644548,
+      "start": 1704507891770,
+      "end": 1704507891770,
       "order": "normal"
     },
     {
       "name": "vite:worker",
-      "start": 1704507644548,
-      "end": 1704507644548,
+      "start": 1704507891770,
+      "end": 1704507891770,
       "order": "normal"
     },
     {
       "name": "vite:vue",
       "result": "\nconst _sfc_main = {};\n\nimport { mergeProps as _mergeProps } from \"vue\"\nimport { ssrRenderAttr as _ssrRenderAttr, ssrRenderAttrs as _ssrRenderAttrs } from \"vue/server-renderer\"\nimport _imports_0 from '../../src/assets/img/laravel.png'\nimport _imports_1 from '../../src/assets/img/php.png'\nimport _imports_2 from '../../src/assets/img/vue.png'\nimport _imports_3 from '../../src/assets/img/docker.png'\nimport _imports_4 from '../../src/assets/img/mysql.png'\nimport _imports_5 from '../../src/assets/img/node.png'\n\n\nfunction _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $options) {\n  _push(`<div${\n    _ssrRenderAttrs(_mergeProps({ class: \"mx-auto grid w-full max-w-lg grid-cols-3 items-center gap-y-5 sm:gap-y-5 lg:mx-0 lg:max-w-none lg:pl-8\" }, _attrs))\n  }><div class=\"group relative opacity-75 hover:opacity-100 hover:border-white rounded-lg p-6\"><div class=\"overflow-hidden rounded-lg bg-gray-900\"><img${\n    _ssrRenderAttr(\"src\", _imports_0)\n  } class=\"object-cover object-center hover:scale-105 transition duration-300\"></div><div class=\"mt-4 flex items-center justify-between space-x-8 text-base font-medium text-gray-900\"></div></div><div class=\"group relative opacity-75 hover:opacity-100 hover:border-white rounded-lg p-6\"><div class=\"overflow-hidden rounded-lg bg-gray-900\"><img${\n    _ssrRenderAttr(\"src\", _imports_1)\n  } class=\"object-cover object-center hover:scale-105 transition duration-300\"></div><div class=\"mt-4 flex items-center justify-between space-x-8 text-base font-medium text-gray-900\"></div></div><div class=\"group relative opacity-75 hover:opacity-100 hover:border-white rounded-lg p-6\"><div class=\"overflow-hidden rounded-lg bg-gray-900\"><img${\n    _ssrRenderAttr(\"src\", _imports_2)\n  } class=\"object-cover object-center hover:scale-105 transition duration-300\"></div><div class=\"mt-4 flex items-center justify-between space-x-8 text-base font-medium text-gray-900\"></div></div><div class=\"group relative opacity-75 hover:opacity-100 hover:border-white rounded-lg p-6\"><div class=\"overflow-hidden rounded-lg bg-gray-900\"><img${\n    _ssrRenderAttr(\"src\", _imports_3)\n  } class=\"object-cover object-center hover:scale-105 transition duration-300\"></div><div class=\"mt-4 flex items-center justify-between space-x-8 text-base font-medium text-gray-900\"></div></div><div class=\"group relative opacity-75 hover:opacity-100 hover:border-white rounded-lg p-6\"><div class=\"overflow-hidden rounded-lg bg-gray-900\"><img${\n    _ssrRenderAttr(\"src\", _imports_4)\n  } class=\"object-cover object-center hover:scale-105 transition duration-300\"></div><div class=\"mt-4 flex items-center justify-between space-x-8 text-base font-medium text-gray-900\"></div></div><div class=\"group relative opacity-75 hover:opacity-100 hover:border-white rounded-lg p-6\"><div class=\"overflow-hidden rounded-lg bg-gray-900\"><img${\n    _ssrRenderAttr(\"src\", _imports_5)\n  } class=\"object-cover object-center hover:scale-105 transition duration-300\"></div><div class=\"mt-4 flex items-center justify-between space-x-8 text-base font-medium text-gray-900\"></div></div></div>`)\n}\n\n\nimport { useSSRContext as __vite_useSSRContext } from 'vue'\nconst _sfc_setup = _sfc_main.setup\n_sfc_main.setup = (props, ctx) => {\n  const ssrContext = __vite_useSSRContext()\n  ;(ssrContext.modules || (ssrContext.modules = new Set())).add(\"components/images/stackImagesComponent.vue\")\n  return _sfc_setup ? _sfc_setup(props, ctx) : undefined\n}\nimport _export_sfc from '\u0000plugin-vue:export-helper'\nexport default /*#__PURE__*/_export_sfc(_sfc_main, [['ssrRender',_sfc_ssrRender]])",
-      "start": 1704507644548,
-      "end": 1704507644550,
+      "start": 1704507891770,
+      "end": 1704507891772,
       "order": "normal",
       "sourcemaps": {
         "version": 3,
@@ -83,176 +83,176 @@
     },
     {
       "name": "vite:vue-jsx",
-      "start": 1704507644550,
-      "end": 1704507644550,
+      "start": 1704507891772,
+      "end": 1704507891772,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1704507644550,
-      "end": 1704507644550,
+      "start": 1704507891772,
+      "end": 1704507891773,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1704507644550,
-      "end": 1704507644550,
+      "start": 1704507891772,
+      "end": 1704507891773,
       "order": "normal"
     },
     {
       "name": "nuxt:remove-plugin-metadata",
-      "start": 1704507644550,
-      "end": 1704507644550,
+      "start": 1704507891773,
+      "end": 1704507891773,
       "order": "normal"
     },
     {
       "name": "nuxt:remove-plugin-metadata",
-      "start": 1704507644550,
-      "end": 1704507644550,
+      "start": 1704507891773,
+      "end": 1704507891773,
       "order": "normal"
     },
     {
       "name": "nuxt:components:imports",
-      "start": 1704507644550,
-      "end": 1704507644550,
+      "start": 1704507891773,
+      "end": 1704507891773,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1704507644550,
-      "end": 1704507644550,
+      "start": 1704507891773,
+      "end": 1704507891773,
       "order": "normal"
     },
     {
       "name": "ssr-styles",
-      "start": 1704507644550,
-      "end": 1704507644550,
+      "start": 1704507891773,
+      "end": 1704507891773,
       "order": "normal"
     },
     {
       "name": "vite:define",
-      "start": 1704507644550,
-      "end": 1704507644550,
+      "start": 1704507891773,
+      "end": 1704507891773,
       "order": "normal"
     },
     {
       "name": "vite:css-post",
-      "start": 1704507644550,
-      "end": 1704507644550,
+      "start": 1704507891773,
+      "end": 1704507891773,
       "order": "normal"
     },
     {
       "name": "vite:build-html",
-      "start": 1704507644550,
-      "end": 1704507644550,
+      "start": 1704507891773,
+      "end": 1704507891773,
       "order": "normal"
     },
     {
       "name": "vite:worker-import-meta-url",
-      "start": 1704507644550,
-      "end": 1704507644550,
+      "start": 1704507891773,
+      "end": 1704507891773,
       "order": "normal"
     },
     {
       "name": "vite:asset-import-meta-url",
-      "start": 1704507644550,
-      "end": 1704507644550,
+      "start": 1704507891773,
+      "end": 1704507891773,
       "order": "normal"
     },
     {
       "name": "commonjs",
-      "start": 1704507644550,
-      "end": 1704507644550,
+      "start": 1704507891773,
+      "end": 1704507891773,
       "order": "normal"
     },
     {
       "name": "vite:dynamic-import-vars",
-      "start": 1704507644550,
-      "end": 1704507644550,
+      "start": 1704507891773,
+      "end": 1704507891773,
       "order": "normal"
     },
     {
       "name": "vite:import-glob",
-      "start": 1704507644550,
-      "end": 1704507644550,
+      "start": 1704507891773,
+      "end": 1704507891773,
       "order": "normal"
     },
     {
       "name": "nuxt:composable-keys",
-      "start": 1704507644550,
-      "end": 1704507644550,
+      "start": 1704507891773,
+      "end": 1704507891773,
       "order": "post"
     },
     {
       "name": "nuxt:composable-keys",
-      "start": 1704507644550,
-      "end": 1704507644550,
+      "start": 1704507891773,
+      "end": 1704507891773,
       "order": "post"
     },
     {
       "name": "nuxt:imports-transform",
-      "start": 1704507644550,
-      "end": 1704507644551,
+      "start": 1704507891773,
+      "end": 1704507891774,
       "order": "post"
     },
     {
       "name": "nuxt:imports-transform",
-      "start": 1704507644550,
-      "end": 1704507644551,
+      "start": 1704507891773,
+      "end": 1704507891774,
       "order": "post"
     },
     {
       "name": "unctx:transform",
-      "start": 1704507644551,
-      "end": 1704507644551,
+      "start": 1704507891774,
+      "end": 1704507891774,
       "order": "post"
     },
     {
       "name": "unctx:transform",
-      "start": 1704507644551,
-      "end": 1704507644551,
+      "start": 1704507891774,
+      "end": 1704507891774,
       "order": "post"
     },
     {
       "name": "nuxt:pages-macros-transform",
-      "start": 1704507644551,
-      "end": 1704507644551,
+      "start": 1704507891774,
+      "end": 1704507891774,
       "order": "post"
     },
     {
       "name": "nuxt:pages-macros-transform",
-      "start": 1704507644551,
-      "end": 1704507644551,
+      "start": 1704507891774,
+      "end": 1704507891774,
       "order": "post"
     },
     {
       "name": "nuxt:tree-shake-template",
-      "start": 1704507644551,
-      "end": 1704507644551,
+      "start": 1704507891774,
+      "end": 1704507891774,
       "order": "post"
     },
     {
       "name": "nuxt:components-loader",
-      "start": 1704507644551,
-      "end": 1704507644551,
+      "start": 1704507891774,
+      "end": 1704507891774,
       "order": "post"
     },
     {
       "name": "nuxt:tree-shake-composables:transform",
-      "start": 1704507644551,
-      "end": 1704507644551,
+      "start": 1704507891774,
+      "end": 1704507891774,
       "order": "post"
     },
     {
       "name": "vite:build-import-analysis",
-      "start": 1704507644551,
-      "end": 1704507644552,
+      "start": 1704507891774,
+      "end": 1704507891774,
       "order": "normal"
     },
     {
       "name": "vite:reporter",
-      "start": 1704507644552,
-      "end": 1704507644552,
+      "start": 1704507891774,
+      "end": 1704507891774,
       "order": "normal"
     }
   ]

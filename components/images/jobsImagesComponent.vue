@@ -1,6 +1,6 @@
 <template>
   <div class="mt-32">
-    <div class="mt-6 grid grid-cols-1 lg:grid-cols-4 gap-x-8">
+    <div class="mt-6 grid grid-cols-1 lg:grid-cols-4 gap-x-8 gap-y-10">
       <div class="overflow-hidden rounded-lg bg-gray-900 hover:scale-105 transition duration-300">
         <a href="https://www.ensinio.com" target="_blank">
           <img src="../../src/assets/img/ensinio.png" class="object-cover object-center" />

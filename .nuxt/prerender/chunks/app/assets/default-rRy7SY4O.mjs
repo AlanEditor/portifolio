@@ -3,7 +3,7 @@ import { useSSRContext, ref, mergeProps, unref, withCtx, createVNode, openBlock,
 import { ssrRenderAttrs, ssrRenderComponent, ssrRenderList, ssrRenderAttr, ssrInterpolate } from 'file:///Users/alansantos/Desktop/PROJETOS/PORTIFO%CC%81LIO/portifolio/node_modules/vue/server-renderer/index.mjs';
 import { Dialog, DialogPanel } from 'file:///Users/alansantos/Desktop/PROJETOS/PORTIFO%CC%81LIO/portifolio/node_modules/@headlessui/vue/dist/headlessui.esm.js';
 import { Bars3Icon, XMarkIcon } from 'file:///Users/alansantos/Desktop/PROJETOS/PORTIFO%CC%81LIO/portifolio/node_modules/@heroicons/vue/24/outline/esm/index.js';
-import { g as getTranslation } from './index-OCpyaFXL.mjs';
+import { g as getTranslation } from './index-XDqqO_0p.mjs';
 import { _ as _export_sfc } from '../server.mjs';
 import 'file:///Users/alansantos/Desktop/PROJETOS/PORTIFO%CC%81LIO/portifolio/node_modules/vue-bundle-renderer/dist/runtime.mjs';
 import 'file:///Users/alansantos/Desktop/PROJETOS/PORTIFO%CC%81LIO/portifolio/node_modules/h3/dist/index.mjs';
@@ -248,4 +248,4 @@ _sfc_main.setup = (props, ctx) => {
 const _default = /* @__PURE__ */ _export_sfc(_sfc_main, [["__scopeId", "data-v-f58232d6"]]);
 
 export { _default as default };
-//# sourceMappingURL=default-5kA4Ow_h.mjs.map
+//# sourceMappingURL=default-rRy7SY4O.mjs.map

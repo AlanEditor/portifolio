@@ -3,70 +3,70 @@
   "transforms": [
     {
       "name": "vite:load-fallback",
-      "result": "<template>\n  <div class=\"mt-32\">\n    <div class=\"mt-6 grid grid-cols-1 lg:grid-cols-4 gap-x-8\">\n      <div class=\"overflow-hidden rounded-lg bg-gray-900 hover:scale-105 transition duration-300\">\n        <a href=\"https://www.ensinio.com\" target=\"_blank\">\n          <img src=\"../../src/assets/img/ensinio.png\" class=\"object-cover object-center\" />\n        </a>\n      </div>\n      <div class=\"overflow-hidden rounded-lg bg-gray-900 hover:scale-105 transition duration-300\">\n        <a href=\"https://www.iporto.com.br\" target=\"_blank\">\n          <img src=\"../../src/assets/img/iporto.png\" class=\"object-cover object-center\" />\n        </a>\n      </div>\n      <div class=\"overflow-hidden rounded-lg bg-gray-900 hover:scale-105 transition duration-300\">\n        <a href=\"https://casadege.com.br\" target=\"_blank\">\n          <img src=\"../../src/assets/img/casa_de_ge.png\" class=\"object-cover object-center\" />\n        </a>\n      </div>\n      <div class=\"overflow-hidden rounded-lg bg-gray-900 hover:scale-105 transition duration-300\">\n        <img src=\"../../src/assets/img/cm.png\" class=\"object-cover object-center\" />\n      </div>\n      <div\n        class=\"mt-4 flex items-center justify-between space-x-8 text-base font-medium text-gray-900\"\n      ></div>\n    </div>\n  </div>\n</template>\n\n<script>\nconst jobs = [\n  {\n    company: \"Ensinio\",\n    imageSrc: `ensinio.png`,\n    link: \"https://www.ensinio.com\"\n  },\n  {\n    company: \"iPORTO\",\n    imageSrc: `iporto.png`,\n    link: \"https://iporto.com.br/\"\n  },\n  {\n    company: \"Casa de Gê\",\n    imageSrc: `casa_de_ge.png`,\n    link: \"https://casadege.com.br/\"\n  },\n  {\n    company: \"Congregação Mariana\",\n    imageSrc: `cm.png`\n  }\n];\n</script>",
-      "start": 1704507644488,
-      "end": 1704507644552,
+      "result": "<template>\n  <div class=\"mt-32\">\n    <div class=\"mt-6 grid grid-cols-1 lg:grid-cols-4 gap-x-8 gap-y-10\">\n      <div class=\"overflow-hidden rounded-lg bg-gray-900 hover:scale-105 transition duration-300\">\n        <a href=\"https://www.ensinio.com\" target=\"_blank\">\n          <img src=\"../../src/assets/img/ensinio.png\" class=\"object-cover object-center\" />\n        </a>\n      </div>\n      <div class=\"overflow-hidden rounded-lg bg-gray-900 hover:scale-105 transition duration-300\">\n        <a href=\"https://www.iporto.com.br\" target=\"_blank\">\n          <img src=\"../../src/assets/img/iporto.png\" class=\"object-cover object-center\" />\n        </a>\n      </div>\n      <div class=\"overflow-hidden rounded-lg bg-gray-900 hover:scale-105 transition duration-300\">\n        <a href=\"https://casadege.com.br\" target=\"_blank\">\n          <img src=\"../../src/assets/img/casa_de_ge.png\" class=\"object-cover object-center\" />\n        </a>\n      </div>\n      <div class=\"overflow-hidden rounded-lg bg-gray-900 hover:scale-105 transition duration-300\">\n        <img src=\"../../src/assets/img/cm.png\" class=\"object-cover object-center\" />\n      </div>\n      <div\n        class=\"mt-4 flex items-center justify-between space-x-8 text-base font-medium text-gray-900\"\n      ></div>\n    </div>\n  </div>\n</template>\n\n<script>\nconst jobs = [\n  {\n    company: \"Ensinio\",\n    imageSrc: `ensinio.png`,\n    link: \"https://www.ensinio.com\"\n  },\n  {\n    company: \"iPORTO\",\n    imageSrc: `iporto.png`,\n    link: \"https://iporto.com.br/\"\n  },\n  {\n    company: \"Casa de Gê\",\n    imageSrc: `casa_de_ge.png`,\n    link: \"https://casadege.com.br/\"\n  },\n  {\n    company: \"Congregação Mariana\",\n    imageSrc: `cm.png`\n  }\n];\n</script>",
+      "start": 1704507891628,
+      "end": 1704507891722,
       "sourcemaps": null
     },
     {
       "name": "nuxt:layer-aliasing",
-      "start": 1704507644552,
-      "end": 1704507644552,
+      "start": 1704507891722,
+      "end": 1704507891722,
       "order": "pre"
     },
     {
       "name": "nuxt:layer-aliasing",
-      "start": 1704507644552,
-      "end": 1704507644552,
+      "start": 1704507891722,
+      "end": 1704507891722,
       "order": "pre"
     },
     {
       "name": "nuxt:server-devonly:transform",
-      "start": 1704507644552,
-      "end": 1704507644552,
+      "start": 1704507891722,
+      "end": 1704507891722,
       "order": "pre"
     },
     {
       "name": "nuxt:server-devonly:transform",
-      "start": 1704507644552,
-      "end": 1704507644552,
+      "start": 1704507891722,
+      "end": 1704507891722,
       "order": "pre"
     },
     {
       "name": "nuxt:client-fallback-auto-id",
-      "start": 1704507644552,
-      "end": 1704507644552,
+      "start": 1704507891722,
+      "end": 1704507891722,
       "order": "pre"
     },
     {
       "name": "vite:css",
-      "start": 1704507644552,
-      "end": 1704507644552,
+      "start": 1704507891722,
+      "end": 1704507891722,
       "order": "normal"
     },
     {
       "name": "vite:esbuild",
-      "start": 1704507644552,
-      "end": 1704507644552,
+      "start": 1704507891722,
+      "end": 1704507891722,
       "order": "normal"
     },
     {
       "name": "vite:json",
-      "start": 1704507644552,
-      "end": 1704507644552,
+      "start": 1704507891722,
+      "end": 1704507891722,
       "order": "normal"
     },
     {
       "name": "vite:worker",
-      "start": 1704507644552,
-      "end": 1704507644552,
+      "start": 1704507891722,
+      "end": 1704507891722,
       "order": "normal"
     },
     {
       "name": "vite:vue",
-      "result": "\nconst jobs = [\n  {\n    company: \"Ensinio\",\n    imageSrc: `ensinio.png`,\n    link: \"https://www.ensinio.com\"\n  },\n  {\n    company: \"iPORTO\",\n    imageSrc: `iporto.png`,\n    link: \"https://iporto.com.br/\"\n  },\n  {\n    company: \"Casa de Gê\",\n    imageSrc: `casa_de_ge.png`,\n    link: \"https://casadege.com.br/\"\n  },\n  {\n    company: \"Congregação Mariana\",\n    imageSrc: `cm.png`\n  }\n];\n\nconst _sfc_main = {}\nimport { mergeProps as _mergeProps } from \"vue\"\nimport { ssrRenderAttr as _ssrRenderAttr, ssrRenderAttrs as _ssrRenderAttrs } from \"vue/server-renderer\"\nimport _imports_0 from '../../src/assets/img/ensinio.png'\nimport _imports_1 from '../../src/assets/img/iporto.png'\nimport _imports_2 from '../../src/assets/img/casa_de_ge.png'\nimport _imports_3 from '../../src/assets/img/cm.png'\n\n\nfunction _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $options) {\n  _push(`<div${\n    _ssrRenderAttrs(_mergeProps({ class: \"mt-32\" }, _attrs))\n  }><div class=\"mt-6 grid grid-cols-1 lg:grid-cols-4 gap-x-8\"><div class=\"overflow-hidden rounded-lg bg-gray-900 hover:scale-105 transition duration-300\"><a href=\"https://www.ensinio.com\" target=\"_blank\"><img${\n    _ssrRenderAttr(\"src\", _imports_0)\n  } class=\"object-cover object-center\"></a></div><div class=\"overflow-hidden rounded-lg bg-gray-900 hover:scale-105 transition duration-300\"><a href=\"https://www.iporto.com.br\" target=\"_blank\"><img${\n    _ssrRenderAttr(\"src\", _imports_1)\n  } class=\"object-cover object-center\"></a></div><div class=\"overflow-hidden rounded-lg bg-gray-900 hover:scale-105 transition duration-300\"><a href=\"https://casadege.com.br\" target=\"_blank\"><img${\n    _ssrRenderAttr(\"src\", _imports_2)\n  } class=\"object-cover object-center\"></a></div><div class=\"overflow-hidden rounded-lg bg-gray-900 hover:scale-105 transition duration-300\"><img${\n    _ssrRenderAttr(\"src\", _imports_3)\n  } class=\"object-cover object-center\"></div><div class=\"mt-4 flex items-center justify-between space-x-8 text-base font-medium text-gray-900\"></div></div></div>`)\n}\n\n\nimport { useSSRContext as __vite_useSSRContext } from 'vue'\nconst _sfc_setup = _sfc_main.setup\n_sfc_main.setup = (props, ctx) => {\n  const ssrContext = __vite_useSSRContext()\n  ;(ssrContext.modules || (ssrContext.modules = new Set())).add(\"components/images/jobsImagesComponent.vue\")\n  return _sfc_setup ? _sfc_setup(props, ctx) : undefined\n}\nimport _export_sfc from '\u0000plugin-vue:export-helper'\nexport default /*#__PURE__*/_export_sfc(_sfc_main, [['ssrRender',_sfc_ssrRender]])",
-      "start": 1704507644552,
-      "end": 1704507644553,
+      "result": "\nconst jobs = [\n  {\n    company: \"Ensinio\",\n    imageSrc: `ensinio.png`,\n    link: \"https://www.ensinio.com\"\n  },\n  {\n    company: \"iPORTO\",\n    imageSrc: `iporto.png`,\n    link: \"https://iporto.com.br/\"\n  },\n  {\n    company: \"Casa de Gê\",\n    imageSrc: `casa_de_ge.png`,\n    link: \"https://casadege.com.br/\"\n  },\n  {\n    company: \"Congregação Mariana\",\n    imageSrc: `cm.png`\n  }\n];\n\nconst _sfc_main = {}\nimport { mergeProps as _mergeProps } from \"vue\"\nimport { ssrRenderAttr as _ssrRenderAttr, ssrRenderAttrs as _ssrRenderAttrs } from \"vue/server-renderer\"\nimport _imports_0 from '../../src/assets/img/ensinio.png'\nimport _imports_1 from '../../src/assets/img/iporto.png'\nimport _imports_2 from '../../src/assets/img/casa_de_ge.png'\nimport _imports_3 from '../../src/assets/img/cm.png'\n\n\nfunction _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $options) {\n  _push(`<div${\n    _ssrRenderAttrs(_mergeProps({ class: \"mt-32\" }, _attrs))\n  }><div class=\"mt-6 grid grid-cols-1 lg:grid-cols-4 gap-x-8 gap-y-10\"><div class=\"overflow-hidden rounded-lg bg-gray-900 hover:scale-105 transition duration-300\"><a href=\"https://www.ensinio.com\" target=\"_blank\"><img${\n    _ssrRenderAttr(\"src\", _imports_0)\n  } class=\"object-cover object-center\"></a></div><div class=\"overflow-hidden rounded-lg bg-gray-900 hover:scale-105 transition duration-300\"><a href=\"https://www.iporto.com.br\" target=\"_blank\"><img${\n    _ssrRenderAttr(\"src\", _imports_1)\n  } class=\"object-cover object-center\"></a></div><div class=\"overflow-hidden rounded-lg bg-gray-900 hover:scale-105 transition duration-300\"><a href=\"https://casadege.com.br\" target=\"_blank\"><img${\n    _ssrRenderAttr(\"src\", _imports_2)\n  } class=\"object-cover object-center\"></a></div><div class=\"overflow-hidden rounded-lg bg-gray-900 hover:scale-105 transition duration-300\"><img${\n    _ssrRenderAttr(\"src\", _imports_3)\n  } class=\"object-cover object-center\"></div><div class=\"mt-4 flex items-center justify-between space-x-8 text-base font-medium text-gray-900\"></div></div></div>`)\n}\n\n\nimport { useSSRContext as __vite_useSSRContext } from 'vue'\nconst _sfc_setup = _sfc_main.setup\n_sfc_main.setup = (props, ctx) => {\n  const ssrContext = __vite_useSSRContext()\n  ;(ssrContext.modules || (ssrContext.modules = new Set())).add(\"components/images/jobsImagesComponent.vue\")\n  return _sfc_setup ? _sfc_setup(props, ctx) : undefined\n}\nimport _export_sfc from '\u0000plugin-vue:export-helper'\nexport default /*#__PURE__*/_export_sfc(_sfc_main, [['ssrRender',_sfc_ssrRender]])",
+      "start": 1704507891722,
+      "end": 1704507891724,
       "order": "normal",
       "sourcemaps": {
         "version": 3,
@@ -76,183 +76,183 @@
           "/Users/alansantos/Desktop/PROJETOS/PORTIFÓLIO/portifolio/components/images/jobsImagesComponent.vue"
         ],
         "sourcesContent": [
-          "<template>\n  <div class=\"mt-32\">\n    <div class=\"mt-6 grid grid-cols-1 lg:grid-cols-4 gap-x-8\">\n      <div class=\"overflow-hidden rounded-lg bg-gray-900 hover:scale-105 transition duration-300\">\n        <a href=\"https://www.ensinio.com\" target=\"_blank\">\n          <img src=\"../../src/assets/img/ensinio.png\" class=\"object-cover object-center\" />\n        </a>\n      </div>\n      <div class=\"overflow-hidden rounded-lg bg-gray-900 hover:scale-105 transition duration-300\">\n        <a href=\"https://www.iporto.com.br\" target=\"_blank\">\n          <img src=\"../../src/assets/img/iporto.png\" class=\"object-cover object-center\" />\n        </a>\n      </div>\n      <div class=\"overflow-hidden rounded-lg bg-gray-900 hover:scale-105 transition duration-300\">\n        <a href=\"https://casadege.com.br\" target=\"_blank\">\n          <img src=\"../../src/assets/img/casa_de_ge.png\" class=\"object-cover object-center\" />\n        </a>\n      </div>\n      <div class=\"overflow-hidden rounded-lg bg-gray-900 hover:scale-105 transition duration-300\">\n        <img src=\"../../src/assets/img/cm.png\" class=\"object-cover object-center\" />\n      </div>\n      <div\n        class=\"mt-4 flex items-center justify-between space-x-8 text-base font-medium text-gray-900\"\n      ></div>\n    </div>\n  </div>\n</template>\n\n<script>\nconst jobs = [\n  {\n    company: \"Ensinio\",\n    imageSrc: `ensinio.png`,\n    link: \"https://www.ensinio.com\"\n  },\n  {\n    company: \"iPORTO\",\n    imageSrc: `iporto.png`,\n    link: \"https://iporto.com.br/\"\n  },\n  {\n    company: \"Casa de Gê\",\n    imageSrc: `casa_de_ge.png`,\n    link: \"https://casadege.com.br/\"\n  },\n  {\n    company: \"Congregação Mariana\",\n    imageSrc: `cm.png`\n  }\n];\n</script>"
+          "<template>\n  <div class=\"mt-32\">\n    <div class=\"mt-6 grid grid-cols-1 lg:grid-cols-4 gap-x-8 gap-y-10\">\n      <div class=\"overflow-hidden rounded-lg bg-gray-900 hover:scale-105 transition duration-300\">\n        <a href=\"https://www.ensinio.com\" target=\"_blank\">\n          <img src=\"../../src/assets/img/ensinio.png\" class=\"object-cover object-center\" />\n        </a>\n      </div>\n      <div class=\"overflow-hidden rounded-lg bg-gray-900 hover:scale-105 transition duration-300\">\n        <a href=\"https://www.iporto.com.br\" target=\"_blank\">\n          <img src=\"../../src/assets/img/iporto.png\" class=\"object-cover object-center\" />\n        </a>\n      </div>\n      <div class=\"overflow-hidden rounded-lg bg-gray-900 hover:scale-105 transition duration-300\">\n        <a href=\"https://casadege.com.br\" target=\"_blank\">\n          <img src=\"../../src/assets/img/casa_de_ge.png\" class=\"object-cover object-center\" />\n        </a>\n      </div>\n      <div class=\"overflow-hidden rounded-lg bg-gray-900 hover:scale-105 transition duration-300\">\n        <img src=\"../../src/assets/img/cm.png\" class=\"object-cover object-center\" />\n      </div>\n      <div\n        class=\"mt-4 flex items-center justify-between space-x-8 text-base font-medium text-gray-900\"\n      ></div>\n    </div>\n  </div>\n</template>\n\n<script>\nconst jobs = [\n  {\n    company: \"Ensinio\",\n    imageSrc: `ensinio.png`,\n    link: \"https://www.ensinio.com\"\n  },\n  {\n    company: \"iPORTO\",\n    imageSrc: `iporto.png`,\n    link: \"https://iporto.com.br/\"\n  },\n  {\n    company: \"Casa de Gê\",\n    imageSrc: `casa_de_ge.png`,\n    link: \"https://casadege.com.br/\"\n  },\n  {\n    company: \"Congregação Mariana\",\n    imageSrc: `cm.png`\n  }\n];\n</script>"
         ],
         "mappings": ";AA6BA,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,EAAE,EAAE;EACX;IACE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;IAClB,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;IACvB,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;EAChC,CAAC;EACD;IACE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;IACjB,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;IACtB,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;EAC/B,CAAC;EACD;IACE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,EAAE,CAAC,CAAC,CAAC;IACrB,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;IAC1B,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;EACjC,CAAC;EACD;IACE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;IAC9B,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;EACnB;AACF,CAAC;;;;;OA5Cc,UAAsC;OAKtC,UAAqC;OAKrC,UAAyC;OAI3C,UAAiC;;;;EAnB9C;IAAA,gBAAA,cACO,KAAK,EAAC,OAAO,IADpB;;IAAA,eAKe,KAAsC,EAAtC,UAAsC;;IALrD,eAUe,KAAqC,EAArC,UAAqC;;IAVpD,eAee,KAAyC,EAAzC,UAAyC;;IAfxD,eAmBa,KAAiC,EAAjC,UAAiC"
       }
     },
     {
       "name": "vite:vue-jsx",
-      "start": 1704507644553,
-      "end": 1704507644553,
+      "start": 1704507891724,
+      "end": 1704507891724,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1704507644553,
-      "end": 1704507644553,
+      "start": 1704507891724,
+      "end": 1704507891724,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1704507644553,
-      "end": 1704507644553,
+      "start": 1704507891724,
+      "end": 1704507891724,
       "order": "normal"
     },
     {
       "name": "nuxt:remove-plugin-metadata",
-      "start": 1704507644553,
-      "end": 1704507644553,
+      "start": 1704507891724,
+      "end": 1704507891724,
       "order": "normal"
     },
     {
       "name": "nuxt:remove-plugin-metadata",
-      "start": 1704507644553,
-      "end": 1704507644553,
+      "start": 1704507891724,
+      "end": 1704507891724,
       "order": "normal"
     },
     {
       "name": "nuxt:components:imports",
-      "start": 1704507644553,
-      "end": 1704507644553,
+      "start": 1704507891724,
+      "end": 1704507891724,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1704507644553,
-      "end": 1704507644553,
+      "start": 1704507891724,
+      "end": 1704507891724,
       "order": "normal"
     },
     {
       "name": "ssr-styles",
-      "start": 1704507644553,
-      "end": 1704507644553,
+      "start": 1704507891724,
+      "end": 1704507891724,
       "order": "normal"
     },
     {
       "name": "vite:define",
-      "start": 1704507644553,
-      "end": 1704507644553,
+      "start": 1704507891724,
+      "end": 1704507891724,
       "order": "normal"
     },
     {
       "name": "vite:css-post",
-      "start": 1704507644553,
-      "end": 1704507644553,
+      "start": 1704507891724,
+      "end": 1704507891724,
       "order": "normal"
     },
     {
       "name": "vite:build-html",
-      "start": 1704507644553,
-      "end": 1704507644553,
+      "start": 1704507891724,
+      "end": 1704507891724,
       "order": "normal"
     },
     {
       "name": "vite:worker-import-meta-url",
-      "start": 1704507644553,
-      "end": 1704507644553,
+      "start": 1704507891724,
+      "end": 1704507891724,
       "order": "normal"
     },
     {
       "name": "vite:asset-import-meta-url",
-      "start": 1704507644553,
-      "end": 1704507644553,
+      "start": 1704507891724,
+      "end": 1704507891724,
       "order": "normal"
     },
     {
       "name": "commonjs",
-      "start": 1704507644553,
-      "end": 1704507644553,
+      "start": 1704507891724,
+      "end": 1704507891724,
       "order": "normal"
     },
     {
       "name": "vite:dynamic-import-vars",
-      "start": 1704507644553,
-      "end": 1704507644553,
+      "start": 1704507891724,
+      "end": 1704507891724,
       "order": "normal"
     },
     {
       "name": "vite:import-glob",
-      "start": 1704507644553,
-      "end": 1704507644553,
+      "start": 1704507891724,
+      "end": 1704507891724,
       "order": "normal"
     },
     {
       "name": "nuxt:composable-keys",
-      "start": 1704507644553,
-      "end": 1704507644553,
+      "start": 1704507891724,
+      "end": 1704507891724,
       "order": "post"
     },
     {
       "name": "nuxt:composable-keys",
-      "start": 1704507644553,
-      "end": 1704507644553,
+      "start": 1704507891724,
+      "end": 1704507891724,
       "order": "post"
     },
     {
       "name": "nuxt:imports-transform",
-      "start": 1704507644553,
-      "end": 1704507644554,
+      "start": 1704507891724,
+      "end": 1704507891725,
       "order": "post"
     },
     {
       "name": "nuxt:imports-transform",
-      "start": 1704507644553,
-      "end": 1704507644554,
+      "start": 1704507891724,
+      "end": 1704507891725,
       "order": "post"
     },
     {
       "name": "unctx:transform",
-      "start": 1704507644554,
-      "end": 1704507644554,
+      "start": 1704507891725,
+      "end": 1704507891725,
       "order": "post"
     },
     {
       "name": "unctx:transform",
-      "start": 1704507644554,
-      "end": 1704507644554,
+      "start": 1704507891725,
+      "end": 1704507891725,
       "order": "post"
     },
     {
       "name": "nuxt:pages-macros-transform",
-      "start": 1704507644554,
-      "end": 1704507644554,
+      "start": 1704507891725,
+      "end": 1704507891725,
       "order": "post"
     },
     {
       "name": "nuxt:pages-macros-transform",
-      "start": 1704507644554,
-      "end": 1704507644554,
+      "start": 1704507891725,
+      "end": 1704507891725,
       "order": "post"
     },
     {
       "name": "nuxt:tree-shake-template",
-      "start": 1704507644554,
-      "end": 1704507644554,
+      "start": 1704507891725,
+      "end": 1704507891725,
       "order": "post"
     },
     {
       "name": "nuxt:components-loader",
-      "start": 1704507644554,
-      "end": 1704507644554,
+      "start": 1704507891725,
+      "end": 1704507891725,
       "order": "post"
     },
     {
       "name": "nuxt:tree-shake-composables:transform",
-      "start": 1704507644554,
-      "end": 1704507644554,
+      "start": 1704507891725,
+      "end": 1704507891725,
       "order": "post"
     },
     {
       "name": "vite:build-import-analysis",
-      "start": 1704507644554,
-      "end": 1704507644554,
+      "start": 1704507891725,
+      "end": 1704507891725,
       "order": "normal"
     },
     {
       "name": "vite:reporter",
-      "start": 1704507644554,
-      "end": 1704507644554,
+      "start": 1704507891725,
+      "end": 1704507891725,
       "order": "normal"
     }
   ]

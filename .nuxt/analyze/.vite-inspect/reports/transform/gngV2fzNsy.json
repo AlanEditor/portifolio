@@ -4,57 +4,57 @@
     {
       "name": "vite:load-fallback",
       "result": "<template>\n  <div id=\"contact\">\n    <div class=\"relative isolate -z-10 mt-32 sm:mt-40\">\n      <div class=\"mx-auto max-w-7xl sm:px-6 lg:px-8\">\n        <div\n          class=\"mx-auto flex max-w-2xl flex-col gap-16 bg-white/5 px-6 py-16 ring-1 ring-white/10 sm:rounded-3xl sm:p-8 lg:mx-0 lg:max-w-none lg:flex-row lg:items-center lg:py-20 xl:gap-x-20 xl:px-20\"\n        >\n          <div class=\"w-full flex-auto\">\n            <h2 class=\"text-3xl font-bold tracking-tight text-white sm:text-4xl text-center\">{{ getTranslation('Vamos trabalhar juntos', actualLanguage) }}</h2>\n            <p\n              class=\"mt-6 text-lg leading-8 text-gray-300 text-center\"\n            >{{getTranslation('Entre em contato', actualLanguage) }}</p>\n            <div\n              class=\"mt-10 md:flex justify-center gap-x-24 gap-y-3 text-base leading-7 text-white sm:grid-cols-2\"\n            >\n              <div v-for=\"contact in contacts\" :key=\"contact.name\" class=\"flex gap-x-3 mb-10 justify-center\">\n                <i :class=\"contact.icon\" style=\"font-size: 32px;\"></i>\n                <p class=\"mt-1\">{{ contact.value }}</p>\n              </div>\n            </div>\n          </div>\n        </div>\n      </div>\n      <div\n        class=\"absolute inset-x-0 -top-16 -z-10 flex transform-gpu justify-center overflow-hidden blur-3xl\"\n        aria-hidden=\"true\"\n      >\n        <div\n          class=\"aspect-[1318/752] w-[82.375rem] flex-none bg-gradient-to-r from-[#80caff] to-[#4f46e5] opacity-25\"\n          style=\"clip-path: polygon(73.6% 51.7%, 91.7% 11.8%, 100% 46.4%, 97.4% 82.2%, 92.5% 84.9%, 75.7% 64%, 55.3% 47.5%, 46.5% 49.4%, 45% 62.9%, 50.3% 87.2%, 21.3% 64.1%, 0.1% 100%, 5.4% 51.1%, 21.4% 63.9%, 58.9% 0.2%, 73.6% 51.7%)\"\n        />\n      </div>\n    </div>\n  </div>\n</template>\n\n<script setup>\nconst contacts = [\n    {\n        name: \"Email\",\n        icon: \"bi bi-envelope-fill\",\n        value: \"alansantos04@hotmail.com\",\n    },\n    {\n        name: \"Fone\",\n        icon: \"bi bi-whatsapp\",\n        value: \"+55 (13) 98862-1433\",\n    }\n]\n\n</script>\n\n<script>\nimport { getTranslation } from '~/services/translationService';\n\nexport default {\n  name: \"contactSection\",\n  data() {\n    return {\n      actualLanguage: this.$router.currentRoute.value.query.lang\n    };\n  },\n  methods: {\n    getTranslation(key, language) {\n      return getTranslation(key, language);\n    }\n  },\n  watch: {\n    $route(to, from) {\n      this.actualLanguage = to.query.lang;\n    }\n  }\n};\n</script>\n",
-      "start": 1704507639401,
-      "end": 1704507640079,
+      "start": 1704507886461,
+      "end": 1704507887209,
       "sourcemaps": null
     },
     {
       "name": "nuxt:layer-aliasing",
-      "start": 1704507640079,
-      "end": 1704507640079,
+      "start": 1704507887209,
+      "end": 1704507887209,
       "order": "pre"
     },
     {
       "name": "nuxt:server-devonly:transform",
-      "start": 1704507640079,
-      "end": 1704507640079,
+      "start": 1704507887209,
+      "end": 1704507887209,
       "order": "pre"
     },
     {
       "name": "nuxt:client-fallback-auto-id",
-      "start": 1704507640079,
-      "end": 1704507640079,
+      "start": 1704507887209,
+      "end": 1704507887210,
       "order": "pre"
     },
     {
       "name": "vite:css",
-      "start": 1704507640079,
-      "end": 1704507640079,
+      "start": 1704507887210,
+      "end": 1704507887210,
       "order": "normal"
     },
     {
       "name": "vite:esbuild",
-      "start": 1704507640079,
-      "end": 1704507640079,
+      "start": 1704507887210,
+      "end": 1704507887210,
       "order": "normal"
     },
     {
       "name": "vite:json",
-      "start": 1704507640079,
-      "end": 1704507640079,
+      "start": 1704507887210,
+      "end": 1704507887210,
       "order": "normal"
     },
     {
       "name": "vite:worker",
-      "start": 1704507640079,
-      "end": 1704507640079,
+      "start": 1704507887210,
+      "end": 1704507887210,
       "order": "normal"
     },
     {
       "name": "vite:vue",
       "result": "import { unref as _unref, toDisplayString as _toDisplayString, createElementVNode as _createElementVNode, renderList as _renderList, Fragment as _Fragment, openBlock as _openBlock, createElementBlock as _createElementBlock, normalizeClass as _normalizeClass } from \"vue\"\n\nconst _hoisted_1 = { id: \"contact\" }\nconst _hoisted_2 = { class: \"relative isolate -z-10 mt-32 sm:mt-40\" }\nconst _hoisted_3 = { class: \"mx-auto max-w-7xl sm:px-6 lg:px-8\" }\nconst _hoisted_4 = { class: \"mx-auto flex max-w-2xl flex-col gap-16 bg-white/5 px-6 py-16 ring-1 ring-white/10 sm:rounded-3xl sm:p-8 lg:mx-0 lg:max-w-none lg:flex-row lg:items-center lg:py-20 xl:gap-x-20 xl:px-20\" }\nconst _hoisted_5 = { class: \"w-full flex-auto\" }\nconst _hoisted_6 = { class: \"text-3xl font-bold tracking-tight text-white sm:text-4xl text-center\" }\nconst _hoisted_7 = { class: \"mt-6 text-lg leading-8 text-gray-300 text-center\" }\nconst _hoisted_8 = { class: \"mt-10 md:flex justify-center gap-x-24 gap-y-3 text-base leading-7 text-white sm:grid-cols-2\" }\nconst _hoisted_9 = { class: \"mt-1\" }\nconst _hoisted_10 = /*#__PURE__*/_createElementVNode(\"div\", {\n  class: \"absolute inset-x-0 -top-16 -z-10 flex transform-gpu justify-center overflow-hidden blur-3xl\",\n  \"aria-hidden\": \"true\"\n}, [\n  /*#__PURE__*/_createElementVNode(\"div\", {\n    class: \"aspect-[1318/752] w-[82.375rem] flex-none bg-gradient-to-r from-[#80caff] to-[#4f46e5] opacity-25\",\n    style: {\"clip-path\":\"polygon(73.6% 51.7%, 91.7% 11.8%, 100% 46.4%, 97.4% 82.2%, 92.5% 84.9%, 75.7% 64%, 55.3% 47.5%, 46.5% 49.4%, 45% 62.9%, 50.3% 87.2%, 21.3% 64.1%, 0.1% 100%, 5.4% 51.1%, 21.4% 63.9%, 58.9% 0.2%, 73.6% 51.7%)\"}\n  })\n], -1)\n\n\nimport { getTranslation } from '~/services/translationService';\n\nconst __default__ = {\n  name: \"contactSection\",\n  data() {\n    return {\n      actualLanguage: this.$router.currentRoute.value.query.lang\n    };\n  },\n  methods: {\n    getTranslation(key, language) {\n      return getTranslation(key, language);\n    }\n  },\n  watch: {\n    $route(to, from) {\n      this.actualLanguage = to.query.lang;\n    }\n  }\n};\n\n\nconst _sfc_main = /*#__PURE__*/Object.assign(__default__, {\n  setup(__props) {\n\nconst contacts = [\n    {\n        name: \"Email\",\n        icon: \"bi bi-envelope-fill\",\n        value: \"alansantos04@hotmail.com\",\n    },\n    {\n        name: \"Fone\",\n        icon: \"bi bi-whatsapp\",\n        value: \"+55 (13) 98862-1433\",\n    }\n]\n\n\nreturn (_ctx, _cache) => {\n  return (_openBlock(), _createElementBlock(\"div\", _hoisted_1, [\n    _createElementVNode(\"div\", _hoisted_2, [\n      _createElementVNode(\"div\", _hoisted_3, [\n        _createElementVNode(\"div\", _hoisted_4, [\n          _createElementVNode(\"div\", _hoisted_5, [\n            _createElementVNode(\"h2\", _hoisted_6, _toDisplayString(_unref(getTranslation)('Vamos trabalhar juntos', _ctx.actualLanguage)), 1),\n            _createElementVNode(\"p\", _hoisted_7, _toDisplayString(_unref(getTranslation)('Entre em contato', _ctx.actualLanguage)), 1),\n            _createElementVNode(\"div\", _hoisted_8, [\n              (_openBlock(), _createElementBlock(_Fragment, null, _renderList(contacts, (contact) => {\n                return _createElementVNode(\"div\", {\n                  key: contact.name,\n                  class: \"flex gap-x-3 mb-10 justify-center\"\n                }, [\n                  _createElementVNode(\"i\", {\n                    class: _normalizeClass(contact.icon),\n                    style: {\"font-size\":\"32px\"}\n                  }, null, 2),\n                  _createElementVNode(\"p\", _hoisted_9, _toDisplayString(contact.value), 1)\n                ])\n              }), 64))\n            ])\n          ])\n        ])\n      ]),\n      _hoisted_10\n    ])\n  ]))\n}\n}\n\n})\n\n\n\nexport default _sfc_main",
-      "start": 1704507640079,
-      "end": 1704507640082,
+      "start": 1704507887210,
+      "end": 1704507887212,
       "order": "normal",
       "sourcemaps": {
         "mappings": ""
@@ -62,152 +62,152 @@
     },
     {
       "name": "vite:vue-jsx",
-      "start": 1704507640082,
-      "end": 1704507640082,
+      "start": 1704507887212,
+      "end": 1704507887212,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1704507640082,
-      "end": 1704507640082,
+      "start": 1704507887212,
+      "end": 1704507887212,
       "order": "normal"
     },
     {
       "name": "nuxt:remove-plugin-metadata",
-      "start": 1704507640082,
-      "end": 1704507640082,
+      "start": 1704507887212,
+      "end": 1704507887212,
       "order": "normal"
     },
     {
       "name": "nuxt:chunk-error",
-      "start": 1704507640082,
-      "end": 1704507640082,
+      "start": 1704507887212,
+      "end": 1704507887212,
       "order": "normal"
     },
     {
       "name": "nuxt:components:imports",
-      "start": 1704507640082,
-      "end": 1704507640082,
+      "start": 1704507887212,
+      "end": 1704507887212,
       "order": "normal"
     },
     {
       "name": "replace",
-      "start": 1704507640082,
-      "end": 1704507640082,
+      "start": 1704507887212,
+      "end": 1704507887212,
       "order": "normal"
     },
     {
       "name": "ssr-styles",
-      "start": 1704507640082,
-      "end": 1704507640082,
+      "start": 1704507887212,
+      "end": 1704507887212,
       "order": "normal"
     },
     {
       "name": "vite:define",
-      "start": 1704507640082,
-      "end": 1704507640082,
+      "start": 1704507887212,
+      "end": 1704507887212,
       "order": "normal"
     },
     {
       "name": "vite:css-post",
-      "start": 1704507640082,
-      "end": 1704507640082,
+      "start": 1704507887212,
+      "end": 1704507887212,
       "order": "normal"
     },
     {
       "name": "vite:build-html",
-      "start": 1704507640082,
-      "end": 1704507640082,
+      "start": 1704507887212,
+      "end": 1704507887212,
       "order": "normal"
     },
     {
       "name": "vite:worker-import-meta-url",
-      "start": 1704507640082,
-      "end": 1704507640082,
+      "start": 1704507887212,
+      "end": 1704507887213,
       "order": "normal"
     },
     {
       "name": "vite:asset-import-meta-url",
-      "start": 1704507640082,
-      "end": 1704507640082,
+      "start": 1704507887213,
+      "end": 1704507887213,
       "order": "normal"
     },
     {
       "name": "commonjs",
-      "start": 1704507640082,
-      "end": 1704507640082,
+      "start": 1704507887213,
+      "end": 1704507887213,
       "order": "normal"
     },
     {
       "name": "vite:dynamic-import-vars",
-      "start": 1704507640082,
-      "end": 1704507640082,
+      "start": 1704507887213,
+      "end": 1704507887213,
       "order": "normal"
     },
     {
       "name": "vite:import-glob",
-      "start": 1704507640082,
-      "end": 1704507640082,
+      "start": 1704507887213,
+      "end": 1704507887213,
       "order": "normal"
     },
     {
       "name": "nuxt:composable-keys",
-      "start": 1704507640082,
-      "end": 1704507640082,
+      "start": 1704507887213,
+      "end": 1704507887213,
       "order": "post"
     },
     {
       "name": "nuxt:imports-transform",
-      "start": 1704507640082,
-      "end": 1704507640083,
+      "start": 1704507887213,
+      "end": 1704507887214,
       "order": "post"
     },
     {
       "name": "unctx:transform",
-      "start": 1704507640083,
-      "end": 1704507640083,
+      "start": 1704507887214,
+      "end": 1704507887214,
       "order": "post"
     },
     {
       "name": "nuxt:pages-macros-transform",
-      "start": 1704507640083,
-      "end": 1704507640083,
+      "start": 1704507887214,
+      "end": 1704507887214,
       "order": "post"
     },
     {
       "name": "nuxt:runtime-paths-dep",
-      "start": 1704507640083,
-      "end": 1704507640083,
+      "start": 1704507887214,
+      "end": 1704507887214,
       "order": "post"
     },
     {
       "name": "nuxt:route-injection-plugin",
-      "start": 1704507640083,
-      "end": 1704507640083,
+      "start": 1704507887214,
+      "end": 1704507887214,
       "order": "post"
     },
     {
       "name": "nuxt:components-loader",
-      "start": 1704507640083,
-      "end": 1704507640083,
+      "start": 1704507887214,
+      "end": 1704507887214,
       "order": "post"
     },
     {
       "name": "nuxt:tree-shake-composables:transform",
-      "start": 1704507640083,
-      "end": 1704507640083,
+      "start": 1704507887214,
+      "end": 1704507887214,
       "order": "post"
     },
     {
       "name": "vite:build-import-analysis",
-      "start": 1704507640083,
-      "end": 1704507640083,
+      "start": 1704507887214,
+      "end": 1704507887214,
       "order": "normal"
     },
     {
       "name": "vite:reporter",
-      "start": 1704507640083,
-      "end": 1704507640083,
+      "start": 1704507887214,
+      "end": 1704507887214,
       "order": "normal"
     }
   ]
