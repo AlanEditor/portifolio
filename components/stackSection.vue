@@ -45,7 +45,14 @@ export default {
   },
   watch: {
     $route(to, from) {
-      this.actualLanguage = to.query.lang;
+      let hash = to.hash;
+      if (hash) {
+        const searchParams = new URLSearchParams(hash.slice(hash.indexOf("?")));
+        const lang = searchParams.get("lang") || "pt";
+        this.actualLanguage = lang;
+      } else {
+        this.actualLanguage = to.query.lang || "pt";
+      }
     }
   }
 };

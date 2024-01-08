@@ -25,9 +25,7 @@
           <figure class="relative isolate pt-6 sm:pt-2">
             <blockquote class="leading-8 text-white sm:leading-9">
               <h1 class="text-6xl font-bold">{{ getTranslation('Olá', actualLanguage)}},</h1>
-              <p
-                class="mt-6 text-lg"
-              >{{ getTranslation('Sobre-mim', actualLanguage)}}</p>
+              <p class="mt-6 text-lg">{{ getTranslation('Sobre-mim', actualLanguage)}}</p>
             </blockquote>
           </figure>
           <div class="mt-10">
@@ -43,7 +41,7 @@
               target="_blank"
               class="mr-4 px-6 py-3 bg-transparent text-white rounded-lg"
             >
-            <i class="bi bi-github mr-2"></i> GitHub
+              <i class="bi bi-github mr-2"></i> GitHub
             </a>
           </div>
           <div class="my-10 flex justify-center md:justify-start mx-2">
@@ -71,7 +69,10 @@ export default {
   },
   methods: {
     downloadFile() {
-      const file = this.actualLanguage === 'en' ? 'alan_santos_cv_english.pdf' : 'alan_santos_cv.pdf';
+      const file =
+        this.actualLanguage === "en"
+          ? "alan_santos_cv_english.pdf"
+          : "alan_santos_cv.pdf";
       const fileUrl = "/files/" + file;
       const link = document.createElement("a");
       link.href = fileUrl;
@@ -79,23 +80,33 @@ export default {
       link.click();
     },
     openPdfInNewTab() {
-      const file = this.actualLanguage === 'en' ? 'alan_santos_cv_english.pdf' : 'alan_santos_cv.pdf';
+      const file =
+        this.actualLanguage === "en"
+          ? "alan_santos_cv_english.pdf"
+          : "alan_santos_cv.pdf";
 
       // Caminho relativo ao diretório public
-      const fileUrl = 'files/' + file;
+      const fileUrl = "files/" + file;
 
       // Abre o PDF em uma nova guia ou janela
-      window.open(fileUrl, '_blank');
+      window.open(fileUrl, "_blank");
     },
     getTranslation(key, language) {
       return getTranslation(key, language);
-    },
+    }
   },
   watch: {
-      $route(to, from) {
-        this.actualLanguage = to.query.lang;
+    $route(to, from) {
+      let hash = to.hash;
+      if (hash) {
+        const searchParams = new URLSearchParams(hash.slice(hash.indexOf("?")));
+        const lang = searchParams.get("lang") || "pt";
+        this.actualLanguage = lang;
+      } else {
+        this.actualLanguage = to.query.lang || "pt";
       }
     }
+  }
 };
 </script>
 

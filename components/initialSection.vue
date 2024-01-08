@@ -13,7 +13,7 @@
               <h3
                 class="text-4xl font-bold tracking-tight text-white sm:text-6xl mb-5 animate__animated animate__fadeInDown"
               >Alan Santos</h3>
-              <hr class="hr-effect">
+              <hr class="hr-effect" />
               <h3
                 class="text-2xl font-bold tracking-tight text-white sm:text-5xl mt-8 animate__animated animate__fadeInUp"
               >{{ getTranslation('Engenheiro de Software', actualLanguage) }}</h3>
@@ -26,7 +26,7 @@
 </template>
 
 <script>
-import { getTranslation } from '~/services/translationService';
+import { getTranslation } from "~/services/translationService";
 export default {
   name: "initialSection",
   data() {
@@ -41,7 +41,14 @@ export default {
   },
   watch: {
     $route(to, from) {
-      this.actualLanguage = to.query.lang;
+      let hash = to.hash;
+      if (hash) {
+        const searchParams = new URLSearchParams(hash.slice(hash.indexOf("?")));
+        const lang = searchParams.get("lang") || "pt";
+        this.actualLanguage = lang;
+      } else {
+        this.actualLanguage = to.query.lang || "pt";
+      }
     }
   }
 };
