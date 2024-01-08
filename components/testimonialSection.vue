@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-gradient-to-t from-black to-slate-950 py-24 sm:py-32" id="testimonials">
+  <div class="bg-gradient-to-t from-black to-slate-950 pt-24 sm:pt-32" id="testimonials">
     <div class="mx-auto max-w-7xl px-6 lg:px-8">
       <div class="mx-auto max-w-xl text-center mb-10">
         <h2 class="text-4xl font-bold tracking-tight text-white sm:text-6xl">{{ getTranslation('provas-sociais', actualLanguage) }}</h2>
