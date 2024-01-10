@@ -37,31 +37,28 @@
 <script setup>
 const testimonials = [
   {
-    body:
-      "Alan assumiu a desafiadora tarefa de desenvolver uma plataforma online interna para os associados da Federação das Congregações Marianas de Santos, através da nossa Seção de Tecnologia. Sem dúvidas, um projeto que provou ser extremamente inovador. Seu trabalho não apenas elevou o padrão de nossas iniciativas tecnológicas, mas também criou um modelo que pode ser replicado em outras organizações semelhantes.",
     author: {
       name: "Gabriel Valério"
     }
   },
   {
-    body:
-      "Um excelente parceiro de serviço, sempre bem humorado, deixa o clima super leve e agradável no time, além de ser muito profissional e caprichoso nas entregas!",
     author: {
       name: "Luis Guilherme"
     }
   },
   {
-    body:
-      "Tive o privilégio de trabalhar lado a lado com o Alan nesses últimos meses no escopo de Backend da Ensinio. Sua dedicação e habilidades técnicas excepcionais fazem dele um profissional excelente. Seu comprometimento com a excelência e sua atitude positiva têm um impacto significativo no nível das entregas. Cumprindo as datas sem abdicar de qualidade, sua ética de trabalho exemplar serve como um modelo para todos nós.",
     author: {
       name: "Adriano Christian"
     }
   },
   {
-    body:
-      "[...] Alan também é um profissional excepcional. Atenção aos detalhes, comprometimento e qualidade nas entregas sempre foram características visíveis em todos momentos que tive oportunidade de trocar conhecimento com ele.",
     author: {
       name: "Gabriel Coutinho"
+    }
+  },
+  {
+    author: {
+      name: "Leonardo Sobral"
     }
   }
 ];
